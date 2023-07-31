@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background-image: url('../public/homepageBg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.saidiaTitle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.saidiaText{
+  width: 98%;
+
+  @media (max-width: 1441px) {
+    width: 100%    
+  }
+}
+
+.saidiaHeadPic {
+  position: absolute;
+  width: 500px;
+  bottom: -96px;
+
+  @media (max-width: 1441px) {
+    width: 400px;
+  }
+}

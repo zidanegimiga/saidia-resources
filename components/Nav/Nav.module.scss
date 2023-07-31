@@ -1,0 +1,84 @@
+.nav{
+    position: fixed;
+    z-index: 2;
+}
+
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuToggle{
+    cursor: pointer;
+}
+
+.navOverlay{
+    position: fixed;
+    background-color: #18181c;
+    z-index: -2;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 4em;
+    transition: all 2s cubic-bezier(0 16, 1, 0.3, 1 )
+}
+
+.hamBox{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    padding: 2.4em;
+
+    &:hover{
+        background-color: #2a2a2f;
+    }
+}
+
+.hamBoxOpen{
+    background-color: #2a2a2f;
+}
+
+.lineTop, .lineBottom{
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    width: 48px;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.534);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.lineTop{
+    top: 2.2em;
+
+    .spin{
+        top: 2.35em;
+        transform: rotate(135deg);
+        background: #fff;
+    }
+}
+
+.lineBottom{
+    bottom: 2.2em;
+
+    .spin{
+        bottom: 2.35em;
+        transform: rotate(225deg);
+        background: #fff;
+    }
+}
