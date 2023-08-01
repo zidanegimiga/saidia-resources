@@ -42,6 +42,10 @@
 
     &:hover {
         background-color: #2a2a2f;
+
+        .lineTop, .lineBottom{
+            background-color: #fff;
+        }
     }
 }
 
@@ -57,7 +61,7 @@
     width: 48px;
     height: 2px;
     border-radius: 10px;
-    background: #ffffff88;
+    background: #000000;
     left: 0;
     right: 0;
     transform: rotate(0deg);
@@ -130,5 +134,6 @@ ul.navLinks li a{
     left: 0;
     padding: 2em;
     display: flex;
-    justify-content: space-between;        
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

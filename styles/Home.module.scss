@@ -31,9 +31,10 @@
 .saidiaHeadPic {
   position: absolute;
   width: 500px;
-  bottom: -96px;
+  bottom: -40%;
 
   @media (max-width: 1441px) {
     width: 400px;
+    bottom: -30%;
   }
 }
