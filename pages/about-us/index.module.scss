@@ -10,37 +10,44 @@
     background-size: cover;
 }
 
-.mainContentContainer{
+.mainContentContainer {
     background: rgba(233, 231, 215, 0.69);
     width: 75%;
     display: flex;
     padding: 2em;
     justify-content: flex-end;
     height: auto;
-    border-radius: 32px;    
+    border-radius: 32px;
 }
 
-.mainContent{
-    width: 70%;
+.mainContent {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.aboutDescription{
-    width: 70%;
+.aboutDescription {
 
-    p{
+    p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-top: 8px;
-        color: black;
+        margin-top: 24px;
+        color: rgb(27, 27, 27);
         font-weight: 500;
     }
 }
 
-.platformsBadges{
+.platformsBadges {
     display: flex;
-    width: 70%;
+    width: 100%;
     gap: 24px;
-    margin-top: 24px;
+    margin-top: 56px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .platformText{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        font-weight: 600;
+    }
 }
