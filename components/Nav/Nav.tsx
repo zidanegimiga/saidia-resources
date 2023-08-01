@@ -62,6 +62,10 @@ const Nav = () => {
               <Link href={"/about-us"}>CREATIVES GARAGE</Link>
               <div className={styles.navItemWrapper}></div>
             </li>
+            <li className={styles.navItem}>
+              <Link href={"/about-us"}>GAME CREDITS</Link>
+              <div className={styles.navItemWrapper}></div>
+            </li>
           </ul>
           <div className={styles.navFooter}>
             <div className={styles.footerItem}>

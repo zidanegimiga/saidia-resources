@@ -20,7 +20,7 @@
 
 .navOverlay {
     position: fixed;
-    background-color: #18181c;
+    background-color: #FFD97D;
     z-index: -2;
     top: -100%;
     left: 0;
@@ -113,19 +113,24 @@ ul.navLinks li a{
     font-size: 4em;
     position: relative;
     top: 0;
+    font-weight: 500;
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+
+    &:hover{
+        color: #D16978;
+    }
 }
 
-.navItemWrapper::after{
-    content: "";
-    position: absolute;
-    top: 120px;
-    left: -10%;
-    width: 120%;
-    height: 100%;
-    background-color: #18181c;
-    margin: 0 auto;
-}
+// .navItemWrapper::after{
+//     content: "";
+//     position: absolute;
+//     top: 120px;
+//     left: -10%;
+//     width: 120%;
+//     height: 100%;
+//     background-color: #18181c;
+//     margin: 0 auto;
+// }
 
 .navFooter{
     position: absolute;
