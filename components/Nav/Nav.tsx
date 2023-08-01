@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Nav.module.scss";
+import Link from "next/link";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -37,7 +38,40 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <div className={styles.navOverlay}></div>
+        <div
+          className={styles.navOverlay}
+          style={{
+            top: navOpen ? "0" : "-100%",
+            transitionDelay: navOpen ? "0s" : "0s",
+          }}
+        >
+          <ul className={styles.navLinks}>
+            <li className={styles.navItem}>
+              <Link href={"/"}>HOME</Link>
+              <div className={styles.navItemWrapper}></div>
+            </li>
+            <li className={styles.navItem}>
+              <Link href={"/"}>GUIDES & RESOURCES</Link>
+              <div className={styles.navItemWrapper}></div>
+            </li>
+            <li className={styles.navItem}>
+              <Link href={"/"}>ABOUT US</Link>
+              <div className={styles.navItemWrapper}></div>
+            </li>
+          </ul>
+          <div className={styles.navFooter}>
+            <div className={styles.footerItem}>
+              <span>
+                <Link href={"/"}>Privacy Policy</Link>
+              </span>
+            </div>
+            <div className={styles.footerItem}>
+              <span>
+                <Link href={"/"}>Terms and Conditions</Link>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
