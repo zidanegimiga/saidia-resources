@@ -1,5 +1,7 @@
 .pageWrapper {
     background-image: url('../../../public/homepageBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     padding-top: 48px;
     padding-right: 64px;
@@ -50,7 +52,8 @@
     h2 {
         font-weight: 500;
         font-size: 24px;
-        margin-bottom: 24px;
+        margin-top: 24px;
+        margin-bottom: 8px;
     }
 
     ol{
