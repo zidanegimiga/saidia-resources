@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./guides.module.scss"
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Guides(){
     return (
@@ -52,30 +53,34 @@ export default function Guides(){
             <p>All the 411 you need ku-saidika in the real world</p>
           </div>
           <div className={styles.categoriesContainer}>
-            <div className={styles.categoryContainer}>
-              <div className={styles.categoryHeadingContainer}>
-                <h3>Legal</h3>
+            <Link href={"/guides/legal"}>
+              <div className={styles.categoryContainer}>
+                <div className={styles.categoryHeadingContainer}>
+                  <h3>Legal</h3>
+                </div>
+                <p>
+                  All the 411 you need ku-saidika* in the real world All the 411
+                  you need ku-saidika* in the real world All the 411 you need
+                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
+                  in the real world All the 411 you need ku-saidika* in the real
+                  world All the 411 you need ku-saidika* in the real world
+                </p>
               </div>
-              <p>
-                All the 411 you need ku-saidika* in the real world All the 411
-                you need ku-saidika* in the real world All the 411 you need
-                ku-saidika* in the real worldAll the 411 you need ku-saidika* in
-                the real world All the 411 you need ku-saidika* in the real
-                world All the 411 you need ku-saidika* in the real world
-              </p>
-            </div>
-            <div className={styles.categoryContainer}>
-              <div className={styles.categoryHeadingContainer}>
-                <h3>Supporting Organizations</h3>
+            </Link>
+            <Link href={"/guides/organizations"}>
+              <div className={styles.categoryContainer}>
+                <div className={styles.categoryHeadingContainer}>
+                  <h3>Supporting Organizations</h3>
+                </div>
+                <p>
+                  All the 411 you need ku-saidika* in the real world All the 411
+                  you need ku-saidika* in the real world All the 411 you need
+                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
+                  in the real world All the 411 you need ku-saidika* in the real
+                  world All the 411 you need ku-saidika* in the real world
+                </p>
               </div>
-              <p>
-                All the 411 you need ku-saidika* in the real world All the 411
-                you need ku-saidika* in the real world All the 411 you need
-                ku-saidika* in the real worldAll the 411 you need ku-saidika* in
-                the real world All the 411 you need ku-saidika* in the real
-                world All the 411 you need ku-saidika* in the real world
-              </p>
-            </div>
+            </Link>
             <div className={styles.categoryContainer}>
               <div className={styles.categoryHeadingContainer}>
                 <h3>Business and Employments</h3>
@@ -124,7 +129,7 @@ export default function Guides(){
                 world All the 411 you need ku-saidika* in the real world
               </p>
             </div>
-          </div>          
+          </div>
         </section>
       </div>
     );
