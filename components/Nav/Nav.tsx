@@ -51,7 +51,7 @@ const Nav = () => {
               <div className={styles.navItemWrapper}></div>
             </li>
             <li className={styles.navItem}>
-              <Link href={"/"}>GUIDES & RESOURCES</Link>
+              <Link href={"/guides"}>GUIDES & RESOURCES</Link>
               <div className={styles.navItemWrapper}></div>
             </li>
             <li className={styles.navItem}>
