@@ -11,25 +11,28 @@ export default function Home() {
     <>
       <Head>
         <title>Saidia</title>
-        <meta name="description" content="A resources website for the Saidia game" />
+        <meta
+          name="description"
+          content="A resources website for the Saidia game"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Nav/>
+        <Nav />
         <div className={styles.saidiaTitle}>
           <img
-            src={'/saidiaTitle.png'}
+            src={"/saidiaTitle.png"}
             alt={"Saidia Title"}
             className={styles.saidiaText}
           />
-          <img
-            src={'/kayaHead.png'}
-            alt={"Saidia"}
-            className={styles.saidiaHeadPic}
-          />
-        </div>        
+        </div>
+        <img
+          src={"/kayaHead.png"}
+          alt={"Saidia"}
+          className={styles.saidiaHeadPic}
+        />
       </main>
     </>
-  )
+  );
 }
