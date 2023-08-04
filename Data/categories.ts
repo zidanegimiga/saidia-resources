@@ -118,7 +118,7 @@ export const events = [
   },
   {
     title: "Dance classes",
-    url: "/guides/events/#fun-things-to-do",
+    url: "/guides/events/#dance-classes",
   },
 ];
 
