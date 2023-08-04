@@ -1,0 +1,68 @@
+.accordionWrapper {
+    padding: 16px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px black;
+    margin-top: 8px;
+    background-color: #f0ebe1;
+    height: fit-content;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+
+    &:hover {
+        background-color: #f0e3ca;
+    }
+}
+
+.accordionHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover {
+        p {
+            color: #53CD9C;
+        }
+    }
+}
+
+.accordionHeader.active {
+    p {
+        transform: rotate(90deg);
+    }
+}
+
+.accordionHeaderTitle {
+    font-size: 18px;
+    color: #242424;
+
+    &:hover {
+        color: #53CD9C;
+    }
+}
+
+.accordionArticleTitlesList {
+    list-style: disc;
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordionArticleTitlesList.show {
+    height: auto;
+    max-height: 999;
+    display: block;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+.accordionArticleTitle{
+    font-size: 14px;
+}

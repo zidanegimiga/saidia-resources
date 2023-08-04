@@ -70,7 +70,7 @@ export default function Guides(){
             <Link href={"/guides/organizations"}>
               <div className={styles.categoryContainer}>
                 <div className={styles.categoryHeadingContainer}>
-                  <h3>Supporting Organizations</h3>
+                  <h3>Support Organizations and True Stories</h3>
                 </div>
                 <p>
                   All the 411 you need ku-saidika* in the real world All the 411
@@ -81,54 +81,62 @@ export default function Guides(){
                 </p>
               </div>
             </Link>
-            <div className={styles.categoryContainer}>
-              <div className={styles.categoryHeadingContainer}>
-                <h3>Business and Employments</h3>
+            <Link href={"/guides/business"}>
+              <div className={styles.categoryContainer}>
+                <div className={styles.categoryHeadingContainer}>
+                  <h3>Business and Employment</h3>
+                </div>
+                <p>
+                  All the 411 you need ku-saidika* in the real world All the 411
+                  you need ku-saidika* in the real world All the 411 you need
+                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
+                  in the real world All the 411 you need ku-saidika* in the real
+                  world All the 411 you need ku-saidika* in the real world
+                </p>
               </div>
-              <p>
-                All the 411 you need ku-saidika* in the real world All the 411
-                you need ku-saidika* in the real world All the 411 you need
-                ku-saidika* in the real worldAll the 411 you need ku-saidika* in
-                the real world All the 411 you need ku-saidika* in the real
-                world All the 411 you need ku-saidika* in the real world
-              </p>
-            </div>
-            <div className={styles.categoryContainer}>
-              <div className={styles.categoryHeadingContainer}>
-                <h3>Inclusivity and Diversity</h3>
+            </Link>
+            <Link href={"/guides/inclusivity"}>
+              <div className={styles.categoryContainer}>
+                <div className={styles.categoryHeadingContainer}>
+                  <h3>Inclusivity and Diversity</h3>
+                </div>
+                <p>
+                  All the 411 you need ku-saidika* in the real world All the 411
+                  you need ku-saidika* in the real world All the 411 you need
+                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
+                  in the real world All the 411 you need ku-saidika* in the real
+                  world All the 411 you need ku-saidika* in the real world
+                </p>
               </div>
-              <p>
-                All the 411 you need ku-saidika* in the real world All the 411
-                you need ku-saidika* in the real world All the 411 you need
-                ku-saidika* in the real worldAll the 411 you need ku-saidika* in
-                the real world All the 411 you need ku-saidika* in the real
-                world All the 411 you need ku-saidika* in the real world
-              </p>
-            </div>
-            <div className={styles.categoryContainer}>
-              <div className={styles.categoryHeadingContainer}>
-                <h3>Events and Culture</h3>
+            </Link>
+            <Link href={"/guides/events"}>
+              <div className={styles.categoryContainer}>
+                <div className={styles.categoryHeadingContainer}>
+                  <h3>Events and Culture</h3>
+                </div>
+                <p>
+                  All the 411 you need ku-saidika* in the real world All the 411
+                  you need ku-saidika* in the real world All the 411 you need
+                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
+                  in the real world All the 411 you need ku-saidika* in the real
+                  world All the 411 you need ku-saidika* in the real world
+                </p>
               </div>
-              <p>
-                All the 411 you need ku-saidika* in the real world All the 411
-                you need ku-saidika* in the real world All the 411 you need
-                ku-saidika* in the real worldAll the 411 you need ku-saidika* in
-                the real world All the 411 you need ku-saidika* in the real
-                world All the 411 you need ku-saidika* in the real world
-              </p>
-            </div>
-            <div className={styles.categoryContainer}>
-              <div className={styles.categoryHeadingContainer}>
-                <h3>Self-care</h3>
+            </Link>
+            <Link href={"/guides/self-care"}>
+              <div className={styles.categoryContainer}>
+                <div className={styles.categoryHeadingContainer}>
+                  <h3>Self-care</h3>
+                </div>
+                <p>
+                  All the 411 you need ku-saidika* in the real world All the 411
+                  you need ku-saidika* in the real world All the 411 you need
+                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
+                  in the real world All the 411 you need ku-saidika* in the real
+                  world All the 411 you need ku-saidika* in the real world
+                </p>
               </div>
-              <p>
-                All the 411 you need ku-saidika* in the real world All the 411
-                you need ku-saidika* in the real world All the 411 you need
-                ku-saidika* in the real worldAll the 411 you need ku-saidika* in
-                the real world All the 411 you need ku-saidika* in the real
-                world All the 411 you need ku-saidika* in the real world
-              </p>
-            </div>
+            </Link>
           </div>
         </section>
       </div>

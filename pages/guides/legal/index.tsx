@@ -1,78 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./legal.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
-import Link from "next/link";
-
-interface IAccordion{
-    categoryTitle: string,
-    categoryArticles: any,
-}
-
-const legal = [
-  {
-    title: "Fines, Cash Bail, and Bonds",
-    url: "/guides/legal/#fines-cash-bail-and-bonds",
-  },
-  {
-    title: "Obtain and Replace Your ID",
-    url: "/guides/legal/#id-replacement",
-  },
-  {
-    title: "Understanding Police Service",
-    url: "/guides/legal/#understanding-police-service",
-  },
-  {
-    title: "Reporting Police Misconduct",
-    url: "/guides/legal/#reporting-police-misconduct",
-  },
-  {
-    title: "Uganda Anti-LGBTQ law",
-    url: "/guides/legal/#uganda-antilaw",
-  },
-  {
-    title: "Protesting",
-    url: "/guides/legal/#protesting",
-  },
-  {
-    title: "Activist Organizations",
-    url: "/guides/legal/#activist-organizations",
-  },
-  {
-    title: "Changing Your Name",
-    url: "/guides/legal/#changing-your-name",
-  },
-  {
-    title: "Changing your gender marker",
-    url: "/guides/legal/#changing-your-gender-marker",
-  },
-  {
-    title: "Repeal 162",
-    url: "/guides/legal/#repeal-162",
-  },
-];
-
-const Accordion = ({categoryTitle, categoryArticles}: IAccordion) =>{
-    return (
-      <div className={styles.accordionWrapper}>
-        <div className={styles.accordionHeader}>
-          <h2> {categoryTitle}</h2>
-          <p>&gt;</p>
-        </div>
-        <ul className={styles.accordionArticleTitlesList}>
-          {categoryArticles?.map((article: any, index: number) => {
-            return (
-              <div key={index}>
-                <Link href={article?.url}>
-                  <li className={styles.accordionArticleTitle}>{article?.title}</li>
-                </Link>
-              </div>
-            );
-          })}
-        </ul>
-      </div>
-    );
-}
+import SideNav from "@/components/SideNav";
 
 export default function Guides() {
   return (
@@ -87,9 +17,7 @@ export default function Guides() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <div className={styles.sideNav}>
-        <Accordion categoryTitle="Legal" categoryArticles={legal} />
-      </div>
+      <SideNav/>
       <div className={styles.article} id="fines-cash-bails-and-bonds">
         <h2>
           Understanding Fines, Cash Bail, and Bonds in Kenya&apos;s Legal System
@@ -195,7 +123,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article}>
+      <div className={styles.article} id="lost-id">
         <h2>If you&apos;ve lost your ID card in Kenya, follow these steps: </h2>
         <ol>
           <li>
@@ -1344,7 +1272,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article}>
+      <div className={styles.article} id="when-arrested">
         <h2>What happens when you have just been arrested in Kenya?</h2>
         <p>
           When a person is arrested in Kenya, they have certain rights protected
@@ -1536,7 +1464,7 @@ export default function Guides() {
           administering justice and resolving legal disputes within the country.
         </p>
       </div>
-      <div className={styles.article}>
+      <div className={styles.article} id="work-permits">
         <h2>Work Permits</h2>
         <p>
           Obtaining a work permit in Kenya is necessary for individuals who wish
@@ -1696,7 +1624,7 @@ export default function Guides() {
           country.
         </p>
       </div>
-      <div className={styles.article}>
+      <div className={styles.article} id="reporting-a-case">
         <h2>Reporting a Case</h2>
         <p>
           When reporting an incident to the police, it&apos;s important to
@@ -1719,7 +1647,7 @@ export default function Guides() {
           when you visit the station again.
         </p>
       </div>
-      <div className={styles.article}>
+      <div className={styles.article} id="same-sex-marriage">
         <h2>Why can&apos;t people of the same sex get married in Kenya?</h2>
         <p>
           Same-sex marriage is not legally recognized in Kenya. The
