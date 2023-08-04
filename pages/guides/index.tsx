@@ -54,7 +54,7 @@ export default function Guides(){
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>So what&apos;s on Saidia?</h2>
-            <p>All the 411 you need ku-saidika in the real world</p>
+            <p>All the 411 you need &quot;Ku-saidika&quot; in 6 categories</p>
           </div>
           <div className={styles.categoriesContainer} id={"categories"}>
             <Link href={"/guides/legal"}>
