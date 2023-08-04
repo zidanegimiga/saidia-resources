@@ -327,158 +327,48 @@ export default function Events() {
           entertainment, the city has something for everyone to enjoy.
         </p>
       </div>
-      <div className={styles.article} id="banks-in-kenya">
-        <h2>Which banks operate in Kenya</h2>
-        <p>Here is a summary of some prominent banks in Kenya:</p>
-        <ol>
-          <li>
-            Equity Bank:
-            <p>
-              Largest bank in terms of customer base. Offers a wide range of
-              banking products and services. Known for its innovative mobile
-              banking platform, Equitel.
-            </p>
-          </li>
-          <li>
-            KCB Bank (Kenya Commercial Bank):
-            <p>
-              One of the oldest and largest banks in Kenya. Offers various
-              banking services, including personal banking, business banking,
-              and corporate banking. Has an extensive branch and ATM network
-              across the country.
-            </p>
-          </li>
-          <li>
-            Cooperative Bank of Kenya:
-            <p>
-              Provides banking services to individuals, SMEs, and corporate
-              clients. Known for its cooperative model and focus on supporting
-              the agricultural sector. Offers a range of financial products,
-              including loans, savings accounts, and insurance.
-            </p>
-          </li>
-          <li>
-            Standard Chartered Bank Kenya:
-            <p>
-              Part of the global Standard Chartered Group. Offers a wide range
-              of banking and financial services to individuals, businesses, and
-              corporate clients. Provides international banking services, trade
-              finance, and wealth management solutions.
-            </p>
-          </li>
-          <li>
-            ABSA
-            <p>
-              Operates as Absa Kenya following the rebranding from Barclays Bank
-              of Kenya. Offers personal banking, business banking, and corporate
-              banking services. Provides digital banking solutions and has a
-              strong presence in the Kenyan market.
-            </p>
-          </li>
-          <li>
-            Stanbic Bank Kenya:
-            <p>
-              Part of the Standard Bank Group. Offers corporate and investment
-              banking services, as well as personal banking solutions. Provides
-              a range of financial products, including loans, savings accounts,
-              and investment options.
-            </p>
-          </li>
-          <li>
-            Commercial Bank of Kenya:
-            <p>
-              Merged with NIC Bank to form NCBA Bank. Offers retail banking,
-              corporate banking, and treasury services. Known for its mobile
-              banking platform, M-Shwari, which provides micro-loans and savings
-              options.
-            </p>
-          </li>
-          <li>
-            Diamond Trust Bank:
-            <p>
-              Operates in Kenya and other East African countries. Provides
-              banking services to individuals, businesses, and corporate
-              clients. Offers a variety of financial products, including loans,
-              savings accounts, and trade finance.
-            </p>
-          </li>
-        </ol>
-      </div>
-      <div className={styles.article} id="banks-with-the-best-rates">
-        <h2>Which Bank has the best interest rates</h2>
+      <div className={styles.article} id="dance-classes">
+        <h2>Dance classes in Kenya</h2>
         <p>
-          Determining the bank with the best interest rates in Kenya can depend
-          on various factors, including the type of account, the deposit amount,
-          and the specific time period. Interest rates can also change over
-          time, so it is recommended to check with different banks to get the
-          most up-to-date information. Here are a few banks that are known for
-          offering competitive interest rates:
+          There are various dance classes available in Kenya where individuals
+          can learn and enhance their dancing skills. Here are some popular
+          dance classes and studios in Kenya:
         </p>
         <ol>
           <li>
-            Sidian Bank: Known for its attractive interest rates on savings
-            accounts and fixed deposits.
+            Sarakasi Trust: Located in Nairobi, Sarakasi Trust offers a wide
+            range of dance classes, including contemporary, hip-hop, salsa,
+            African dance, and more. They cater to different age groups and
+            skill levels.
           </li>
           <li>
-            Family Bank: Offers competitive interest rates on various savings
-            and investment accounts.
+            Dance Center Kenya: Situated in Nairobi, Dance Center Kenya offers
+            classes in ballet, contemporary, jazz, and tap dance. They have
+            programs for both children and adults, taught by experienced
+            instructors.
           </li>
           <li>
-            CFC Stanbic Bank: Provides competitive interest rates on fixed
-            deposits and savings accounts.
+            Out of the Box Dance Company: Based in Nairobi, Out of the Box Dance
+            Company offers classes in various styles like hip-hop, afro-fusion,
+            dancehall, and street dance. They focus on energetic and dynamic
+            choreography.
           </li>
           <li>
-            I&M Bank: Offers competitive interest rates on savings accounts and
-            fixed deposits
+            Lavington School of Dance: Located in Nairobi, Lavington School of
+            Dance provides classes in ballet, modern, tap, and jazz dance. They
+            have classes for different age groups and skill levels, from
+            beginners to advanced.
           </li>
           <li>
-            Standard Chartered Bank: Known for its competitive interest rates on
-            time deposits and savings accounts.
-          </li>
-        </ol>
-        <p>
-          It is important to note that interest rates can vary based on the
-          specific account type and the amount of funds deposited. Additionally,
-          banks may offer promotional rates or customized rates for specific
-          customers, so it is advisable to contact the banks directly or visit
-          their websites to get the most accurate and up-to-date information on
-          interest rates.
-        </p>
-      </div>
-      <div className={styles.article} id="banks-best-for-startups">
-        <h2>What banks are best for Business Start ups</h2>
-        <p>
-          Several banks in Kenya offer services and support tailored to business
-          start-ups. Here are a few banks that are often recommended for
-          entrepreneurs and business start-ups:
-        </p>
-        <ol>
-          <li>
-            KCB Bank: KCB Bank has a dedicated department that focuses on
-            serving SMEs and start-up businesses. They offer business accounts,
-            loans, and various business advisory services to help entrepreneurs
-            navigate the challenges of starting and growing a business.
+            Alliance Française: With branches in Nairobi and Mombasa, Alliance
+            Française organizes regular dance workshops and classes. They cover
+            a range of styles, including African, salsa, contemporary, and more.
           </li>
           <li>
-            Cooperative Bank of Kenya: The Cooperative Bank has a strong focus
-            on supporting SMEs and offers various financial products and
-            services specifically tailored for start-ups. They provide business
-            accounts, loans, trade finance solutions, and business advisory
-            services.
-          </li>
-          <li>
-            Diamond Trust Bank (DTB): DTB offers a range of banking services for
-            business start-ups, including business accounts, loans, and trade
-            finance solutions. They have specialized teams that provide guidance
-            and support to entrepreneurs throughout the business start-up
-            process.
-          </li>
-          <li>
-            Standard Chartered Bank: Standard Chartered Bank has a dedicated
-            unit called &quot;Business Banking&quot; that focuses on providing
-            banking solutions for SMEs and start-ups. They offer business
-            accounts, loans, cash management services, and trade finance
-            solutions.
+            Nairobi Dance Project: Nairobi Dance Project offers a variety of
+            dance classes, workshops, and intensives in different styles such as
+            contemporary, urban, and traditional African dance. They focus on
+            nurturing creativity and artistic expression.
           </li>
         </ol>
       </div>
