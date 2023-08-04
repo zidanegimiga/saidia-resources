@@ -50,7 +50,7 @@ export default function About() {
             </div>
             <div className={styles.platformsBadges}>
               <p className={styles.platformText}>
-                Saidia game is sponsored by:{" "}
+                Saidia game is developed in partnership with:{" "}
               </p>
               <Image src={"/heinrich.png"} width={160} height={61.92} alt="" />
             </div>
