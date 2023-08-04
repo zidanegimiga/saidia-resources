@@ -175,10 +175,6 @@ export const selfCare = [
     url: "/guides/self-care/#selfcare-apps",
   },
   {
-    title: "Finding Inner Calm",
-    url: "/guides/self-care/#finding-inner-calm",
-  },
-  {
     title: "Group therapy",
     url: "/guides/self-care/#group-therapy",
   },
@@ -192,6 +188,6 @@ export const selfCare = [
   },
   {
     title: "Organizations providing mental health support",
-    url: "/guides/self-care/#mental-heakth-support-orgs",
+    url: "/guides/self-care/#mental-health-support-orgs",
   },
 ];
