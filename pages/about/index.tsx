@@ -21,11 +21,8 @@ export default function About() {
       <main className={styles.main}>
         <Nav />
         <div className={styles.mainContentContainer}>
+          <img src="/kaya.png" className={styles.kayaImg} />
           <div className={styles.mainContent}>
-            <img
-            src="/kaya.png"
-            className={styles.kayaImg}
-            />
             <div className={styles.aboutDescription}>
               <p>
                 Embark on an extraordinary journey with Kaya in &quot;Saidia:
@@ -53,17 +50,15 @@ export default function About() {
               </p>
             </div>
             <div className={styles.platformsBadges}>
-              <Image
+              <img
                 src={"/googlePlayBadge.png"}
-                width={160}
-                height={61.92}
                 alt=""
+                className={styles.platformBadge}
               />
-              <Image
+              <img
                 src={"/googlePlayBadge.png"}
-                width={160}
-                height={61.92}
                 alt=""
+                className={styles.platformBadge}
               />
             </div>
           </div>
