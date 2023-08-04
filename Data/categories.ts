@@ -95,7 +95,7 @@ export const organizations = [
   },
   {
     title: "Statistics on Violence Against Kenya's Queer Community",
-    url: "/guides/organizations/#lgbtq-violence-statistics",
+    url: "/guides/organizations/#violence-statistics",
   },
   {
     title: "Breaking Barriers for Transgender Rights in Kenya - Audrey",
