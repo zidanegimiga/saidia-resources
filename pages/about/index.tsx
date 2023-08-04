@@ -22,6 +22,10 @@ export default function About() {
         <Nav />
         <div className={styles.mainContentContainer}>
           <div className={styles.mainContent}>
+            <img
+            src="/kaya.png"
+            className={styles.kayaImg}
+            />
             <div className={styles.aboutDescription}>
               <p>
                 Embark on an extraordinary journey with Kaya in &quot;Saidia:

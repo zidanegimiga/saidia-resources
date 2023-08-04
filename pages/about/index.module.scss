@@ -11,8 +11,9 @@
 }
 
 .mainContentContainer{
+    position: relative;
     background: rgba(233, 231, 215, 0.69);
-    width: 75%;
+    width: 50%;
     display: flex;
     padding: 2em;
     justify-content: flex-end;
@@ -28,7 +29,7 @@
 }
 
 .aboutDescription{
-    width: 70%;
+    width: 90%;
 
     p{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,7 +41,14 @@
 
 .platformsBadges{
     display: flex;
-    width: 70%;
+    width: 90%;
     gap: 24px;
     margin-top: 24px;
+}
+
+.kayaImg{
+    position: absolute;
+    height: 600px;
+    left: -260px;
+    top: -40px
 }
