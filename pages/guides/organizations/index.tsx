@@ -251,6 +251,86 @@ const Support = () => {
           Kenya.
         </p>
       </div>
+      <div className={styles.article} id={"audrey"}>
+        <h2>
+          Audrey&apos;s Journey: Breaking Barriers for Transgender Rights in
+          Kenya
+        </h2>
+        <p>
+          In the heart of Kenya, a courageous and determined individual named
+          Audrey Mbugua was on a mission to challenge the norms and fight for
+          the rights of transgender people. Born as a male in 1984, Audrey
+          always felt a deep connection with her true identity—a woman. From a
+          young age, she knew that living as her authentic self was her ultimate
+          goal.
+        </p>
+        <p>
+          Audrey&apos;s journey to self-discovery and acceptance was not an easy
+          one. Growing up, she faced the weight of societal expectations,
+          struggling with her identity while trying to conform to the gender
+          assigned to her at birth. The feeling of discomfort and depression
+          grew stronger over the years, leading her to a dark place where she
+          attempted to take her own life.
+        </p>
+        <p>
+          Rescued from her desperate act, Audrey found herself seeking help and
+          support at Mathari Hospital. It was there that she was diagnosed with
+          Gender Identity Disorder, a condition rarely discussed or understood
+          in Kenya at that time. This was the turning point for Audrey, as she
+          embarked on a path of self-acceptance and empowerment.
+        </p>
+        <p>
+          With determination, Audrey sought counseling and began hormonal
+          treatment to align her physical appearance with her true self. She
+          dreamed of living as a woman, and she was determined to make it a
+          reality.
+        </p>
+        <p>
+          In a groundbreaking move, Audrey became the first transgender woman in
+          East Africa to lawfully change her name in official documents. No
+          longer going by Andrew, she embraced her true identity as Audrey, the
+          woman she had always known herself to be.
+        </p>
+        <p>
+          Audrey&apos;s fight for recognition did not end there. In a landmark
+          case against the Kenya National Examinations Council (KNEC), she
+          challenged the name and gender marker listed on her academic
+          certificates. The court ruled in her favor, ordering the KNEC to
+          change her name to Audrey and remove the male gender marker. This
+          victory was a significant step towards creating a more inclusive
+          society for transgender individuals.
+        </p>
+        <p>
+          Audrey&apos;s unwavering advocacy and determination did not go
+          unnoticed. In 2014, she was nominated for the prestigious Human Rights
+          Tulip award by the Dutch Ministry of Foreign Affairs. Her activism and
+          relentless pursuit of justice were recognized on an international
+          stage, bringing attention to the struggles and triumphs of transgender
+          people in Kenya.
+        </p>
+        <p>
+          Inspired by her own journey, Audrey founded a groundbreaking
+          organization—a transgender-led international nonprofit—the first of
+          its kind in Africa. Through this organization, she continued to fight
+          for the rights of transgender individuals, breaking barriers and
+          challenging societal prejudices.
+        </p>
+        <p>
+          Despite the challenges Audrey faced along the way, she never gave up
+          on her mission. She forged ahead, facing adversity with grace and
+          strength. Her passion for justice and equality fueled her advocacy,
+          and she became a beacon of hope for the transgender community in Kenya
+          and beyond.
+        </p>
+        <p>
+          Audrey&apos;s legacy lives on as she continues to lead the charge for
+          transgender rights in Kenya. Her story serves as a reminder that
+          change is possible, even in the face of deeply ingrained societal
+          norms. Through her courage and determination, Audrey opened doors for
+          transgender individuals, paving the way for a more inclusive and
+          accepting future for all.
+        </p>
+      </div>
     </div>
   );
 };
