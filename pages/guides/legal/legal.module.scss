@@ -5,39 +5,15 @@
     min-height: 100vh;
     padding-top: 48px;
     padding-right: 64px;
-}
 
-.sideNav {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #e7e7e7;
-    overflow-x: hidden;
-    padding-top: 160px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-// .sideNav a {
-//     padding: 6px 8px 6px 16px;
-//     text-decoration: none;
-//     font-size: 25px;
-//     color: #818181;
-//     display: block;
-// }
-
-.sideNav a:hover {
-    font-weight: 500;
-    color: #53CD9C;
+    @media (max-width: 452px) {
+        padding-right: 16px;
+        padding-top: 64px;        
+    }
 }
 
 .article {
     margin-left: 22%;
-    font-size: 28px;
-    padding: 0px 10px;
     color: black;
     background: rgba(233, 231, 215, 0.69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,72 +40,9 @@
         font-size: 16px;
         margin-left: 12px;
     }
-}
 
-// ACCORDION
-
-.accordionWrapper {
-    padding: 16px;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: solid 1px black;
-    margin-top: 8px;
-    background-color: #f0ebe1;
-    height: fit-content;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-
-    &:hover {
-        background-color: #f0e3ca;
+    @media (max-width: 452px) {
+        width: 100%;
+        margin-left: 0px;
     }
-}
-
-.accordionHeader {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: all 0.5s ease-in;
-
-    p {
-        font-size: 20px;
-        font-weight: 500;
-        transition: all 0.5s ease-in;
-    }
-
-    &:hover {
-        p {
-            color: #53CD9C;
-        }
-    }
-}
-
-.accordionHeader.active {
-    p {
-        transform: rotate(90deg);
-    }
-}
-
-.accordionHeaderTitle {
-    font-size: 20px;
-    color: #242424;
-
-    &:hover {
-        color: #53CD9C;
-    }
-}
-
-.accordionArticleTitlesList {
-    list-style: disc;
-    padding: 6px 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.accordionArticleTitlesList.show {
-    height: auto;
-    max-height: 999;
-    display: block;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
