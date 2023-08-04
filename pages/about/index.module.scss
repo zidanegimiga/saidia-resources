@@ -8,39 +8,133 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 1079px) {
+        padding: 3rem;
+    }
+
+    @media (max-width: 429px) {
+        padding: 16px;
+        padding-top: 120px;
+    }
 }
 
-.mainContentContainer{
+.mainContentContainer {
+    position: relative;
     background: rgba(233, 231, 215, 0.69);
-    width: 75%;
+    width: 50%;
     display: flex;
     padding: 2em;
     justify-content: flex-end;
     height: auto;
-    border-radius: 32px;    
+    border-radius: 32px;
+
+    @media (max-width: 1441px) {
+        width: 80%
+    }
+
+    @media (max-width: 1079px) {
+        width: 90%
+    }
+
+    @media (max-width: 769px) {
+        width: 100%
+    }
+
+    @media (max-width: 429px) {
+        width: 90%;
+        padding: 16px;
+        justify-content: flex-start;
+        border-radius: 8px;
+    }
 }
 
-.mainContent{
+.mainContent {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
 
-.aboutDescription{
-    width: 70%;
+    @media (max-width: 1079px) {
+        width: 80%
+    }
 
-    p{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-top: 8px;
-        color: black;
-        font-weight: 500;
+    @media (max-width: 1079px) {
+        width: 80%
+    }
+
+    @media (max-width: 429px) {
+        width: 100%
     }
 }
 
-.platformsBadges{
+.aboutDescription {
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    p {
+        margin-top: 8px;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    @media (max-width: 769px) {
+        width: 80%
+    }
+
+    @media (max-width: 429px) {
+        width: 100%
+    }
+}
+
+.platformsBadges {
     display: flex;
-    width: 70%;
+    width: 90%;
     gap: 24px;
     margin-top: 24px;
+
+    @media (max-width: 769px) {
+        width: 80%
+    }
+
+    @media (max-width: 429px) {
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+.kayaImg {
+    position: absolute;
+    height: 600px;
+    left: -260px;
+    top: -40px;
+
+    @media (max-width: 1441px) {
+        height: 500px;
+        left: -200px;
+        top: 40px;
+    }
+
+    @media (max-width: 769px) {
+        height: 520px;
+        left: -180px;
+        top: 80px;
+    }
+
+    @media (max-width: 429px) {
+        display: none;
+    }
+}
+
+.platformBadge {
+    height: 56px;
+    width: 150px;
+     
+    @media (max-width: 429px) {
+        height: 56px;
+        width: 150px
+    }
 }

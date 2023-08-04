@@ -95,7 +95,7 @@ export const organizations = [
   },
   {
     title: "Statistics on Violence Against Kenya's Queer Community",
-    url: "/guides/organizations/#lgbtq-violence-statistics",
+    url: "/guides/organizations/#violence-statistics",
   },
   {
     title: "Breaking Barriers for Transgender Rights in Kenya - Audrey",
@@ -110,7 +110,7 @@ export const events = [
   },
   {
     title: "Painting workshops in Nairobi",
-    url: "/guides/events/#fun-things-to-do",
+    url: "/guides/events/#painting-workshops",
   },
   {
     title: "Fun things to do in Nairobi",
@@ -118,7 +118,7 @@ export const events = [
   },
   {
     title: "Dance classes",
-    url: "/guides/events/#fun-things-to-do",
+    url: "/guides/events/#dance-classes",
   },
 ];
 
@@ -175,10 +175,6 @@ export const selfCare = [
     url: "/guides/self-care/#selfcare-apps",
   },
   {
-    title: "Finding Inner Calm",
-    url: "/guides/self-care/#finding-inner-calm",
-  },
-  {
     title: "Group therapy",
     url: "/guides/self-care/#group-therapy",
   },
@@ -192,6 +188,6 @@ export const selfCare = [
   },
   {
     title: "Organizations providing mental health support",
-    url: "/guides/self-care/#mental-heakth-support-orgs",
+    url: "/guides/self-care/#mental-health-support-orgs",
   },
 ];

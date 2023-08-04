@@ -4,37 +4,49 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  max-height: 100vh;
   background-image: url('../public/homepageBg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
+  @media (max-width: 452px) {
+    padding: 16px
+  }
 }
 
-.saidiaTitle{
+.saidiaTitle {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  height: 100vh;
 }
 
-.saidiaText{
+.saidiaText {
   width: 98%;
 
   @media (max-width: 1441px) {
-    width: 100%    
+    width: 100%
   }
 }
 
 .saidiaHeadPic {
   position: absolute;
   width: 500px;
-  bottom: -40%;
+  bottom: 0%;
 
   @media (max-width: 1441px) {
     width: 400px;
-    bottom: -30%;
+    bottom: 0%;
+  }
+
+  @media (max-width: 376px) {
+    transform: scale(80%) translateY(48px);
+  }
+
+  @media (max-width: 321px) {
+    transform: scale(60%) translateY(104px);
   }
 }

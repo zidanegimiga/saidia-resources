@@ -156,23 +156,180 @@ const Support = () => {
             supporting LGBTQ+ individuals in the creative industry. With a firm
             commitment to inclusivity, they are breaking barriers and creating
             opportunities for LGBTQ+ creatives to thrive. One of the
-            cornerstones of Creatives Garage&apos;s initiative is empowering LGBTQ+
-            creatives to create their works, be it in art, design, literature,
-            or any other creative field. By offering resources, mentorship, and
-            workshops, they ensure that LGBTQ+ artists have the tools they need
-            to bring their visions to life. Moreover, Creatives Garage
-            understands that access to markets is vital for any artist&apos;s
-            success. To this end, they actively facilitate opportunities for
-            LGBTQ+ creatives to showcase and sell their work. This exposure not
-            only elevates their careers but also helps break down barriers and
-            challenge stereotypes. What sets Creatives Garage apart is their
-            genuine commitment to inclusivity. A significant portion of their
-            team is comprised of LGBTQ+ individuals, who bring their unique
-            perspectives and experiences to the organization. This diversity
-            fosters an environment where everyone&apos;s voices are valued and
-            respected.
+            cornerstones of Creatives Garage&apos;s initiative is empowering
+            LGBTQ+ creatives to create their works, be it in art, design,
+            literature, or any other creative field. By offering resources,
+            mentorship, and workshops, they ensure that LGBTQ+ artists have the
+            tools they need to bring their visions to life. Moreover, Creatives
+            Garage understands that access to markets is vital for any
+            artist&apos;s success. To this end, they actively facilitate
+            opportunities for LGBTQ+ creatives to showcase and sell their work.
+            This exposure not only elevates their careers but also helps break
+            down barriers and challenge stereotypes. What sets Creatives Garage
+            apart is their genuine commitment to inclusivity. A significant
+            portion of their team is comprised of LGBTQ+ individuals, who bring
+            their unique perspectives and experiences to the organization. This
+            diversity fosters an environment where everyone&apos;s voices are
+            valued and respected.
           </li>
         </ol>
+      </div>
+      <div className={styles.article} id="violence-statistics">
+        <h2>
+          Unmasking the Harsh Reality: Statistics on Violence Against
+          Kenya&apos;s Queer Community
+        </h2>
+        <p>
+          Violence and discrimination against the LGBTQ+ community in Kenya
+          continue to be a distressing reality. Shocking statistics reveal the
+          alarming prevalence of assault cases, the reluctance to report
+          incidents due to fear of authorities, and the heart-wrenching list of
+          lives lost within the queer community in recent years.
+        </p>
+        <p>
+          The Fear of Reporting: According to GLACK+, an LGBTQ+ rights
+          organization in Kenya, a staggering 29% of LGBTQ+ individuals choose
+          not to report assault cases. This hesitancy stems from the slow
+          response of authorities and the fear of further harassment,
+          exacerbating the vulnerability of queer individuals.
+        </p>
+        <p>
+          Alarming Assault Rates: A deeply troubling statistic exposes that over
+          53% of LGBTQ+ people in Kenya have faced physical assault. This means
+          that one in every two individuals within the community has suffered
+          violence, underscoring the urgency for change and protection of human
+          rights.
+        </p>
+        <p>
+          GLACK+&apos;s Disturbing Monthly Reports: GLACK+ receives an average
+          of at least 10 reports of violence against LGBTQ+ individuals every
+          month. These cases shed light on the pervasive nature of
+          discrimination and violence faced by the queer community and the
+          urgent need for comprehensive intervention.
+        </p>
+        <p>
+          Tragic Losses Reported by the Media: Over the last few years, the
+          media has reported several heartbreaking deaths within the LGBTQ+
+          community:
+        </p>
+        <ul>
+          <li>
+            2021: Chriton Atuhwera, a Ugandan gay refugee, lost his life in the
+            bombing of an LGBTQ+ compound at Kakuma refugee camp.
+          </li>
+          <li>2021: Erica Chandra, a trans woman, tragically passed away.</li>
+          <li>
+            2021: Joash Mosoti, a dedicated LGBTQ+ activist, was mourned after
+            his untimely death.
+          </li>
+          <li>2022: Sheila Lumumba, a non-binary lesbian, lost her life.</li>
+          <li>
+            2022: Rose Mbesa, a 50-year-old non-binary woman, was taken from us.
+          </li>
+          <li>
+            2023: Edwin Chiloba, a gay individual, faced a devastating fate.
+          </li>
+          <li>
+            *2020: Aneste Mwiru, a Ugandan gay refugee, allegedly died by
+            suicide, though there are allegations of involvement by UNHCR
+            security guards.
+          </li>
+        </ul>
+        <p>
+          The Path Forward: The distressing statistics and tragic losses
+          underscore the urgent need for systemic change to protect and empower
+          Kenya&apos;s LGBTQ+ community. Creating safe spaces, combating
+          discrimination, and fostering acceptance are critical steps towards
+          ensuring a brighter and more inclusive future for all individuals,
+          regardless of their sexual orientation or gender identity.
+        </p>
+        <p>
+          Collectively, as a society, we must stand against violence and
+          discrimination, promoting a culture of understanding, respect, and
+          love. By acknowledging the harsh reality faced by the LGBTQ+
+          community, we can work together towards a more compassionate and equal
+          Kenya.
+        </p>
+      </div>
+      <div className={styles.article} id={"audrey"}>
+        <h2>
+          Audrey&apos;s Journey: Breaking Barriers for Transgender Rights in
+          Kenya
+        </h2>
+        <p>
+          In the heart of Kenya, a courageous and determined individual named
+          Audrey Mbugua was on a mission to challenge the norms and fight for
+          the rights of transgender people. Born as a male in 1984, Audrey
+          always felt a deep connection with her true identity—a woman. From a
+          young age, she knew that living as her authentic self was her ultimate
+          goal.
+        </p>
+        <p>
+          Audrey&apos;s journey to self-discovery and acceptance was not an easy
+          one. Growing up, she faced the weight of societal expectations,
+          struggling with her identity while trying to conform to the gender
+          assigned to her at birth. The feeling of discomfort and depression
+          grew stronger over the years, leading her to a dark place where she
+          attempted to take her own life.
+        </p>
+        <p>
+          Rescued from her desperate act, Audrey found herself seeking help and
+          support at Mathari Hospital. It was there that she was diagnosed with
+          Gender Identity Disorder, a condition rarely discussed or understood
+          in Kenya at that time. This was the turning point for Audrey, as she
+          embarked on a path of self-acceptance and empowerment.
+        </p>
+        <p>
+          With determination, Audrey sought counseling and began hormonal
+          treatment to align her physical appearance with her true self. She
+          dreamed of living as a woman, and she was determined to make it a
+          reality.
+        </p>
+        <p>
+          In a groundbreaking move, Audrey became the first transgender woman in
+          East Africa to lawfully change her name in official documents. No
+          longer going by Andrew, she embraced her true identity as Audrey, the
+          woman she had always known herself to be.
+        </p>
+        <p>
+          Audrey&apos;s fight for recognition did not end there. In a landmark
+          case against the Kenya National Examinations Council (KNEC), she
+          challenged the name and gender marker listed on her academic
+          certificates. The court ruled in her favor, ordering the KNEC to
+          change her name to Audrey and remove the male gender marker. This
+          victory was a significant step towards creating a more inclusive
+          society for transgender individuals.
+        </p>
+        <p>
+          Audrey&apos;s unwavering advocacy and determination did not go
+          unnoticed. In 2014, she was nominated for the prestigious Human Rights
+          Tulip award by the Dutch Ministry of Foreign Affairs. Her activism and
+          relentless pursuit of justice were recognized on an international
+          stage, bringing attention to the struggles and triumphs of transgender
+          people in Kenya.
+        </p>
+        <p>
+          Inspired by her own journey, Audrey founded a groundbreaking
+          organization—a transgender-led international nonprofit—the first of
+          its kind in Africa. Through this organization, she continued to fight
+          for the rights of transgender individuals, breaking barriers and
+          challenging societal prejudices.
+        </p>
+        <p>
+          Despite the challenges Audrey faced along the way, she never gave up
+          on her mission. She forged ahead, facing adversity with grace and
+          strength. Her passion for justice and equality fueled her advocacy,
+          and she became a beacon of hope for the transgender community in Kenya
+          and beyond.
+        </p>
+        <p>
+          Audrey&apos;s legacy lives on as she continues to lead the charge for
+          transgender rights in Kenya. Her story serves as a reminder that
+          change is possible, even in the face of deeply ingrained societal
+          norms. Through her courage and determination, Audrey opened doors for
+          transgender individuals, paving the way for a more inclusive and
+          accepting future for all.
+        </p>
       </div>
     </div>
   );

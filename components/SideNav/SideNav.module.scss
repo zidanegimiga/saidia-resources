@@ -10,6 +10,10 @@
     padding-top: 160px;
     padding-left: 2em;
     padding-right: 2em;
+
+    @media (max-width: 452px) {
+        display: none        
+    }
 }
 
 // .sideNav a {

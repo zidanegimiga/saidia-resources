@@ -8,7 +8,7 @@ interface IAccordion {
 }
 
 export const Accordion = ({ categoryTitle, categoryArticles }: IAccordion) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div className={styles.accordionWrapper}>

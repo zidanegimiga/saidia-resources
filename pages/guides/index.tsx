@@ -42,28 +42,31 @@ export default function Guides(){
               </p>
             </div>
             <div className={styles.actionBtns}>
-              <div className={styles.actionBtnPrimary}>Get Started</div>
-              <div className={styles.actionBtn}>View Categories</div>
+              <Link href={"/guides/legal"}>
+                <div className={styles.actionBtnPrimary}>Get Started</div>
+              </Link>
+              <Link href={"/guides/#categories"}>
+                <div className={styles.actionBtn}>View Categories</div>
+              </Link>
             </div>
           </div>
         </main>
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>So what&apos;s on Saidia?</h2>
-            <p>All the 411 you need ku-saidika in the real world</p>
+            <p>All the 411 you need &quot;Ku-saidika&quot; in 6 categories</p>
           </div>
-          <div className={styles.categoriesContainer}>
+          <div className={styles.categoriesContainer} id={"categories"}>
             <Link href={"/guides/legal"}>
               <div className={styles.categoryContainer}>
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Legal</h3>
                 </div>
                 <p>
-                  All the 411 you need ku-saidika* in the real world All the 411
-                  you need ku-saidika* in the real world All the 411 you need
-                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
-                  in the real world All the 411 you need ku-saidika* in the real
-                  world All the 411 you need ku-saidika* in the real world
+                  Navigating the legal landscape is crucial. Find up-to-date
+                  information on LGBTQ rights, anti-discrimination laws, and
+                  resources for legal assistance to ensure you&apos;re informed
+                  and empowered to assert your rights
                 </p>
               </div>
             </Link>
@@ -73,11 +76,10 @@ export default function Guides(){
                   <h3>Support Organizations and True Stories</h3>
                 </div>
                 <p>
-                  All the 411 you need ku-saidika* in the real world All the 411
-                  you need ku-saidika* in the real world All the 411 you need
-                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
-                  in the real world All the 411 you need ku-saidika* in the real
-                  world All the 411 you need ku-saidika* in the real world
+                  You are never alone on this journey. Access a directory of
+                  LGBTQ-focused support organizations, and community groups
+                  dedicated to providing assistance, guidance, and a safe space
+                  for you.
                 </p>
               </div>
             </Link>
@@ -87,11 +89,10 @@ export default function Guides(){
                   <h3>Business and Employment</h3>
                 </div>
                 <p>
-                  All the 411 you need ku-saidika* in the real world All the 411
-                  you need ku-saidika* in the real world All the 411 you need
-                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
-                  in the real world All the 411 you need ku-saidika* in the real
-                  world All the 411 you need ku-saidika* in the real world
+                  Empower your entrepreneurial spirit. Whether you are looking to
+                  start or grow a business, find resources tailored to LGBTQ
+                  entrepreneurs, including funding opportunities, mentorship
+                  programs, and business development advice
                 </p>
               </div>
             </Link>
@@ -101,11 +102,10 @@ export default function Guides(){
                   <h3>Inclusivity and Diversity</h3>
                 </div>
                 <p>
-                  All the 411 you need ku-saidika* in the real world All the 411
-                  you need ku-saidika* in the real world All the 411 you need
-                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
-                  in the real world All the 411 you need ku-saidika* in the real
-                  world All the 411 you need ku-saidika* in the real world
+                  Embrace the beauty of diversity. Delve into resources that
+                  promote understanding, respect, and acceptance of all
+                  identities, fostering a more inclusive and compassionate
+                  society for everyone.
                 </p>
               </div>
             </Link>
@@ -115,11 +115,10 @@ export default function Guides(){
                   <h3>Events and Culture</h3>
                 </div>
                 <p>
-                  All the 411 you need ku-saidika* in the real world All the 411
-                  you need ku-saidika* in the real world All the 411 you need
-                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
-                  in the real world All the 411 you need ku-saidika* in the real
-                  world All the 411 you need ku-saidika* in the real world
+                  Stay connected and engaged with LGBTQ events across Kenya.
+                  Explore a calendar of inclusive gatherings, workshops,
+                  seminars, and pride celebrations that celebrate diversity and
+                  provide opportunities for networking
                 </p>
               </div>
             </Link>
@@ -129,11 +128,10 @@ export default function Guides(){
                   <h3>Self-care</h3>
                 </div>
                 <p>
-                  All the 411 you need ku-saidika* in the real world All the 411
-                  you need ku-saidika* in the real world All the 411 you need
-                  ku-saidika* in the real worldAll the 411 you need ku-saidika*
-                  in the real world All the 411 you need ku-saidika* in the real
-                  world All the 411 you need ku-saidika* in the real world
+                  Taking care of your well-being is essential. Discover a range
+                  of self-care resources, from mental health tips and coping
+                  strategies to self-acceptance guides, helping you foster a
+                  positive and resilient mindset.
                 </p>
               </div>
             </Link>
