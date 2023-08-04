@@ -110,7 +110,7 @@ export const events = [
   },
   {
     title: "Painting workshops in Nairobi",
-    url: "/guides/events/#fun-things-to-do",
+    url: "/guides/events/#painting-workshops",
   },
   {
     title: "Fun things to do in Nairobi",
