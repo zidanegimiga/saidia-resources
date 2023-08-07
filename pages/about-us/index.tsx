@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./index.module.scss";
 import Nav from "@/components/Nav/Nav";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,21 @@ export default function About() {
       <main className={styles.main}>
         <Nav />
         <div className={styles.mainContentContainer}>
-          <div className={styles.mainContent}>
+          <motion.div
+            initial={{
+              y: 50,
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 2,
+            }}
+            className={styles.mainContent}
+          >
             <div className={styles.aboutDescription}>
               <p>
                 Creatives Garage is a multi-disciplinary arts organization that
@@ -54,7 +69,7 @@ export default function About() {
               </p>
               <Image src={"/heinrich.png"} width={160} height={61.92} alt="" />
             </div>
-          </div>
+          </motion.div>
         </div>
       </main>
     </>
