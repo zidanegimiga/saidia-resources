@@ -30,15 +30,13 @@ export default function Guides(){
                 alt={"Saidia Title"}
                 className={styles.saidiaText}
               />
-              <h1>Saidia Guide and Resource center</h1>
+              <h1>Saidia Guides and Resources center</h1>
               <p>
                 Embark on an extraordinary journey with Kaya in &quot;Saidia:
                 Embrace the Journey&quot; – a groundbreaking game where
                 acceptance and understanding change lives! We are unwavering in
                 our commitment to creating content that is not only desired by
-                the world but also necessary. We push boundaries, challenge
-                censorship, and fearlessly bring African narratives to the
-                forefront.
+                the world but also necessary.
               </p>
             </div>
             <div className={styles.actionBtns}>
@@ -59,6 +57,11 @@ export default function Guides(){
           <div className={styles.categoriesContainer} id={"categories"}>
             <Link href={"/guides/legal"}>
               <div className={styles.categoryContainer}>
+                <img
+                  src={"/legal.svg"}
+                  alt="slef-care icon"
+                  className={styles.categoryIcon}
+                />
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Legal</h3>
                 </div>
@@ -72,6 +75,11 @@ export default function Guides(){
             </Link>
             <Link href={"/guides/organizations"}>
               <div className={styles.categoryContainer}>
+                <img
+                  src={"/org.svg"}
+                  alt="slef-care icon"
+                  className={styles.categoryIcon}
+                />
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Support Organizations and True Stories</h3>
                 </div>
@@ -85,12 +93,17 @@ export default function Guides(){
             </Link>
             <Link href={"/guides/business"}>
               <div className={styles.categoryContainer}>
+                <img
+                  src={"/money.svg"}
+                  alt="slef-care icon"
+                  className={styles.categoryIcon}
+                />
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Business and Employment</h3>
                 </div>
                 <p>
-                  Empower your entrepreneurial spirit. Whether you are looking to
-                  start or grow a business, find resources tailored to LGBTQ
+                  Empower your entrepreneurial spirit. Whether you are looking
+                  to start or grow a business, find resources tailored to LGBTQ
                   entrepreneurs, including funding opportunities, mentorship
                   programs, and business development advice
                 </p>
@@ -98,6 +111,11 @@ export default function Guides(){
             </Link>
             <Link href={"/guides/inclusivity"}>
               <div className={styles.categoryContainer}>
+                <img
+                  src={"/inclusivity.svg"}
+                  alt="slef-care icon"
+                  className={styles.categoryIcon}
+                />
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Inclusivity and Diversity</h3>
                 </div>
@@ -111,6 +129,11 @@ export default function Guides(){
             </Link>
             <Link href={"/guides/events"}>
               <div className={styles.categoryContainer}>
+                <img
+                  src={"/event.svg"}
+                  alt="slef-care icon"
+                  className={styles.categoryIcon}
+                />
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Events and Culture</h3>
                 </div>
@@ -124,6 +147,11 @@ export default function Guides(){
             </Link>
             <Link href={"/guides/self-care"}>
               <div className={styles.categoryContainer}>
+                <img
+                  src={"/selfCare.svg"}
+                  alt="slef-care icon"
+                  className={styles.categoryIcon}
+                />
                 <div className={styles.categoryHeadingContainer}>
                   <h3>Self-care</h3>
                 </div>

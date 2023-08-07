@@ -14,9 +14,9 @@
     background-size: cover;
     position: relative;
 
-            @media (max-width: 452px) {
-                    padding: 80px 16px;
-                }
+    @media (max-width: 452px) {
+        padding: 80px 16px;
+    }
 }
 
 .hero {
@@ -30,7 +30,7 @@
     padding-left: 2rem;
     gap: 80px;
     background: linear-gradient(0deg, #FFF600 0%, rgba(255, 255, 255, 0.00) 100%);
-    // width: 100vw;
+    width: 100vw;
 
     @media (max-width: 452px) {
         padding-left: 16px;
@@ -63,12 +63,12 @@
 
     @media (max-width: 452px) {
         width: 95%;
-        
-        h1{
+
+        h1 {
             margin-left: 0;
         }
 
-        p{
+        p {
             margin-left: 0;
         }
     }
@@ -148,7 +148,6 @@
 
 .section {
     padding: 6rem;
-    border-top: 1px solid #FFF;
     background: linear-gradient(180deg, #FFF600 0%, #ffffff00 100%);
 
     @media (max-width: 452px) {
@@ -175,10 +174,10 @@
         font-weight: 500;
     }
 
-        @media (max-width: 452px) {
-            flex-direction: column;
-            gap: 8px;
-        }
+    @media (max-width: 452px) {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 .categoriesContainer {
@@ -215,6 +214,7 @@
         font-size: 16px;
         color: #FFF;
         font-weight: 400;
+        line-height: 148%;
     }
 
     &:hover {
@@ -245,7 +245,13 @@
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 16px;
-        text-transform: uppercase;
         letter-spacing: 2px;
+        color: #FFF;
     }
+}
+
+.categoryIcon{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
 }
