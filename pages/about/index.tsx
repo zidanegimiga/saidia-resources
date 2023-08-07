@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./index.module.scss";
 import Nav from "@/components/Nav/Nav";
+import { motion } from "framer-motion"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,32 @@ export default function About() {
       <main className={styles.main}>
         <Nav />
         <div className={styles.mainContentContainer}>
-          <img src="/kaya.png" className={styles.kayaImg} />
-          <div className={styles.mainContent}>
+          < motion.img 
+          initial={{
+            x: -150
+          }}
+          animate={{
+            x: 0
+          }}
+          transition={{
+            ease: "easeInOut",
+            duration: 2
+          }}
+          src="/kaya.png" className={styles.kayaImg}/>
+          <motion.div 
+          initial={{
+            y: 50,
+            opacity: 0
+          }}
+          animate={{
+            y: 0,
+            opacity: 1
+          }}
+          transition={{
+            ease: "easeInOut",
+            duration: 2
+          }}
+          className={styles.mainContent}>
             <div className={styles.aboutDescription}>
               <p>
                 Embark on an extraordinary journey with Kaya in &quot;Saidia:
@@ -61,7 +86,7 @@ export default function About() {
                 className={styles.applePlatformBadge}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </main>
     </>
