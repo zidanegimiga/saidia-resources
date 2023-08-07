@@ -138,3 +138,13 @@
         width: 150px
     }
 }
+
+.applePlatformBadge {
+    height: 56px;
+    width: 116px;
+     
+    @media (max-width: 429px) {
+        height: 56px;
+        width: 150px
+    }
+}

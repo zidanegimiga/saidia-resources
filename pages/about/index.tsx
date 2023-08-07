@@ -56,9 +56,9 @@ export default function About() {
                 className={styles.platformBadge}
               />
               <img
-                src={"/googlePlayBadge.png"}
+                src={"/appleStoreBadge.svg"}
                 alt=""
-                className={styles.platformBadge}
+                className={styles.applePlatformBadge}
               />
             </div>
           </div>
