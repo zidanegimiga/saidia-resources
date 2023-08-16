@@ -54,7 +54,7 @@ export default function Home() {
             duration: 1,
           }}
         /> */}
-        <video controls={false} loop className={styles.video}>
+        <video controls={false} loop autoplay className={styles.video}>
           <source src="/saidiaVid.mp4" type="video/mp4" />
         </video>
       </main>
