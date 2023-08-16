@@ -4,10 +4,17 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import Nav from "@/components/Nav/Nav";
 import { motion } from "framer-motion";
+import {useRef, useState, useEffect} from "react"
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const videoRef = useRef(null);
+
+  useEffect(()=>{
+    console.log(videoRef?.current)
+  }, [])
+
   return (
     <>
       <Head>
@@ -54,7 +61,7 @@ export default function Home() {
             duration: 1,
           }}
         /> */}
-        <video controls={false} loop autoplay className={styles.video}>
+        <video ref={videoRef} controls={false} loop autoPlay className={styles.video} muted>
           <source src="/saidiaVid.mp4" type="video/mp4" />
         </video>
       </main>
