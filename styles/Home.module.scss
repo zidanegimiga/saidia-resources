@@ -4,12 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  max-height: 100vh;
+  height: 100vh;
   background-image: url('../public/homepageBg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 
   @media (max-width: 452px) {
     padding: 16px
@@ -49,4 +50,12 @@
   @media (max-width: 321px) {
     transform: scale(60%) translateY(104px);
   }
+}
+
+.video{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

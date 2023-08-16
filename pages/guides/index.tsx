@@ -3,6 +3,7 @@ import styles from "./guides.module.scss"
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import Link from "next/link";
+import {motion} from "framer-motion"
 
 export default function Guides(){
     return (
@@ -24,7 +25,22 @@ export default function Guides(){
             className={styles.kayaFullBody}
           />
           <div className={styles.hero}>
-            <div className={styles.heroLeft}>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -50,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 2.5,
+                ease: "easeInOut",
+                stiffness: 50,
+              }}
+              className={styles.heroLeft}
+            >
               <img
                 src={"/saidiaTitle.png"}
                 alt={"Saidia Title"}
@@ -38,7 +54,7 @@ export default function Guides(){
                 our commitment to creating content that is not only desired by
                 the world but also necessary.
               </p>
-            </div>
+            </motion.div>
             <div className={styles.actionBtns}>
               <Link href={"/guides/legal"}>
                 <div className={styles.actionBtnPrimary}>Get Started</div>
@@ -54,7 +70,23 @@ export default function Guides(){
             <h2>So what&apos;s on Saidia?</h2>
             <p>All the 411 you need &quot;Ku-saidika&quot; in 6 categories</p>
           </div>
-          <div className={styles.categoriesContainer} id={"categories"}>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -100,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 2.5,
+              ease: "easeInOut",
+              stiffness: 50,
+            }}
+            className={styles.categoriesContainer}
+            id={"categories"}
+          >
             <Link href={"/guides/legal"}>
               <div className={styles.categoryContainer}>
                 <img
@@ -163,7 +195,7 @@ export default function Guides(){
                 </p>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </section>
       </div>
     );

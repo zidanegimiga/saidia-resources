@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Nav />
-        <motion.div
+        {/* <motion.div
           initial={{
             scale: 0,
           }}
@@ -53,7 +53,10 @@ export default function Home() {
             ease: "easeInOut",
             duration: 1,
           }}
-        />
+        /> */}
+        <video controls={false} loop className={styles.video}>
+          <source src="/saidiaVid.mp4" type="video/mp4" />
+        </video>
       </main>
     </>
   );
