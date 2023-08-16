@@ -67,8 +67,8 @@ export default function Guides(){
         </main>
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
-            <h2>So what&apos;s on Saidia?</h2>
-            <p>All the 411 you need &quot;Ku-saidika&quot; in 6 categories</p>
+            <h2>SAIDIA CATEGORIES</h2>
+            {/* <p>All the 411 you need &quot;Ku-saidika&quot; in 6 categories</p> */}
           </div>
           <motion.div
             initial={{
