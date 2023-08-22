@@ -35,7 +35,7 @@
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media (max-width: 452px) {
-       padding: 16px
+
     }
 }
 
@@ -115,9 +115,9 @@ ul.navLinks {
     align-items: flex-start;
 
     @media (max-width: 452px) {
-        gap: 16px;
+        gap: 8px;
         left: 10%;
-        transform: translate(0%, -90%);
+        transform: translate(0%, -80%);
     }
 }
 
@@ -162,7 +162,11 @@ ul.navLinks li a {
     }
 
     @media (max-width: 452px) {
-        font-size: 24px;        
+        font-size: 24px;   
+        
+        &:after {
+            height: 2px;
+        }
     }
 }
 
