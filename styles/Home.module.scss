@@ -9,11 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
-
-  @media (max-width: 452px) {
-    padding: 16px
-  }
 }
 
 .saidiaTitle {
@@ -39,7 +34,6 @@
   opacity: 0.2;
 
   @media (max-width: 1441px) {
-    width: 400px;
     bottom: 0%;
   }
 
@@ -62,11 +56,35 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  justify-content: center;
+
+    @media (max-width: 456px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 80px;
+      }
 }
 
 .saidiaTextContainer{
   position: relative;
-  font-size: 240px;
+  font-size: 280px;
+
+  @media (max-width: 1601px) {
+    font-size: 200px;
+  }
+  @media (max-width: 1441px) {
+    font-size: 160px;
+  }
+
+  @media (max-width: 1026px) {
+    font-size: 120px;
+  }
+  @media (max-width: 895px) {
+    font-size: 80px;
+  }
+  @media (max-width: 376px) {
+    font-size: 64px;
+  }
 }
 
 .saidiaText{
@@ -80,8 +98,27 @@
   left: 2%
 }
 
-.kayaFullBody{
-  width: 400px;
+.kayaFullBody {
+  width: 560px;
+
+  @media (max-width: 1905px) {
+    width: 480px;
+  }
+
+  @media (max-width: 1601px) {
+    width: 320px;
+  }
+
+  @media (max-width: 895px) {
+    width: 200px;
+  }
+
+  @media (max-width: 895px) {
+    width: 200px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 5%;
+  }
 }
 
 .video{
