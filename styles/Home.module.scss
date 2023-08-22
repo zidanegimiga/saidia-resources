@@ -3,9 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   height: 100vh;
-  background-image: url('../public/homepageBg.png');
+  background-image: url('../public/bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,10 +32,11 @@
   }
 }
 
-.saidiaHeadPic {
+.city {
   position: absolute;
-  width: 500px;
+  width: 100%;
   bottom: 0%;
+  opacity: 0.2;
 
   @media (max-width: 1441px) {
     width: 400px;
@@ -50,6 +50,38 @@
   @media (max-width: 321px) {
     transform: scale(60%) translateY(104px);
   }
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 255, 255, 0.24);
+  padding: 6rem;
+  position: absolute;
+  font-family: var(--raster-font);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.saidiaTextContainer{
+  position: relative;
+  font-size: 240px;
+}
+
+.saidiaText{
+  color: #e41695;
+}
+
+.saidiaTextTop{
+  position: absolute;
+  color: #e5ff00;
+  top: 0%;
+  left: 2%
+}
+
+.kayaFullBody{
+  width: 400px;
 }
 
 .video{

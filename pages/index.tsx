@@ -28,42 +28,83 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Nav />
-        {/* <motion.div
-          initial={{
-            scale: 0,
-          }}
-          animate={{
-            scale: 1,
-          }}
-          transition={{ ease: "easeInOut", duration: 1 }}
-          className={styles.saidiaTitle}
-        >
-          <img
-            src={"/saidiaTitle.png"}
-            alt={"Saidia Title"}
-            className={styles.saidiaText}
-          />
-        </motion.div>
         <motion.img
-          src={"/kayaHead.png"}
+          src={"/city.png"}
           alt={"Saidia"}
-          className={styles.saidiaHeadPic}
+          className={styles.city}
           initial={{
-            y: 100,
-            scale: 0,
+            y: 400,
           }}
           animate={{
             y: 0,
-            scale: 1,
           }}
           transition={{
             ease: "easeInOut",
-            duration: 1,
+            duration: 1.5,
           }}
-        /> */}
-        <video ref={videoRef} controls={false} loop autoPlay className={styles.video} muted>
+        />
+        <div className={styles.container}>
+          <motion.img
+            src={"/kayaFullBody.png"}
+            className={styles.kayaFullBody}
+            initial={{
+              scale: 0,
+            }}
+            animate={{
+              scale: 1,
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1.5,
+              delay: 1,
+              stiffness: 50,
+            }}
+          />
+          <div className={styles.saidiaTextContainer}>
+            <motion.h1
+              className={styles.saidiaText}
+              initial={{
+                opacity: 0,
+                y: 400,
+              }}
+              animate={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                ease: "easeInOut",
+                duration: 1.5,
+                delay: 0,
+                stiffness: 50,
+              }}
+            >
+              SAIDIA
+            </motion.h1>
+            <motion.h1
+              className={styles.saidiaTextTop}
+              initial={{
+                opacity: 0,
+                y: -400,
+              }}
+              animate={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 2,
+                stiffness: 180,
+              }}
+            >
+              SAIDIA
+            </motion.h1>
+          </div>
+        </div>
+
+        {/* <video ref={videoRef} controls={false} loop autoPlay className={styles.video} muted>
           <source src="/saidiaVid.mp4" type="video/mp4" />
-        </video>
+        </video> */}
       </main>
     </>
   );
