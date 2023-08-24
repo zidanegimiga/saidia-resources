@@ -21,7 +21,131 @@ export default function Guides() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <SideNav/>
+      <SideNav />
+      <div className={styles.article}>
+        <h2>
+          Empowering Careers: Acquiring Vocational Skills in Nairobi&apos;s
+          Diverse Landscape
+        </h2>
+        <p>
+          In Nairobi, the bustling capital city of Kenya, the opportunity to
+          acquire vocational skills in various areas of expertise is readily
+          available. Whether you dream of becoming an electrician, a carpenter,
+          a nurse, an automotive technician, a graphic designer, a welder, a
+          plumber, a chef, an IT support specialist, or a hairstylist, the city
+          offers a wide range of vocational training options to suit your
+          passions and career aspirations.
+        </p>
+        <p>
+          IVocational skills, also known as technical or job-specific skills,
+          are the essential abilities and knowledge directly related to a
+          specific occupation or trade. Unlike traditional academic education,
+          vocational skills are highly practical and enable individuals to
+          perform specific tasks or jobs effectively. These skills are acquired
+          through specialized training, education, or hands-on experience,
+          allowing you to become job-ready and industry-savvy.
+        </p>
+        <p>
+          Imagine mastering the art of wiring installations, electrical
+          troubleshooting, and understanding circuitry as an electrician. Or
+          honing your woodworking skills, mastering joinery techniques, and
+          confidently using power tools as a carpenter. Picture yourself
+          providing patient care, administering medications, and skillfully
+          dressing wounds as a compassionate and skilled nurse. As an automotive
+          technician, visualize confidently diagnosing vehicle issues, repairing
+          engines, and maintaining brake and electrical systems. If you are
+          creatively inclined, you can explore graphic design, becoming
+          proficient in graphic design software, layout design, typography,
+          color theory, and image editing.
+        </p>
+        <p>
+          For those with a passion for working with metals, welding skills such
+          as interpreting blueprints, metal fabrication, and operating welding
+          equipment can be your path to success. As a plumber, you can excel in
+          pipe installation and repair, pipefitting, plumbing code knowledge,
+          and troubleshooting, ensuring smooth water flow in various settings.
+          If culinary arts are your calling, you can develop your expertise in
+          culinary techniques, food preparation, menu planning, cooking methods,
+          and kitchen safety as a chef. Alternatively, if you are tech-savvy,
+          you can embark on a journey as an IT support specialist,
+          troubleshooting hardware and software issues, setting up networks,
+          configuring systems, and providing top-notch customer service. As a
+          hairstylist, you can specialize in hair cutting, styling techniques,
+          coloring, chemical treatments, and salon sanitation, creating stunning
+          looks for your clients.
+        </p>
+        <p>
+          Vocational skills are crucial for career success in various
+          industries, and they are often specific to a particular occupation or
+          trade. By developing and honing these skills, individuals can enhance
+          their employability, excel in their chosen field, and open doors to
+          countless opportunities.
+        </p>
+        <p>
+          Nairobi is home to esteemed institutions that offer top-quality
+          vocational training, equipping individuals with the skills they need
+          to thrive in their chosen fields. Some of the notable institutions
+          include the Nairobi Technical Training Institute (NTTI), which
+          provides a diverse array of courses, including Artisan in Motor
+          Vehicle Mechanics, Certificate in Food Science Technology, Certificate
+          in Information Technology, Certificate in Medical Laboratory
+          Technology, Certificate in Social Work and Community Development, and
+          Craft Certification in Automotive Engineering, among numerous others
+        </p>
+        <p>
+          Kasarani Technical and Vocational College (KTVC) is another prominent
+          institution, located approximately 1.5 kilometers from Kamulu shopping
+          center, off Kangundo Road, in Kasarani Constituency, Nairobi County.
+          KTVC offers 27 diverse courses in areas such as ICT and Computer
+          Studies, Mechanical and Automotive Engineering, Building and Civil
+          Engineering, Business Department, Liberal Studies, Agriculture, and
+          Institutional Management courses.
+        </p>
+        <p>
+          Founded in 1979, the PC Kinyanjui Technical Training Institute
+          (PCKTTI) is a prestigious public technical institute in Nairobi,
+          Kenya. Established with the support of Jomo Kenyatta, the first
+          President of the Republic of Kenya, PCKTTI initially enrolled 1,500
+          students. The institute offers a variety of diploma courses, including
+          Applied Biology, Analytical Chemistry, Food Technology, Civil
+          Engineering, Building Technology, Business Management, Sales
+          Marketing, Human Resource Management, Human Cooperative Management,
+          Supply Chain Management, Community Development, Child Care and
+          Protection, ICT, Electrical & Electronics Engineering (Power &
+          Telecomms Options), Food Beverage Production and Service, as well as
+          craft certificates in Science Laboratory Technology, Building
+          Technology, Human Resource Management, Sales & Marketing, ICT
+          International Computer Driving License, Electrical & Electronics
+          Engineering (Power Options), Electrical & Electronics Engineering
+          (Telecomms Options), Electrical Installation, Artisan in Food &
+          Beverage Production & Service, Craft Certificate in Food and Beverage
+          Production & Service, Craft Certificate in Housekeeping &
+          Accommodation, Craft Certificate in Automotive Engineering (Production
+          Option), Craft Certificate in Automotive Engineering, and Artisan in
+          Motor Vehicle Mechanics.
+        </p>
+        <p>
+          Additionally, Dandora Greenlight Vocational Training College is an
+          accredited public vocational training college located on Komarock Road
+          in Nairobi. The college is registered under the Technical and
+          Vocational Education and Training Authority (TVETA) and provides
+          various courses, including Artisan courses in Motor Vehicle Mechanics,
+          Fashion and Design, and Craft Certificate in Information Communication
+          Technology (ICT).
+        </p>
+        <p>
+          In Nairobi, the pursuit of vocational skills opens doors to a world of
+          possibilities. These hands-on and industry-specific training programs
+          pave the way for a fulfilling and successful career in various fields.
+          Aspiring individuals are equipped with practical skills that are in
+          high demand across diverse industries. With vocational skills, you can
+          seize opportunities, contribute to the growth of your chosen field,
+          and make a positive impact on your community and beyond. So, if you&apos;re
+          ready to unleash your potential, dive into an exciting career path,
+          and make your mark, Nairobi&apos;s vocational skills training is the
+          perfect place to start your journey to success.
+        </p>
+      </div>
       <div className={styles.article} id="business-management">
         <h2>Exploring Business Management: Your Gateway to Success</h2>
         <p>
@@ -857,11 +981,12 @@ export default function Guides() {
           </li>
           <li>
             Standard Chartered Bank: Standard Chartered Bank has a dedicated
-            unit called &quot;Business Banking&quot; that focuses on providing banking
-            solutions for SMEs and start-ups. They offer business accounts,
-            loans, cash management services, and trade finance solutions.
+            unit called &quot;Business Banking&quot; that focuses on providing
+            banking solutions for SMEs and start-ups. They offer business
+            accounts, loans, cash management services, and trade finance
+            solutions.
           </li>
-        </ol>        
+        </ol>
       </div>
     </div>
   );

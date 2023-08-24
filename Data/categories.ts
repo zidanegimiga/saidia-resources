@@ -64,6 +64,11 @@ export const legal = [
 
 export const business = [
   {
+    title:
+      "Empowering Careers: Acquiring Vocational Skills in Nairobi's Diverse Landscape",
+    url: "/guides/business/",
+  },
+  {
     title: "Exploring Business Management: Your Gateway to Success",
     url: "/guides/business/#business-management",
   },
