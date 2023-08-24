@@ -199,3 +199,10 @@ export const selfCare = [
     url: "/guides/self-care/#mental-health-support-orgs",
   },
 ];
+
+export const eWaste = [
+  {
+    title: "E-waste: Managing Electronic Waste for a Circular Economy in Kenya",
+    url: "/guides/e-waste/",
+  },
+];
