@@ -115,7 +115,7 @@ export const events = [
     url: "/guides/events/#inclusive-events",
   },
   {
-    title: "Painting workshops in Nairobi",
+    title: "Painting events and Workshops",
     url: "/guides/events/#painting-workshops",
   },
   {
@@ -123,7 +123,7 @@ export const events = [
     url: "/guides/events/#fun-things-to-do",
   },
   {
-    title: "Dance classes",
+    title: "Dance classes in Kenya",
     url: "/guides/events/#dance-classes",
   },
 ];
