@@ -152,157 +152,162 @@ export default function Inclusivity() {
           and use the correct pronouns for each person based on their gender
           identity.
         </p>
-      </div>
-      <div className={styles.article} id="respect-pronouns">
-        <h2>Why should you respect people&apos;s pronouns?</h2>
-        <p>Respecting pronouns is crucial for several reasons:</p>
-        <ol>
-          <li>
-            Inclusivity: Respecting someone&apos;s pronouns acknowledges and
-            affirms their gender identity. It shows that you recognize and
-            accept them for who they are, fostering an inclusive and supportive
-            environment for all individuals.
-          </li>
-          <li>
-            Dignity and Respect: Using the correct pronouns demonstrates respect
-            for a person&apos;s self-identified gender. It affirms their
-            autonomy and allows them to be seen and addressed in a way that
-            aligns with their true selves, promoting their dignity and
-            well-being.
-          </li>
-          <li>
-            Mental Health and Well-being: Misgendering someone by using
-            incorrect pronouns can have a significant impact on their mental
-            health. It can lead to feelings of invalidation, dysphoria, and
-            emotional distress. Respecting pronouns helps create a safer and
-            more supportive space for individuals to navigate their gender
-            identity.
-          </li>
-          <li>
-            Allyship and Solidarity: Respecting pronouns is an important aspect
-            of being an ally to the LGBTQ+ community. It shows support and
-            solidarity, signaling that you are actively working to create an
-            inclusive society where all individuals are valued and respected.
-          </li>
-          <li>
-            Building Trust and Connection: Using the correct pronouns helps
-            build trust and fosters positive connections with others. It shows
-            that you are actively listening and acknowledging a person&apos;s
-            identity, contributing to stronger and more meaningful
-            relationships.
-          </li>
-        </ol>
-        <p>
-          Overall, respecting pronouns is an essential step towards creating a
-          more inclusive, affirming, and understanding society for people of all
-          gender identities.
-        </p>
-      </div>
-      <div className={styles.article} id="pronouns-importance">
-        <h2>Why have pronouns become important in the last few years?</h2>
-        <p>
-          Pronouns have gained increased visibility and importance in recent
-          years due to several factors:
-        </p>
-        <ol>
-          <li>
-            Greater Awareness of Gender Diversity: There is now a greater
-            understanding and recognition of the spectrum of gender identities
-            beyond the traditional binary of male and female. People are
-            becoming more aware of non-binary, genderqueer, and gender
-            non-conforming individuals who may use pronouns other than he or she
-          </li>
-          <li>
-            LGBTQ+ Rights and Activism: The LGBTQ+ rights movement has made
-            significant progress in advocating for the rights and visibility of
-            diverse gender identities. This includes raising awareness about the
-            importance of using correct pronouns to respect and affirm
-            individuals&apos; gender identities.
-          </li>
-          <li>
-            Online and Social Media Influence: The rise of social media
-            platforms has allowed marginalized communities, including the LGBTQ+
-            community, to connect and share their experiences more widely. This
-            has helped amplify conversations around pronouns and increase
-            understanding of their significance.
-          </li>
-          <li>
-            Education and Inclusivity Efforts: Schools, workplaces, and various
-            organizations have been focusing on promoting inclusivity and
-            creating safer spaces for individuals of all gender identities. This
-            includes encouraging the use of preferred pronouns as a way to
-            foster respect and acceptance.
-          </li>
-          <li>
-            Personal Empowerment and Visibility: Many individuals have embraced
-            the use of preferred pronouns as a means of self-expression and
-            asserting their gender identity. By sharing their pronouns, they can
-            challenge societal norms and increase visibility for
-            underrepresented gender identities.
-          </li>
-        </ol>
-      </div>
-      <div className={styles.article} id="#pronouns-gender">
-        <h2>
-          Does changing your pronoun mean you have changed your gender marker?
-        </h2>
-        <p>
-          No, changing your pronouns does not necessarily mean you have changed
-          your legal gender marker. Changing your pronouns is a personal choice
-          that individuals make to align with their gender identity and how they
-          want to be referred to. It is about expressing their true selves and
-          being recognized in a way that feels authentic.
-        </p>
-        <p>
-          On the other hand, changing your gender marker refers to updating your
-          legal identification documents, such as driver&apos;s licenses,
-          passports, or birth certificates, to reflect your gender identity.
-          This typically involves a legal process that varies by jurisdiction
-          and may require specific documentation or evidence.
-        </p>
-        <p>
-          While changing your pronouns and gender marker can often go hand in
-          hand, they are separate processes. Some individuals may change their
-          pronouns without pursuing a legal gender marker change, while others
-          may undergo both processes as part of their gender transition. It
-          ultimately depends on the individual&apos;s personal journey,
-          identity, and legal options available to them in their respective
-          jurisdiction.
-        </p>
-      </div>
-      <div className={styles.article} id="pronouns-gender-change-orgs">
-        <h2>
-          Which organizations in Kenya provide resources, guidance, and support
-          for individuals navigating pronoun changes and gender identity?
-        </h2>
-        <p>
-          In Kenya, there are several organizations and online communities that
-          provide resources, guidance, and support for individuals navigating
-          pronoun changes and gender identity. Here are a few examples:
-        </p>
-        <ol>
-          <li>
-            Transgender Education and Advocacy (TEA) Kenya: TEA Kenya is an
-            organization that works to advance the rights and well-being of
-            transgender and gender diverse individuals in Kenya. They provide
-            resources, support groups, and counseling services for individuals
-            navigating gender identity and pronoun changes.
-          </li>
-          <li>
-            Gay and Lesbian Coalition of Kenya (GALCK): GALCK is a national
-            umbrella organization that advocates for the rights and inclusion of
-            LGBTQ+ individuals in Kenya. They provide support and resources for
-            transgender individuals, including guidance on gender identity
-            exploration and pronoun use.
-          </li>
-          <li>
-            The National Gay and Lesbian Human Rights Commission (NGLHRC):
-            NGLHRC is an organization dedicated to promoting and protecting the
-            rights of LGBTQ+ individuals in Kenya. They offer resources, legal
-            support, and advocacy services for transgender individuals seeking
-            guidance on pronouns and gender identity.
-          </li>
-        </ol>
+        <div id="respect-pronouns">
+          <h2>Why should you respect people&apos;s pronouns?</h2>
+          <p>Respecting pronouns is crucial for several reasons:</p>
+          <ol>
+            <li>
+              Inclusivity: Respecting someone&apos;s pronouns acknowledges and
+              affirms their gender identity. It shows that you recognize and
+              accept them for who they are, fostering an inclusive and
+              supportive environment for all individuals.
+            </li>
+            <li>
+              Dignity and Respect: Using the correct pronouns demonstrates
+              respect for a person&apos;s self-identified gender. It affirms
+              their autonomy and allows them to be seen and addressed in a way
+              that aligns with their true selves, promoting their dignity and
+              well-being.
+            </li>
+            <li>
+              Mental Health and Well-being: Misgendering someone by using
+              incorrect pronouns can have a significant impact on their mental
+              health. It can lead to feelings of invalidation, dysphoria, and
+              emotional distress. Respecting pronouns helps create a safer and
+              more supportive space for individuals to navigate their gender
+              identity.
+            </li>
+            <li>
+              Allyship and Solidarity: Respecting pronouns is an important
+              aspect of being an ally to the LGBTQ+ community. It shows support
+              and solidarity, signaling that you are actively working to create
+              an inclusive society where all individuals are valued and
+              respected.
+            </li>
+            <li>
+              Building Trust and Connection: Using the correct pronouns helps
+              build trust and fosters positive connections with others. It shows
+              that you are actively listening and acknowledging a person&apos;s
+              identity, contributing to stronger and more meaningful
+              relationships.
+            </li>
+          </ol>
+          <p>
+            Overall, respecting pronouns is an essential step towards creating a
+            more inclusive, affirming, and understanding society for people of
+            all gender identities.
+          </p>
+        </div>
+        <div id="pronouns-importance">
+          <h2>Why have pronouns become important in the last few years?</h2>
+          <p>
+            Pronouns have gained increased visibility and importance in recent
+            years due to several factors:
+          </p>
+          <ol>
+            <li>
+              Greater Awareness of Gender Diversity: There is now a greater
+              understanding and recognition of the spectrum of gender identities
+              beyond the traditional binary of male and female. People are
+              becoming more aware of non-binary, genderqueer, and gender
+              non-conforming individuals who may use pronouns other than he or
+              she
+            </li>
+            <li>
+              LGBTQ+ Rights and Activism: The LGBTQ+ rights movement has made
+              significant progress in advocating for the rights and visibility
+              of diverse gender identities. This includes raising awareness
+              about the importance of using correct pronouns to respect and
+              affirm individuals&apos; gender identities.
+            </li>
+            <li>
+              Online and Social Media Influence: The rise of social media
+              platforms has allowed marginalized communities, including the
+              LGBTQ+ community, to connect and share their experiences more
+              widely. This has helped amplify conversations around pronouns and
+              increase understanding of their significance.
+            </li>
+            <li>
+              Education and Inclusivity Efforts: Schools, workplaces, and
+              various organizations have been focusing on promoting inclusivity
+              and creating safer spaces for individuals of all gender
+              identities. This includes encouraging the use of preferred
+              pronouns as a way to foster respect and acceptance.
+            </li>
+            <li>
+              Personal Empowerment and Visibility: Many individuals have
+              embraced the use of preferred pronouns as a means of
+              self-expression and asserting their gender identity. By sharing
+              their pronouns, they can challenge societal norms and increase
+              visibility for underrepresented gender identities.
+            </li>
+          </ol>
+        </div>
+        <div id="#pronouns-gender">
+          <h2>
+            Does changing your pronoun mean you have changed your gender marker?
+          </h2>
+          <p>
+            No, changing your pronouns does not necessarily mean you have
+            changed your legal gender marker. Changing your pronouns is a
+            personal choice that individuals make to align with their gender
+            identity and how they want to be referred to. It is about expressing
+            their true selves and being recognized in a way that feels
+            authentic.
+          </p>
+          <p>
+            On the other hand, changing your gender marker refers to updating
+            your legal identification documents, such as driver&apos;s licenses,
+            passports, or birth certificates, to reflect your gender identity.
+            This typically involves a legal process that varies by jurisdiction
+            and may require specific documentation or evidence.
+          </p>
+          <p>
+            While changing your pronouns and gender marker can often go hand in
+            hand, they are separate processes. Some individuals may change their
+            pronouns without pursuing a legal gender marker change, while others
+            may undergo both processes as part of their gender transition. It
+            ultimately depends on the individual&apos;s personal journey,
+            identity, and legal options available to them in their respective
+            jurisdiction.
+          </p>
+        </div>
+        <div id="pronouns-gender-change-orgs">
+          <h2>
+            Which organizations in Kenya provide resources, guidance, and
+            support for individuals navigating pronoun changes and gender
+            identity?
+          </h2>
+          <p>
+            In Kenya, there are several organizations and online communities
+            that provide resources, guidance, and support for individuals
+            navigating pronoun changes and gender identity. Here are a few
+            examples:
+          </p>
+          <ol>
+            <li>
+              Transgender Education and Advocacy (TEA) Kenya: TEA Kenya is an
+              organization that works to advance the rights and well-being of
+              transgender and gender diverse individuals in Kenya. They provide
+              resources, support groups, and counseling services for individuals
+              navigating gender identity and pronoun changes.
+            </li>
+            <li>
+              Gay and Lesbian Coalition of Kenya (GALCK): GALCK is a national
+              umbrella organization that advocates for the rights and inclusion
+              of LGBTQ+ individuals in Kenya. They provide support and resources
+              for transgender individuals, including guidance on gender identity
+              exploration and pronoun use.
+            </li>
+            <li>
+              The National Gay and Lesbian Human Rights Commission (NGLHRC):
+              NGLHRC is an organization dedicated to promoting and protecting
+              the rights of LGBTQ+ individuals in Kenya. They offer resources,
+              legal support, and advocacy services for transgender individuals
+              seeking guidance on pronouns and gender identity.
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   );
