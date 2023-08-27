@@ -58,7 +58,7 @@ export const legal = [
   },
   {
     title: "Why same-sex marriage is not possible in Kenya",
-    url: "/guides/legal/#reporting-a-case",
+    url: "/guides/legal/#same-sex-marriage-not-possible",
   },
 ];
 
