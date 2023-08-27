@@ -167,6 +167,16 @@ export const inclusivity = [
     title: "Organizations providing support for pronoun changes",
     url: "/guides/inclusivity/#pronouns-gender-change-orgs",
   },
+  {
+    title:
+      "Discovering the Vibrant History of Ballroom Culture: A Safe Haven for the LGBTQ+ Community",
+    url: "/guides/inclusivity/#ballroom-culture",
+  },
+  {
+    title:
+      "Vigils: Celebrating Life and Honoring the Lives of Kenyans in the LGBTQ+ Community",
+    url: "/guides/inclusivity/#vigils",
+  },
 ];
 
 export const selfCare = [

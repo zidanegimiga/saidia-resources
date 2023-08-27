@@ -140,10 +140,10 @@ export default function Guides() {
           Aspiring individuals are equipped with practical skills that are in
           high demand across diverse industries. With vocational skills, you can
           seize opportunities, contribute to the growth of your chosen field,
-          and make a positive impact on your community and beyond. So, if you&apos;re
-          ready to unleash your potential, dive into an exciting career path,
-          and make your mark, Nairobi&apos;s vocational skills training is the
-          perfect place to start your journey to success.
+          and make a positive impact on your community and beyond. So, if
+          you&apos;re ready to unleash your potential, dive into an exciting
+          career path, and make your mark, Nairobi&apos;s vocational skills
+          training is the perfect place to start your journey to success.
         </p>
       </div>
       <div className={styles.article} id="business-management">
@@ -233,17 +233,46 @@ export default function Guides() {
           and financial projections
         </p>
         <p>
-          Business Name Search and Registration: Conduct a business name search
-          with the Registrar of Companies to ensure your chosen name is unique
-          and available. Once approved, register your business name with the
-          Registrar of Companies. The Registrar of Companies in Kenya is based
-          in Nairobi, the capital city of Kenya. The office is located at Sheria
-          House, which is situated along Harambee Avenue in the central business
-          district of Nairobi. The cost of registering a business name in Kenya
-          can vary depending on several factors, such as the type of business,
-          the nature of the registration, and any additional services required.
-          The fees for registering a business name with the Registrar of
-          Companies in Kenya are as follows:
+          Business Name and Registration: To register your name you can visit
+          any Huduma Center or use the e-Citizen portal. Conduct a business name
+          search using the e-Citizen portal. Set up an e-Citizen following the
+          prompts provided on the platform and then sign in. Once you have
+          signed in the portal will open up on the e-Citizen dashboard, select
+          the ‘Business Registration Service’ tab. Click on the ‘Make
+          Application’ button and select the ‘Business Name Registration’, enter
+          the proposed business name, ownership and address information. Review
+          your application information and pay the filing fee using the payment
+          details provided on the platform. To register your business, you will
+          need to prepare signed copies of the pre-requisite registration
+          documents. These will need to be uploaded onto the portal and include:
+          copies of the business owners’ national IDs, copies of the business
+          owners’ KRA Pin Certificates and passport photos. Feedback on your
+          registration will be provided between 1-2 working days. Once your
+          business registration is complete you will get a notification on the
+          email address you used to register on e-citizen. Log into your
+          e-citizen and check your business status, once your business is
+          registered you will receive a certificate of incorporation.
+        </p>
+        <p>
+          The fees for registering a business in Kenya will cost between
+          950-25,000ksh(as at 2023), the costs of business registration are as
+          follows:
+        </p>
+        <ol>
+          <li>Registration of Business name: 950ksh</li>
+          <li> Private Limited Company: 10,650ksh</li>
+          <li> Public Limited Company: 10,650ksh</li>
+          <li> Company Limited by guarantee: 10,000ksh</li>
+          <li> Limited Liability Partnership: 25,000ksh</li>
+        </ol>
+        <p>
+          Business Structure: Decide on the most suitable business structure for
+          your venture, such as a sole proprietorship, partnership, limited
+          liability company (LLC). Each structure has its own legal requirements
+          and implications. Sole Proprietorship, Partnership, and Limited
+          Liability Company (LLC) are three common forms of business entities,
+          each with its own characteristics and implications. Here is a brief
+          explanation of the differences:
         </p>
         <ol>
           <li>

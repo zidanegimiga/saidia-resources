@@ -309,6 +309,131 @@ export default function Inclusivity() {
           </ol>
         </div>
       </div>
+      <div className={styles.article} id="ballroom-culture">
+        <h2>
+          Discovering the Vibrant History of Ballroom Culture: A Safe Haven for
+          the LGBTQ+ Community
+        </h2>
+        <p>
+          It&apos;s essential to understand the vibrant history of ballroom
+          culture and its significance within the LGBTQ+ community. Rooted in
+          the African American and Latino LGBTQ+ communities in the United
+          States, ballroom events, also known as balls or drag balls, emerged in
+          the 1920s as a response to the discrimination and marginalization
+          faced by queer individuals in mainstream society.
+        </p>
+        <p>
+          During this era, LGBTQ+ individuals, particularly those from
+          marginalized racial and ethnic backgrounds, experienced intersecting
+          forms of discrimination based on their race, sexuality, and gender
+          identity. Many found solace, acceptance, and belonging within their
+          own communities, forming tight-knit social circles and creating
+          underground spaces where they could express themselves freely.
+        </p>
+        <p>
+          Ballroom events provided a platform for queer people to showcase their
+          talents, creativity, and individuality in a safe and supportive
+          environment. These events often featured competitive performances,
+          including elaborate drag shows, voguing battles, and fashion
+          competitions. Participants formed houses, which functioned as chosen
+          families and support systems within the community. Houses were led by
+          mothers and fathers who provided guidance, mentorship, and a sense of
+          belonging to their children.
+        </p>
+        <p>
+          The ballroom culture and events gained further visibility and
+          popularity in the 1980s and 1990s, partly due to mainstream media
+          exposure through documentaries like &quot;Paris Is Burning&quot;
+          (1990). This groundbreaking documentary shed light on the vibrant
+          ballroom scene in New York City, capturing the creativity, resilience,
+          and struggles of the LGBTQ+ individuals involved. It also brought
+          attention to the intersections of race, gender, and sexuality in the
+          ballroom community.
+        </p>
+        <p>
+          Over time, ballroom culture has expanded and evolved, with variations
+          found in different regions and communities around the world. It has
+          become an influential cultural phenomenon that has left a mark on
+          mainstream fashion, dance, music, and language. Additionally, the
+          ballroom community continues to serve as a support system and a source
+          of empowerment for LGBTQ+ individuals, particularly those who are
+          Black, Latinx, and from other marginalized backgrounds.
+        </p>
+        <p>
+          Today, ballroom events and houses continue to thrive, providing spaces
+          for queer people to express themselves authentically and celebrate
+          their identities. These events promote inclusivity, self-expression,
+          and community building while honoring the rich history and legacy of
+          ballroom culture. They remain a sanctuary where LGBTQ+ individuals can
+          find acceptance, affirmation, and chosen families who support and
+          uplift each other.
+        </p>
+        <p>
+          As a young adult in Kenya, understanding the history of ballroom
+          culture and its significance within the LGBTQ+ community can foster
+          empathy, appreciation, and respect for the struggles and triumphs of
+          queer individuals. Embracing the diversity and complexity of human
+          experiences can contribute to a more inclusive and compassionate
+          society for everyone.
+        </p>
+      </div>
+      <div className={styles.article} id="vigils">
+        <h2>
+          Vigils: Celebrating Life and Honoring the Lives of Kenyans in the
+          LGBTQ+ Community
+        </h2>
+        <p>
+          Vigils hold a significant place in the hearts of the LGBTQ+ community
+          in Kenya and across the world. These gatherings serve as powerful
+          reminders of the importance of celebrating life, commemorating lost
+          souls, and shedding light on the harrowing statistics of assault and
+          killings faced by the Kenyan LGBTQ+ community.
+        </p>
+        <p>
+          Vigils are more than gatherings; they are sacred spaces for
+          reflection, solidarity, and resilience. They provide a safe
+          environment for the LGBTQ+ community to come together, share stories,
+          and support one another during times of grief and adversity. These
+          events bring visibility to the challenges faced by LGBTQ+ individuals
+          in Kenya and allow for collective healing and empowerment.
+        </p>
+        <p>
+          Amidst the struggles and discrimination, vigils also offer an
+          opportunity to celebrate life. They emphasize the strength and
+          resilience of the LGBTQ+ community, showcasing the love and bond that
+          unite its members. By celebrating life, vigils reaffirm the beauty of
+          diversity and the importance of acceptance and understanding.
+        </p>
+        <p>
+          The reality of violence faced by the Kenyan LGBTQ+ community is a
+          sobering reminder of the urgent need for change. According to a report
+          by the National Gay and Lesbian Human Rights Commission (NGLHRC), a
+          staggering number of LGBTQ+ individuals experience assault,
+          harassment, and even killings based on their sexual orientation or
+          gender identity
+        </p>
+        <p>
+          The statistics reveal that LGBTQ+ individuals are at a higher risk of
+          experiencing violence, with transgender individuals facing an even
+          higher degree of vulnerability. The fear of persecution often forces
+          members of the LGBTQ+ community into the shadows, depriving them of
+          their fundamental human rights and dignity.
+        </p>
+        <p>
+          Vigils serve as powerful platforms for the Kenyan LGBTQ+ community to
+          come together, remember those who have lost their lives, and advocate
+          for a more inclusive and accepting society. It is crucial to
+          acknowledge the courage and resilience of the LGBTQ+ individuals who
+          continue to stand tall despite the adversity they face.
+        </p>
+        <p>
+          As we commemorate these vigils, let us remember that the fight for
+          equality and human rights is ongoing. By standing together in
+          solidarity and empathy, we can work towards building a future where
+          all individuals are treated with respect and love, irrespective of
+          their sexual orientation or gender identity.
+        </p>
+      </div>
     </div>
   );
 }
