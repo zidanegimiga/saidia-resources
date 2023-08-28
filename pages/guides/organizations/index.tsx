@@ -19,7 +19,7 @@ const Support = () => {
       <Nav />
       <SideNav />
       <div className={styles.article}>
-        <h2>Organizations supporting the Kenyan LGBTQ+ community</h2>
+        <h2 id="organisations-supporting-the-lgbtq">Organizations supporting the Kenyan LGBTQ+ community</h2>
         <p>
           These organizations play a crucial role in promoting inclusivity,
           advocating for equal rights, and providing support to LGBTQ+

@@ -1648,7 +1648,7 @@ export default function Guides() {
           when you visit the station again.
         </p>
       </div>
-      <div className={styles.article} id="same-sex-marriage">
+      <div className={styles.article} id="same-sex-marriage-not-possible">
         <h2>Why can&apos;t people of the same sex get married in Kenya?</h2>
         <p>
           Same-sex marriage is not legally recognized in Kenya. The

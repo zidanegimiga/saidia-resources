@@ -1,12 +1,13 @@
 import React from 'react'
 import { Accordion } from '../Accordion';
 import styles from "./SideNav.module.scss"
-import { business, legal, organizations, inclusivity, events, selfCare } from '@/Data/categories';
+import { business, legal, organizations, inclusivity, events, selfCare, eWaste } from '@/Data/categories';
 
 const SideNav = () => {
   return (
     <div className={styles.sideNav}>
       <Accordion categoryTitle="Legal" categoryArticles={legal} />
+      <Accordion categoryTitle="E-Waste" categoryArticles={eWaste} />
       <Accordion
         categoryTitle="Business and Employment"
         categoryArticles={business}

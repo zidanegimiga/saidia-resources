@@ -224,6 +224,63 @@ export default function SelfCare() {
           the benefits of relaxation and stress reduction.
         </p>
       </div>
+      <div className={styles.article}>
+        <h2>Finding Inner Calm</h2>
+        <p>Duration: 10 minutes</p>
+        <p>
+          Introduction: &quot;Welcome to this guided meditation session. Today,
+          we will focus on finding inner calm and cultivating a sense of peace
+          within ourselves. Find a comfortable seated position, close your eyes,
+          and take a deep breath in, exhaling slowly. Let&apos;s begin.&quot;
+        </p>
+        <p>Body: </p>
+        <ol>
+          <li>
+            Grounding and Relaxation (2 minutes): &quot;Start by bringing your
+            attention to your breath. Take a few deep breaths, inhaling through
+            your nose and exhaling through your mouth. Feel your body becoming
+            more relaxed with each breath. Now, bring your attention to your
+            feet. Visualize roots growing from the soles of your feet, reaching
+            deep into the earth, grounding you and providing stability. Feel the
+            support of the earth beneath you.&quot;
+          </li>
+          <li>
+            Body Scan (3 minutes): &quot;Shift your focus to your body. Begin at
+            the top of your head and slowly scan down, bringing awareness to
+            each part of your body. Notice any areas of tension or discomfort,
+            and as you exhale, release the tension, allowing your body to relax.
+            Move down to your forehead, your eyes, your jaw, your neck, your
+            shoulders, and so on, all the way down to your toes. Take your time
+            with each area, breathing into it and letting go of any
+            tension.&quot;
+          </li>
+          <li>
+            Breath Awareness (3 minutes): &quot;Bring your attention back to
+            your breath. Notice the natural rhythm of your breath as you inhale
+            and exhale. Follow the breath in and out, feeling the sensations in
+            your nostrils or your abdomen. Allow your breath to anchor you in
+            the present moment, letting go of any thoughts or distractions that
+            arise. Simply be present with your breath.&quot;
+          </li>
+          <li>
+            Cultivating Inner Calm (2 minutes): &quot;As you continue to
+            breathe, imagine a gentle, warm light surrounding your body. This
+            light represents a sense of inner calm and peace. With each
+            inhalation, imagine this light growing brighter and expanding
+            throughout your body. Feel it radiating tranquility and harmony. As
+            you exhale, release any remaining tension or stress. Allow this
+            inner calm to permeate your entire being.&quot;
+          </li>
+        </ol>
+        <p>Conclusion:</p>
+        <p>
+          &quot;Take a moment to express gratitude for this time of stillness and
+          self-care. When you&apos;re ready, slowly bring your awareness back to the
+          present moment. Wiggle your fingers and toes, gently open your eyes,
+          and carry this sense of inner calm with you as you go about your day.
+          Thank you for joining this guided meditation.&quot;
+        </p>
+      </div>
       <div className={styles.article} id="selfcare-apps">
         <h2>Which Apps can you use for self care</h2>
         <p>

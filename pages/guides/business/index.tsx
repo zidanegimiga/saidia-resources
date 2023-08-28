@@ -21,7 +21,131 @@ export default function Guides() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <SideNav/>
+      <SideNav />
+      <div className={styles.article}>
+        <h2>
+          Empowering Careers: Acquiring Vocational Skills in Nairobi&apos;s
+          Diverse Landscape
+        </h2>
+        <p>
+          In Nairobi, the bustling capital city of Kenya, the opportunity to
+          acquire vocational skills in various areas of expertise is readily
+          available. Whether you dream of becoming an electrician, a carpenter,
+          a nurse, an automotive technician, a graphic designer, a welder, a
+          plumber, a chef, an IT support specialist, or a hairstylist, the city
+          offers a wide range of vocational training options to suit your
+          passions and career aspirations.
+        </p>
+        <p>
+          IVocational skills, also known as technical or job-specific skills,
+          are the essential abilities and knowledge directly related to a
+          specific occupation or trade. Unlike traditional academic education,
+          vocational skills are highly practical and enable individuals to
+          perform specific tasks or jobs effectively. These skills are acquired
+          through specialized training, education, or hands-on experience,
+          allowing you to become job-ready and industry-savvy.
+        </p>
+        <p>
+          Imagine mastering the art of wiring installations, electrical
+          troubleshooting, and understanding circuitry as an electrician. Or
+          honing your woodworking skills, mastering joinery techniques, and
+          confidently using power tools as a carpenter. Picture yourself
+          providing patient care, administering medications, and skillfully
+          dressing wounds as a compassionate and skilled nurse. As an automotive
+          technician, visualize confidently diagnosing vehicle issues, repairing
+          engines, and maintaining brake and electrical systems. If you are
+          creatively inclined, you can explore graphic design, becoming
+          proficient in graphic design software, layout design, typography,
+          color theory, and image editing.
+        </p>
+        <p>
+          For those with a passion for working with metals, welding skills such
+          as interpreting blueprints, metal fabrication, and operating welding
+          equipment can be your path to success. As a plumber, you can excel in
+          pipe installation and repair, pipefitting, plumbing code knowledge,
+          and troubleshooting, ensuring smooth water flow in various settings.
+          If culinary arts are your calling, you can develop your expertise in
+          culinary techniques, food preparation, menu planning, cooking methods,
+          and kitchen safety as a chef. Alternatively, if you are tech-savvy,
+          you can embark on a journey as an IT support specialist,
+          troubleshooting hardware and software issues, setting up networks,
+          configuring systems, and providing top-notch customer service. As a
+          hairstylist, you can specialize in hair cutting, styling techniques,
+          coloring, chemical treatments, and salon sanitation, creating stunning
+          looks for your clients.
+        </p>
+        <p>
+          Vocational skills are crucial for career success in various
+          industries, and they are often specific to a particular occupation or
+          trade. By developing and honing these skills, individuals can enhance
+          their employability, excel in their chosen field, and open doors to
+          countless opportunities.
+        </p>
+        <p>
+          Nairobi is home to esteemed institutions that offer top-quality
+          vocational training, equipping individuals with the skills they need
+          to thrive in their chosen fields. Some of the notable institutions
+          include the Nairobi Technical Training Institute (NTTI), which
+          provides a diverse array of courses, including Artisan in Motor
+          Vehicle Mechanics, Certificate in Food Science Technology, Certificate
+          in Information Technology, Certificate in Medical Laboratory
+          Technology, Certificate in Social Work and Community Development, and
+          Craft Certification in Automotive Engineering, among numerous others
+        </p>
+        <p>
+          Kasarani Technical and Vocational College (KTVC) is another prominent
+          institution, located approximately 1.5 kilometers from Kamulu shopping
+          center, off Kangundo Road, in Kasarani Constituency, Nairobi County.
+          KTVC offers 27 diverse courses in areas such as ICT and Computer
+          Studies, Mechanical and Automotive Engineering, Building and Civil
+          Engineering, Business Department, Liberal Studies, Agriculture, and
+          Institutional Management courses.
+        </p>
+        <p>
+          Founded in 1979, the PC Kinyanjui Technical Training Institute
+          (PCKTTI) is a prestigious public technical institute in Nairobi,
+          Kenya. Established with the support of Jomo Kenyatta, the first
+          President of the Republic of Kenya, PCKTTI initially enrolled 1,500
+          students. The institute offers a variety of diploma courses, including
+          Applied Biology, Analytical Chemistry, Food Technology, Civil
+          Engineering, Building Technology, Business Management, Sales
+          Marketing, Human Resource Management, Human Cooperative Management,
+          Supply Chain Management, Community Development, Child Care and
+          Protection, ICT, Electrical & Electronics Engineering (Power &
+          Telecomms Options), Food Beverage Production and Service, as well as
+          craft certificates in Science Laboratory Technology, Building
+          Technology, Human Resource Management, Sales & Marketing, ICT
+          International Computer Driving License, Electrical & Electronics
+          Engineering (Power Options), Electrical & Electronics Engineering
+          (Telecomms Options), Electrical Installation, Artisan in Food &
+          Beverage Production & Service, Craft Certificate in Food and Beverage
+          Production & Service, Craft Certificate in Housekeeping &
+          Accommodation, Craft Certificate in Automotive Engineering (Production
+          Option), Craft Certificate in Automotive Engineering, and Artisan in
+          Motor Vehicle Mechanics.
+        </p>
+        <p>
+          Additionally, Dandora Greenlight Vocational Training College is an
+          accredited public vocational training college located on Komarock Road
+          in Nairobi. The college is registered under the Technical and
+          Vocational Education and Training Authority (TVETA) and provides
+          various courses, including Artisan courses in Motor Vehicle Mechanics,
+          Fashion and Design, and Craft Certificate in Information Communication
+          Technology (ICT).
+        </p>
+        <p>
+          In Nairobi, the pursuit of vocational skills opens doors to a world of
+          possibilities. These hands-on and industry-specific training programs
+          pave the way for a fulfilling and successful career in various fields.
+          Aspiring individuals are equipped with practical skills that are in
+          high demand across diverse industries. With vocational skills, you can
+          seize opportunities, contribute to the growth of your chosen field,
+          and make a positive impact on your community and beyond. So, if
+          you&apos;re ready to unleash your potential, dive into an exciting
+          career path, and make your mark, Nairobi&apos;s vocational skills
+          training is the perfect place to start your journey to success.
+        </p>
+      </div>
       <div className={styles.article} id="business-management">
         <h2>Exploring Business Management: Your Gateway to Success</h2>
         <p>
@@ -109,17 +233,46 @@ export default function Guides() {
           and financial projections
         </p>
         <p>
-          Business Name Search and Registration: Conduct a business name search
-          with the Registrar of Companies to ensure your chosen name is unique
-          and available. Once approved, register your business name with the
-          Registrar of Companies. The Registrar of Companies in Kenya is based
-          in Nairobi, the capital city of Kenya. The office is located at Sheria
-          House, which is situated along Harambee Avenue in the central business
-          district of Nairobi. The cost of registering a business name in Kenya
-          can vary depending on several factors, such as the type of business,
-          the nature of the registration, and any additional services required.
-          The fees for registering a business name with the Registrar of
-          Companies in Kenya are as follows:
+          Business Name and Registration: To register your name you can visit
+          any Huduma Center or use the e-Citizen portal. Conduct a business name
+          search using the e-Citizen portal. Set up an e-Citizen following the
+          prompts provided on the platform and then sign in. Once you have
+          signed in the portal will open up on the e-Citizen dashboard, select
+          the ‘Business Registration Service’ tab. Click on the ‘Make
+          Application’ button and select the ‘Business Name Registration’, enter
+          the proposed business name, ownership and address information. Review
+          your application information and pay the filing fee using the payment
+          details provided on the platform. To register your business, you will
+          need to prepare signed copies of the pre-requisite registration
+          documents. These will need to be uploaded onto the portal and include:
+          copies of the business owners’ national IDs, copies of the business
+          owners’ KRA Pin Certificates and passport photos. Feedback on your
+          registration will be provided between 1-2 working days. Once your
+          business registration is complete you will get a notification on the
+          email address you used to register on e-citizen. Log into your
+          e-citizen and check your business status, once your business is
+          registered you will receive a certificate of incorporation.
+        </p>
+        <p>
+          The fees for registering a business in Kenya will cost between
+          950-25,000ksh(as at 2023), the costs of business registration are as
+          follows:
+        </p>
+        <ol>
+          <li>Registration of Business name: 950ksh</li>
+          <li> Private Limited Company: 10,650ksh</li>
+          <li> Public Limited Company: 10,650ksh</li>
+          <li> Company Limited by guarantee: 10,000ksh</li>
+          <li> Limited Liability Partnership: 25,000ksh</li>
+        </ol>
+        <p>
+          Business Structure: Decide on the most suitable business structure for
+          your venture, such as a sole proprietorship, partnership, limited
+          liability company (LLC). Each structure has its own legal requirements
+          and implications. Sole Proprietorship, Partnership, and Limited
+          Liability Company (LLC) are three common forms of business entities,
+          each with its own characteristics and implications. Here is a brief
+          explanation of the differences:
         </p>
         <ol>
           <li>
@@ -857,11 +1010,12 @@ export default function Guides() {
           </li>
           <li>
             Standard Chartered Bank: Standard Chartered Bank has a dedicated
-            unit called &quot;Business Banking&quot; that focuses on providing banking
-            solutions for SMEs and start-ups. They offer business accounts,
-            loans, cash management services, and trade finance solutions.
+            unit called &quot;Business Banking&quot; that focuses on providing
+            banking solutions for SMEs and start-ups. They offer business
+            accounts, loans, cash management services, and trade finance
+            solutions.
           </li>
-        </ol>        
+        </ol>
       </div>
     </div>
   );
