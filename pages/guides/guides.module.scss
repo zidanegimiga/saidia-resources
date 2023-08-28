@@ -143,7 +143,11 @@
 }
 
 .kayaFullBody {
-    height: 640px
+    height: 640px;
+
+    // @media (max-width: 452px) {
+    //     display: none;        
+    // }
 }
 
 .section {
@@ -228,6 +232,7 @@
 
     @media (max-width: 452px) {
         width: 72%;
+        max-height: 380px;
     }
 
     @media (max-width: 321px) {
