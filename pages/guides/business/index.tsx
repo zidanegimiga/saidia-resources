@@ -146,7 +146,7 @@ export default function Guides() {
           training is the perfect place to start your journey to success.
         </p>
       </div>
-      <div className={styles.article} id="business-management">
+      {/* <div className={styles.article} id="business-management">
         <h2>Exploring Business Management: Your Gateway to Success</h2>
         <p>
           Did you know that a Business Management course is widely available in
@@ -223,7 +223,7 @@ export default function Guides() {
           the ever-evolving world of business. The possibilities are boundless,
           and your future awaits!
         </p>
-      </div>
+      </div> */}
       <div className={styles.article} id="starting-a-business-in-kenya">
         <h2>Setting up a business in Kenya</h2>
         <p>

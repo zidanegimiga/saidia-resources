@@ -68,10 +68,10 @@ export const business = [
       "Empowering Careers: Acquiring Vocational Skills in Nairobi's Diverse Landscape",
     url: "/guides/business/",
   },
-  {
-    title: "Exploring Business Management: Your Gateway to Success",
-    url: "/guides/business/#business-management",
-  },
+  // {
+  //   title: "Exploring Business Management: Your Gateway to Success",
+  //   url: "/guides/business/#business-management",
+  // },
   {
     title: "Setting up a business in Kenya",
     url: "/guides/business/#starting-a-business-in-kenya",
@@ -95,10 +95,10 @@ export const business = [
 ];
 
 export const organizations = [
-  {
-    title: "Organizations you can support",
-    url: "/guides/legal/#activist-organizations",
-  },
+  // {
+  //   title: "Organizations you can support",
+  //   url: "/guides/legal/#activist-organizations",
+  // },
   {
     title: "Organizations supporting the Kenyan LGBTQ+ community",
     url: "/guides/organizations/#organisations-supporting-the-lgbtq",
@@ -139,14 +139,14 @@ export const inclusivity = [
       "Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and Understanding",
     url: "/guides/inclusivity/",
   },
-  {
-    title: "Gender Identities",
-    url: "/guides/inclusivity/#gender-identities",
-  },
-  {
-    title: "Types of sexualities",
-    url: "/guides/inclusivity/#types-of-sexualities",
-  },
+  // {
+  //   title: "Gender Identities",
+  //   url: "/guides/inclusivity/#gender-identities",
+  // },
+  // {
+  //   title: "Types of sexualities",
+  //   url: "/guides/inclusivity/#types-of-sexualities",
+  // },
   {
     title: "Pronouns",
     url: "/guides/inclusivity/#pronouns",
