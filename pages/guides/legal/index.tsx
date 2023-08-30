@@ -121,10 +121,11 @@ export default function Guides() {
           consult with the Huduma Centre for the most up-to-date information
           before starting the application process.
         </p>
-      </div>
 
-      <div className={styles.article} id="lost-id">
-        <h2>If you&apos;ve lost your ID card in Kenya, follow these steps: </h2>
+        <p>
+          <b>If you&apos;ve lost your ID card in Kenya, follow these steps: </b>
+        </p>
+
         <ol>
           <li>
             Head to the nearest police station: Find the police station in your
