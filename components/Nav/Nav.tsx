@@ -70,12 +70,12 @@ const Nav = () => {
           <div className={styles.navFooter}>
             <div className={styles.footerItem}>
               <span>
-                <Link href={"/"}>Privacy Policy</Link>
+                <Link href={"/privacy-policy"}>Privacy Policy</Link>
               </span>
             </div>
             <div className={styles.footerItem}>
               <span>
-                <Link href={"/"}>Terms and Conditions</Link>
+                <Link href={"/terms-and-conditions"}>Terms and Conditions</Link>
               </span>
             </div>
           </div>
