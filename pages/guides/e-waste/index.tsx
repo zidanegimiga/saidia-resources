@@ -24,7 +24,7 @@ export default function SelfCare() {
       <SideNav />
       <div className={styles.article}>
         <h2>
-          E-waste: Managing Electronic Waste for a Circular Economy in Kenya
+          Unravel the world of e-waste
         </h2>
         <p>
           E-waste, or electronic waste, is a term used to describe discarded

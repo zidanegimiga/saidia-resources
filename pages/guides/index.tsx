@@ -32,7 +32,7 @@ export default function Guides(){
               }}
               animate={{
                 opacity: 1,
-                y: 0,
+                y: 100,
               }}
               transition={{
                 duration: 2.5,

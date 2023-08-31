@@ -24,8 +24,7 @@ export default function Guides() {
       <SideNav />
       <div className={styles.article}>
         <h2>
-          Empowering Careers: Acquiring Vocational Skills in Nairobi&apos;s
-          Diverse Landscape
+          Vocational Skills in Kenya
         </h2>
         <p>
           In Nairobi, the bustling capital city of Kenya, the opportunity to
