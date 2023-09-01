@@ -399,7 +399,7 @@ export default function SelfCare() {
         </p>
       </div>
       <div className={styles.article} id={"finding-a-therapist"}>
-        <h2>Finding a therapist in Kenya</h2>
+        <h2>Therapist in Kenya</h2>
         <p>
           To find a therapist that works for you, you can follow these steps:
         </p>
@@ -450,7 +450,6 @@ export default function SelfCare() {
           phone call with the therapist to discuss your concerns and assess if
           they are the right fit for you.
         </p>
-      </div>
       <div className={styles.article} id="queer-friendly-therapist">
         <h2>How do you know a therapist is queer friendly</h2>
         <p>
@@ -563,6 +562,7 @@ export default function SelfCare() {
           their websites for more information on the specific services they
           offer and to inquire about mental therapy options.
         </p>
+      </div>
       </div>
     </div>
   );
