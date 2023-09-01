@@ -191,7 +191,7 @@ export const selfCare = [
     url: "/guides/self-care/#selfcare-apps",
   },
   {
-    title: "Group therapy",
+    title: "Group therapy sessions for the LGBTQ community",
     url: "/guides/self-care/#group-therapy",
   },
   {
