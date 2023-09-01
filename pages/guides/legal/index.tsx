@@ -479,59 +479,60 @@ export default function Guides() {
           throughout the planning and execution of the protest. Non-violence,
           respect for diverse
         </p>
-      </div>
-
-      <div className={styles.article} id="activist-organizations">
-        <h2>Activists Organizations you can get support in Kenya </h2>
-        <p>
-          There are several activist organizations in Kenya that focus on
-          various social, political, and human rights issues. Here are a few
-          organizations you can consider supporting:
-        </p>
-        <ol>
-          <li>
-            Haki Africa: A human rights organization that works to promote and
-            protect human rights in Kenya, with a focus on marginalized
-            communities and vulnerable groups.
-          </li>
-          <li>
-            National Gay and Lesbian Human Rights Commission (NGLHRC): A
-            nonprofit organization dedicated to advancing the rights of lesbian,
-            gay, bisexual, transgender, and intersex (LGBTI) individuals in
-            Kenya through advocacy, legal support, and community empowerment.
-          </li>
-          <li>
-            African Women&aposs Development and Communication Network (FEMNET):
-            FEMNET is a pan-African feminist organization that advocates for
-            gender equality, women&apos;s rights, and social justice. They work
-            to amplify the voices of women and girls across the continent.
-          </li>
-          <li>
-            Centre for Human Rights and Democracy (CHRD): CHRD is a grassroots
-            organization that focuses on promoting democracy, human rights, and
-            good governance in Kenya. They engage in advocacy,
-            capacity-building, and community empowerment initiatives.
-          </li>
-          <li>
-            Katiba Institute: A research and litigation organization that
-            promotes constitutionalism and the implementation of the Kenyan
-            Constitution. They work to ensure that the principles of justice,
-            equality, and accountability are upheld.
-          </li>
-          <li>
-            Amnesty International Kenya: The Kenyan chapter of Amnesty
-            International, a global human rights organization. They advocate for
-            the protection of human rights, campaign against human rights
-            abuses, and provide support to individuals at risk.
-          </li>
-        </ol>
-        <p>
-          These are just a few examples, and there are many other organizations
-          in Kenya working towards various causes. It&apos;s important to
-          research and learn more about each organization&apos;s mission,
-          values, and impact to determine which aligns with your interests and
-          values.
-        </p>
+        <div id="activist-organizations">
+          <h2>Activists Organizations you can get support in Kenya </h2>
+          <p>
+            There are several activist organizations in Kenya that focus on
+            various social, political, and human rights issues. Here are a few
+            organizations you can consider supporting:
+          </p>
+          <ol>
+            <li>
+              Haki Africa: A human rights organization that works to promote and
+              protect human rights in Kenya, with a focus on marginalized
+              communities and vulnerable groups.
+            </li>
+            <li>
+              National Gay and Lesbian Human Rights Commission (NGLHRC): A
+              nonprofit organization dedicated to advancing the rights of
+              lesbian, gay, bisexual, transgender, and intersex (LGBTI)
+              individuals in Kenya through advocacy, legal support, and
+              community empowerment.
+            </li>
+            <li>
+              African Women&aposs Development and Communication Network
+              (FEMNET): FEMNET is a pan-African feminist organization that
+              advocates for gender equality, women&apos;s rights, and social
+              justice. They work to amplify the voices of women and girls across
+              the continent.
+            </li>
+            <li>
+              Centre for Human Rights and Democracy (CHRD): CHRD is a grassroots
+              organization that focuses on promoting democracy, human rights,
+              and good governance in Kenya. They engage in advocacy,
+              capacity-building, and community empowerment initiatives.
+            </li>
+            <li>
+              Katiba Institute: A research and litigation organization that
+              promotes constitutionalism and the implementation of the Kenyan
+              Constitution. They work to ensure that the principles of justice,
+              equality, and accountability are upheld.
+            </li>
+            <li>
+              Amnesty International Kenya: The Kenyan chapter of Amnesty
+              International, a global human rights organization. They advocate
+              for the protection of human rights, campaign against human rights
+              abuses, and provide support to individuals at risk.
+            </li>
+          </ol>
+          <p>
+            These are just a few examples, and there are many other
+            organizations in Kenya working towards various causes. It&apos;s
+            important to research and learn more about each organization&apos;s
+            mission, values, and impact to determine which aligns with your
+            interests and values.
+          </p>
+        </div>
       </div>
 
       <div className={styles.article} id="changing-your-name-and-gender-marker">

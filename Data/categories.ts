@@ -24,10 +24,10 @@ export const legal = [
     title: "Protesting in Kenya",
     url: "/guides/legal/#protesting",
   },
-  {
-    title: "Activist Organizations",
-    url: "/guides/legal/#activist-organizations",
-  },
+  // {
+  //   title: "Activist Organizations",
+  //   url: "/guides/legal/#activist-organizations",
+  // },
   {
     title: "Changing Your Name & Gender Marker",
     url: "/guides/legal/#changing-your-name-and-gender-marker",
