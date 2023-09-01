@@ -168,7 +168,7 @@ export const inclusivity = [
   },
   {
     title:
-      "Vigils: Celebrating Life and Honoring the Lives of Kenyans in the LGBTQ+ Community",
+      "Vigils: Celebrating LGBTQ+ lives",
     url: "/guides/inclusivity/#vigils",
   },
 ];
