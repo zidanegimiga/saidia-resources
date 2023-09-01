@@ -17,11 +17,9 @@ export default function Guides() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <SideNav/>
+      <SideNav />
       <div className={styles.article} id="fines-cash-bails-and-bonds">
-        <h2>
-          Understanding Fines, Cash Bail, and Bonds in Kenya&apos;s Legal System
-        </h2>
+        <h2>Fines, Cash bail, and Bonds</h2>
         <p>
           In the Kenyan context, fines, cash bail, and bonds are fundamental
           components of the legal system, each serving unique roles in legal
@@ -536,7 +534,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="changing-your-name">
+      <div className={styles.article} id="changing-your-name-and-gender-marker">
         <h2>How to change your name in Kenya</h2>
         <p>
           In Kenya, the process of legally changing one&apos;s name is governed
@@ -933,68 +931,69 @@ export default function Guides() {
           personal one, based on your comfort level, familiarity with the legal
           process, and the complexity of your situation.
         </p>
-      </div>
-      <div className={styles.article} id="changing-your-gender-marker">
-        <h2>Changing your Gender Marker in Kenya</h2>
-        <p>
-          In Kenya, the process of changing your name and gender marker is
-          separate. Changing your name does not automatically change your gender
-          marker on official documents such as identification cards or
-          passports. The process of changing your gender marker on official
-          documents involves several steps and government offices. Here is an
-          overview of the process:
-        </p>
-        <ol>
-          <li>
-            Consultation: It is advisable to seek guidance from organizations
-            that specialize in transgender rights, such as Transgender Education
-            and Advocacy (TEA) Kenya or the Gay and Lesbian Coalition of Kenya
-            (GALCK). They can provide you with information and support
-            throughout the process.
-          </li>
-          <li>
-            Medical Assessment: Obtain a medical assessment from a registered
-            psychiatrist or clinical psychologist. They will evaluate your
-            gender dysphoria and provide a recommendation for gender marker
-            change.
-          </li>
-          <li>
-            Legal Advice: Seek legal advice from a qualified lawyer who is
-            knowledgeable about transgender rights and the legal process in
-            Kenya. They can guide you through the necessary steps and assist
-            with drafting the required legal documents.
-          </li>
-          <li>
-            Affidavit: Prepare an affidavit stating your intention to change
-            your gender marker. This document should include details about your
-            gender identity, reasons for the change, and any supporting evidence
-            or professional assessments.
-          </li>
-          <li>
-            High Court Petition: File a petition at the High Court of Kenya
-            requesting a change of gender marker. Your lawyer will assist you in
-            preparing the necessary court documents, including the affidavit,
-            medical assessment, and other supporting evidence.
-          </li>
-          <li>
-            Court Hearing: Attend the court hearing where a judge will review
-            your case. If the court approves your petition, you will receive an
-            order granting the change of gender marker.
-          </li>
-          <li>
-            Update Official Documents: With the court order, proceed to the
-            relevant government offices to update your gender marker on official
-            documents, such as your identification card, passport, and other
-            applicable documents. This typically involves visiting the Registrar
-            of Persons office for ID updates and the Department of Immigration
-            for passport changes.
-          </li>
-        </ol>
-        <p>
-          Please note that the process may vary, and it is advisable to consult
-          with legal professionals who are familiar with the current legal
-          requirements and procedures in Kenya.
-        </p>
+
+        <div id="changing-your-gender-marker">
+          <h2>Changing your Gender Marker in Kenya</h2>
+          <p>
+            In Kenya, the process of changing your name and gender marker is
+            separate. Changing your name does not automatically change your
+            gender marker on official documents such as identification cards or
+            passports. The process of changing your gender marker on official
+            documents involves several steps and government offices. Here is an
+            overview of the process:
+          </p>
+          <ol>
+            <li>
+              Consultation: It is advisable to seek guidance from organizations
+              that specialize in transgender rights, such as Transgender
+              Education and Advocacy (TEA) Kenya or the Gay and Lesbian
+              Coalition of Kenya (GALCK). They can provide you with information
+              and support throughout the process.
+            </li>
+            <li>
+              Medical Assessment: Obtain a medical assessment from a registered
+              psychiatrist or clinical psychologist. They will evaluate your
+              gender dysphoria and provide a recommendation for gender marker
+              change.
+            </li>
+            <li>
+              Legal Advice: Seek legal advice from a qualified lawyer who is
+              knowledgeable about transgender rights and the legal process in
+              Kenya. They can guide you through the necessary steps and assist
+              with drafting the required legal documents.
+            </li>
+            <li>
+              Affidavit: Prepare an affidavit stating your intention to change
+              your gender marker. This document should include details about
+              your gender identity, reasons for the change, and any supporting
+              evidence or professional assessments.
+            </li>
+            <li>
+              High Court Petition: File a petition at the High Court of Kenya
+              requesting a change of gender marker. Your lawyer will assist you
+              in preparing the necessary court documents, including the
+              affidavit, medical assessment, and other supporting evidence.
+            </li>
+            <li>
+              Court Hearing: Attend the court hearing where a judge will review
+              your case. If the court approves your petition, you will receive
+              an order granting the change of gender marker.
+            </li>
+            <li>
+              Update Official Documents: With the court order, proceed to the
+              relevant government offices to update your gender marker on
+              official documents, such as your identification card, passport,
+              and other applicable documents. This typically involves visiting
+              the Registrar of Persons office for ID updates and the Department
+              of Immigration for passport changes.
+            </li>
+          </ol>
+          <p>
+            Please note that the process may vary, and it is advisable to
+            consult with legal professionals who are familiar with the current
+            legal requirements and procedures in Kenya.
+          </p>
+        </div>
       </div>
       <div className={styles.article} id="repeal-162">
         <h2>What is Repeal 162?</h2>

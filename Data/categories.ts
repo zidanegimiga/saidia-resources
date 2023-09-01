@@ -30,7 +30,7 @@ export const legal = [
   },
   {
     title: "Changing Your Name",
-    url: "/guides/legal/#changing-your-name",
+    url: "/guides/legal/#changing-your-name-and-gender-marker",
   },
   {
     title: "Changing your Gender Marker in Kenya",

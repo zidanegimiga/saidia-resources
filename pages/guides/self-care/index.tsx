@@ -274,15 +274,15 @@ export default function SelfCare() {
         </ol>
         <p>Conclusion:</p>
         <p>
-          &quot;Take a moment to express gratitude for this time of stillness and
-          self-care. When you&apos;re ready, slowly bring your awareness back to the
-          present moment. Wiggle your fingers and toes, gently open your eyes,
-          and carry this sense of inner calm with you as you go about your day.
-          Thank you for joining this guided meditation.&quot;
+          &quot;Take a moment to express gratitude for this time of stillness
+          and self-care. When you&apos;re ready, slowly bring your awareness
+          back to the present moment. Wiggle your fingers and toes, gently open
+          your eyes, and carry this sense of inner calm with you as you go about
+          your day. Thank you for joining this guided meditation.&quot;
         </p>
       </div>
       <div className={styles.article} id="selfcare-apps">
-        <h2>Which Apps can you use for self care</h2>
+        <h2>Self-care Apps</h2>
         <p>
           There are several apps available that can help with mindfulness and
           self-care practices. Here are some popular ones:
