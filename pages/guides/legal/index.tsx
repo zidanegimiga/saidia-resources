@@ -1646,6 +1646,85 @@ export default function Guides() {
           of the investigation, even if there&apos;s a different officer on duty
           when you visit the station again.
         </p>
+        <div id="violence-statistics">
+          <h2>
+            Unmasking the Harsh Reality: Statistics on Violence Against
+            Kenya&apos;s Queer Community
+          </h2>
+          <p>
+            Violence and discrimination against the LGBTQ+ community in Kenya
+            continue to be a distressing reality. Shocking statistics reveal the
+            alarming prevalence of assault cases, the reluctance to report
+            incidents due to fear of authorities, and the heart-wrenching list
+            of lives lost within the queer community in recent years.
+          </p>
+          <p>
+            The Fear of Reporting: According to GLACK+, an LGBTQ+ rights
+            organization in Kenya, a staggering 29% of LGBTQ+ individuals choose
+            not to report assault cases. This hesitancy stems from the slow
+            response of authorities and the fear of further harassment,
+            exacerbating the vulnerability of queer individuals.
+          </p>
+          <p>
+            Alarming Assault Rates: A deeply troubling statistic exposes that
+            over 53% of LGBTQ+ people in Kenya have faced physical assault. This
+            means that one in every two individuals within the community has
+            suffered violence, underscoring the urgency for change and
+            protection of human rights.
+          </p>
+          <p>
+            GLACK+&apos;s Disturbing Monthly Reports: GLACK+ receives an average
+            of at least 10 reports of violence against LGBTQ+ individuals every
+            month. These cases shed light on the pervasive nature of
+            discrimination and violence faced by the queer community and the
+            urgent need for comprehensive intervention.
+          </p>
+          <p>
+            Tragic Losses Reported by the Media: Over the last few years, the
+            media has reported several heartbreaking deaths within the LGBTQ+
+            community:
+          </p>
+          <ul>
+            <li>
+              2021: Chriton Atuhwera, a Ugandan gay refugee, lost his life in
+              the bombing of an LGBTQ+ compound at Kakuma refugee camp.
+            </li>
+            <li>2021: Erica Chandra, a trans woman, tragically passed away.</li>
+            <li>
+              2021: Joash Mosoti, a dedicated LGBTQ+ activist, was mourned after
+              his untimely death.
+            </li>
+            <li>2022: Sheila Lumumba, a non-binary lesbian, lost her life.</li>
+            <li>
+              2022: Rose Mbesa, a 50-year-old non-binary woman, was taken from
+              us.
+            </li>
+            <li>
+              2023: Edwin Chiloba, a gay individual, faced a devastating fate.
+            </li>
+            <li>
+              *2020: Aneste Mwiru, a Ugandan gay refugee, allegedly died by
+              suicide, though there are allegations of involvement by UNHCR
+              security guards.
+            </li>
+          </ul>
+          <p>
+            The Path Forward: The distressing statistics and tragic losses
+            underscore the urgent need for systemic change to protect and
+            empower Kenya&apos;s LGBTQ+ community. Creating safe spaces,
+            combating discrimination, and fostering acceptance are critical
+            steps towards ensuring a brighter and more inclusive future for all
+            individuals, regardless of their sexual orientation or gender
+            identity.
+          </p>
+          <p>
+            Collectively, as a society, we must stand against violence and
+            discrimination, promoting a culture of understanding, respect, and
+            love. By acknowledging the harsh reality faced by the LGBTQ+
+            community, we can work together towards a more compassionate and
+            equal Kenya.
+          </p>
+        </div>
       </div>
       <div className={styles.article} id="same-sex-marriage-not-possible">
         <h2>Why can&apos;t people of the same sex get married in Kenya?</h2>

@@ -29,7 +29,7 @@ export const legal = [
     url: "/guides/legal/#activist-organizations",
   },
   {
-    title: "Changing Your Name & Geder Marker",
+    title: "Changing Your Name & Gender Marker",
     url: "/guides/legal/#changing-your-name-and-gender-marker",
   },
   {
@@ -60,8 +60,7 @@ export const legal = [
 
 export const business = [
   {
-    title:
-      "Empowering Careers: Acquiring Vocational Skills in Nairobi's Diverse Landscape",
+    title: "Empowering Careers: Acquiring Vocational Skills in Nairobi's Diverse Landscape",
     url: "/guides/business/",
   },
   // {
@@ -72,22 +71,22 @@ export const business = [
     title: "Setting up a business in Kenya",
     url: "/guides/business/#starting-a-business-in-kenya",
   },
-  {
-    title: "How to open a bank account in Kenya",
-    url: "/guides/business/#how-to-open-a-bank-account",
-  },
-  {
-    title: "Which banks are in Kenya",
-    url: "/guides/business/#banks-in-kenya",
-  },
-  {
-    title: "Which banks have the best rates",
-    url: "/guides/business/#banks-with-the-best-rates",
-  },
-  {
-    title: "Which banks are best for startups",
-    url: "/guides/business/#banks-best-for-startups",
-  },
+  // {
+  //   title: "How to open a bank account in Kenya",
+  //   url: "/guides/business/#how-to-open-a-bank-account",
+  // },
+  // {
+  //   title: "Which banks are in Kenya",
+  //   url: "/guides/business/#banks-in-kenya",
+  // },
+  // {
+  //   title: "Which banks have the best rates",
+  //   url: "/guides/business/#banks-with-the-best-rates",
+  // },
+  // {
+  //   title: "Which banks are best for startups",
+  //   url: "/guides/business/#banks-best-for-startups",
+  // },
 ];
 
 export const organizations = [
@@ -99,34 +98,34 @@ export const organizations = [
     title: "Organizations supporting the Kenyan LGBTQ+ community",
     url: "/guides/organizations/#organisations-supporting-the-lgbtq",
   },
-  {
-    title: "Statistics on Violence Against Kenya's Queer Community",
-    url: "/guides/organizations/#violence-statistics",
-  },
+  // {
+  //   title: "Statistics on Violence Against Kenya's Queer Community",
+  //   url: "/guides/organizations/#violence-statistics",
+  // },
   {
     title:
-      "Audrey's Journey: Breaking Barriers for Transgender Rights in Kenya",
+      "Audrey's Journey",
     url: "/guides/organizations/#audrey",
   },
 ];
 
 export const events = [
   {
-    title: "Embracing LGBTQ+ Inclusivity: Fun Events and Activities in Kenya",
+    title: "Queer-friendly events you can attend",
     url: "/guides/events/#inclusive-events",
   },
-  {
-    title: "Painting events and Workshops",
-    url: "/guides/events/#painting-workshops",
-  },
+  // {
+  //   title: "Painting events and Workshops",
+  //   url: "/guides/events/#painting-workshops",
+  // },
   {
     title: "Fun things to do in Nairobi",
     url: "/guides/events/#fun-things-to-do",
   },
-  {
-    title: "Dance classes in Kenya",
-    url: "/guides/events/#dance-classes",
-  },
+  // {
+  //   title: "Dance classes in Kenya",
+  //   url: "/guides/events/#dance-classes",
+  // },
 ];
 
 export const inclusivity = [
@@ -147,22 +146,22 @@ export const inclusivity = [
     title: "Pronouns",
     url: "/guides/inclusivity/#pronouns",
   },
-  {
-    title: "Why you should respect pronouns",
-    url: "/guides/inclusivity/#respect-pronouns",
-  },
-  {
-    title: "Why have pronouns become important",
-    url: "/guides/inclusivity/#pronouns-importance",
-  },
-  {
-    title: "Does changing your pronoun mean a change of gender?",
-    url: "/guides/inclusivity/#pronouns-gender",
-  },
-  {
-    title: "Organizations providing support for pronoun changes",
-    url: "/guides/inclusivity/#pronouns-gender-change-orgs",
-  },
+  // {
+  //   title: "Why you should respect pronouns",
+  //   url: "/guides/inclusivity/#respect-pronouns",
+  // },
+  // {
+  //   title: "Why have pronouns become important",
+  //   url: "/guides/inclusivity/#pronouns-importance",
+  // },
+  // {
+  //   title: "Does changing your pronoun mean a change of gender?",
+  //   url: "/guides/inclusivity/#pronouns-gender",
+  // },
+  // {
+  //   title: "Organizations providing support for pronoun changes",
+  //   url: "/guides/inclusivity/#pronouns-gender-change-orgs",
+  // },
   {
     title:
       "Discovering the Vibrant History of Ballroom Culture: A Safe Haven for the LGBTQ+ Community",

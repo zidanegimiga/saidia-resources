@@ -89,64 +89,6 @@ export default function Events() {
           attending or participating
         </p>
       </div>
-      <div className={styles.article} id="painting-workshops">
-        <h2>Painting events and Workshops</h2>
-        <p>
-          There are various painting events and workshops that take place in
-          Kenya, providing opportunities for artists and art enthusiasts to
-          explore their creativity and engage with the local art scene. Here are
-          some examples of painting events in Kenya:
-        </p>
-        <ol>
-          <li>
-            Nairobi Art Week: Nairobi Art Week is an annual event that
-            celebrates visual arts in Nairobi. It includes painting exhibitions,
-            art workshops, artist talks, and art tours, providing a platform for
-            artists to showcase their works and engage with the audience.
-          </li>
-          <li>
-            Paint and Sip Sessions: Paint and Sip sessions are popular events
-            where participants can enjoy a relaxed painting experience while
-            sipping on their favorite beverages. These events often take place
-            in art studios or designated venues and provide step-by-step
-            guidance for creating a painting.
-          </li>
-          <li>
-            Art Galleries and Exhibitions: Many art galleries in Kenya regularly
-            host painting exhibitions, showcasing the works of local and
-            international artists. These exhibitions provide an opportunity to
-            appreciate various painting styles and themes.
-          </li>
-          <li>
-            Art Classes and Workshops: Several art studios and institutions
-            offer painting classes and workshops throughout the year. These
-            classes cater to different skill levels and provide guidance on
-            various painting techniques and styles.
-          </li>
-          <li>
-            Art Competitions: Art competitions occasionally include painting
-            categories, allowing artists to showcase their skills and compete
-            for recognition and prizes. These competitions often have specific
-            themes or topics that participants need to interpret through their
-            paintings.
-          </li>
-          <li>
-            Community Art Projects: Some community organizations and art
-            collectives organize painting events as part of community art
-            projects. These projects aim to engage the local community in
-            creating public art and promoting artistic expression.
-          </li>
-        </ol>
-        <p>
-          To stay updated on painting events in Kenya, consider following local
-          art galleries, art studios, and art organizations on social media,
-          checking event listings in newspapers or online platforms dedicated to
-          the arts. Additionally, joining art communities and networking with
-          fellow artists can provide valuable information about upcoming
-          painting events.
-        </p>
-      </div>
-
       <div className={styles.article} id="fun-things-to-do">
         <h2>Fun things to do in Nairobi</h2>
         <p>
@@ -326,51 +268,110 @@ export default function Events() {
           offer. Whether you&apos;re interested in nature, culture, history, or
           entertainment, the city has something for everyone to enjoy.
         </p>
-      </div>
-      <div className={styles.article} id="dance-classes">
-        <h2>Dance classes in Kenya</h2>
-        <p>
-          There are various dance classes available in Kenya where individuals
-          can learn and enhance their dancing skills. Here are some popular
-          dance classes and studios in Kenya:
-        </p>
-        <ol>
-          <li>
-            Sarakasi Trust: Located in Nairobi, Sarakasi Trust offers a wide
-            range of dance classes, including contemporary, hip-hop, salsa,
-            African dance, and more. They cater to different age groups and
-            skill levels.
-          </li>
-          <li>
-            Dance Center Kenya: Situated in Nairobi, Dance Center Kenya offers
-            classes in ballet, contemporary, jazz, and tap dance. They have
-            programs for both children and adults, taught by experienced
-            instructors.
-          </li>
-          <li>
-            Out of the Box Dance Company: Based in Nairobi, Out of the Box Dance
-            Company offers classes in various styles like hip-hop, afro-fusion,
-            dancehall, and street dance. They focus on energetic and dynamic
-            choreography.
-          </li>
-          <li>
-            Lavington School of Dance: Located in Nairobi, Lavington School of
-            Dance provides classes in ballet, modern, tap, and jazz dance. They
-            have classes for different age groups and skill levels, from
-            beginners to advanced.
-          </li>
-          <li>
-            Alliance Française: With branches in Nairobi and Mombasa, Alliance
-            Française organizes regular dance workshops and classes. They cover
-            a range of styles, including African, salsa, contemporary, and more.
-          </li>
-          <li>
-            Nairobi Dance Project: Nairobi Dance Project offers a variety of
-            dance classes, workshops, and intensives in different styles such as
-            contemporary, urban, and traditional African dance. They focus on
-            nurturing creativity and artistic expression.
-          </li>
-        </ol>
+        <div id="dance-classes">
+          <h2>Dance classes in Kenya</h2>
+          <p>
+            There are various dance classes available in Kenya where individuals
+            can learn and enhance their dancing skills. Here are some popular
+            dance classes and studios in Kenya:
+          </p>
+          <ol>
+            <li>
+              Sarakasi Trust: Located in Nairobi, Sarakasi Trust offers a wide
+              range of dance classes, including contemporary, hip-hop, salsa,
+              African dance, and more. They cater to different age groups and
+              skill levels.
+            </li>
+            <li>
+              Dance Center Kenya: Situated in Nairobi, Dance Center Kenya offers
+              classes in ballet, contemporary, jazz, and tap dance. They have
+              programs for both children and adults, taught by experienced
+              instructors.
+            </li>
+            <li>
+              Out of the Box Dance Company: Based in Nairobi, Out of the Box
+              Dance Company offers classes in various styles like hip-hop,
+              afro-fusion, dancehall, and street dance. They focus on energetic
+              and dynamic choreography.
+            </li>
+            <li>
+              Lavington School of Dance: Located in Nairobi, Lavington School of
+              Dance provides classes in ballet, modern, tap, and jazz dance.
+              They have classes for different age groups and skill levels, from
+              beginners to advanced.
+            </li>
+            <li>
+              Alliance Française: With branches in Nairobi and Mombasa, Alliance
+              Française organizes regular dance workshops and classes. They
+              cover a range of styles, including African, salsa, contemporary,
+              and more.
+            </li>
+            <li>
+              Nairobi Dance Project: Nairobi Dance Project offers a variety of
+              dance classes, workshops, and intensives in different styles such
+              as contemporary, urban, and traditional African dance. They focus
+              on nurturing creativity and artistic expression.
+            </li>
+          </ol>
+        </div>
+        <div id="painting-workshops">
+          <h2>Painting events and Workshops</h2>
+          <p>
+            There are various painting events and workshops that take place in
+            Kenya, providing opportunities for artists and art enthusiasts to
+            explore their creativity and engage with the local art scene. Here
+            are some examples of painting events in Kenya:
+          </p>
+          <ol>
+            <li>
+              Nairobi Art Week: Nairobi Art Week is an annual event that
+              celebrates visual arts in Nairobi. It includes painting
+              exhibitions, art workshops, artist talks, and art tours, providing
+              a platform for artists to showcase their works and engage with the
+              audience.
+            </li>
+            <li>
+              Paint and Sip Sessions: Paint and Sip sessions are popular events
+              where participants can enjoy a relaxed painting experience while
+              sipping on their favorite beverages. These events often take place
+              in art studios or designated venues and provide step-by-step
+              guidance for creating a painting.
+            </li>
+            <li>
+              Art Galleries and Exhibitions: Many art galleries in Kenya
+              regularly host painting exhibitions, showcasing the works of local
+              and international artists. These exhibitions provide an
+              opportunity to appreciate various painting styles and themes.
+            </li>
+            <li>
+              Art Classes and Workshops: Several art studios and institutions
+              offer painting classes and workshops throughout the year. These
+              classes cater to different skill levels and provide guidance on
+              various painting techniques and styles.
+            </li>
+            <li>
+              Art Competitions: Art competitions occasionally include painting
+              categories, allowing artists to showcase their skills and compete
+              for recognition and prizes. These competitions often have specific
+              themes or topics that participants need to interpret through their
+              paintings.
+            </li>
+            <li>
+              Community Art Projects: Some community organizations and art
+              collectives organize painting events as part of community art
+              projects. These projects aim to engage the local community in
+              creating public art and promoting artistic expression.
+            </li>
+          </ol>
+          <p>
+            To stay updated on painting events in Kenya, consider following
+            local art galleries, art studios, and art organizations on social
+            media, checking event listings in newspapers or online platforms
+            dedicated to the arts. Additionally, joining art communities and
+            networking with fellow artists can provide valuable information
+            about upcoming painting events.
+          </p>
+        </div>
       </div>
     </div>
   );
