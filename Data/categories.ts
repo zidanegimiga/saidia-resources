@@ -29,7 +29,7 @@ export const legal = [
   //   url: "/guides/legal/#activist-organizations",
   // },
   {
-    title: "Changing Your Name & Gender Marker",
+    title: "The Process of Changing Your Name & Gender Marker",
     url: "/guides/legal/#changing-your-name-and-gender-marker",
   },
   {
