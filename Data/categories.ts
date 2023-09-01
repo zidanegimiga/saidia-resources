@@ -29,12 +29,8 @@ export const legal = [
     url: "/guides/legal/#activist-organizations",
   },
   {
-    title: "Changing Your Name",
+    title: "Changing Your Name & Geder Marker",
     url: "/guides/legal/#changing-your-name-and-gender-marker",
-  },
-  {
-    title: "Changing your Gender Marker in Kenya",
-    url: "/guides/legal/#changing-your-gender-marker",
   },
   {
     title: "Repeal 162",
