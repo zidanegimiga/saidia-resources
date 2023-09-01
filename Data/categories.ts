@@ -13,7 +13,7 @@ export const legal = [
     url: "/guides/legal/#understanding-police-service",
   },
   {
-    title: "Reporting Police Misconduct in Kenya: Steps to File a Complaint",
+    title: "How to report police misconduct",
     url: "/guides/legal/#reporting-police-misconduct",
   },
   {
