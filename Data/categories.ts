@@ -175,8 +175,7 @@ export const inclusivity = [
 
 export const selfCare = [
   {
-    title:
-      "A collection of self-care strategies, mindfulness exercises, and relaxation techniques to support emotional well-being and balance",
+    title: "Self-care and Mindfulness",
     url: "/guides/self-care/",
   },
   {
