@@ -45,7 +45,7 @@ export const legal = [
     url: "/guides/legal/#when-arrested",
   },
   {
-    title: "Work permit",
+    title: "Work permits",
     url: "/guides/legal/#work-permits",
   },
   {
