@@ -9,7 +9,7 @@ export const legal = [
   },
   {
     title:
-      "Understanding Police Service: Reasons for Potential Refusal and Delays",
+      "Instances when police officers refuse to provide service",
     url: "/guides/legal/#understanding-police-service",
   },
   {
