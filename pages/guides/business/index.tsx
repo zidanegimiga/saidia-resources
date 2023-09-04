@@ -221,6 +221,8 @@ export default function Guides() {
           and your future awaits!
         </p>
       </div> */}
+      </div>
+      <div className={styles.article}>
         <div id="starting-a-business-in-kenya">
           <h2>Setting up a business in Kenya</h2>
           <p>
@@ -276,47 +278,13 @@ export default function Guides() {
             <li>
               Sole Proprietorship Business Name Registration:
               <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
-                <li>Initial registration fee: KES 1,000 (Kenyan Shillings)</li>
-                <li>Annual renewal fee: KES 1,000</li>
-              </ul>
-            </li>
-            <li>
-              Partnership Business Name Registration:
-              <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
-                <li>Initial registration fee: KES 2,000</li>
-                <li>Annual renewal fee: KES 1,000</li>
-              </ul>
-            </li>
-          </ol>
-          <p>
-            It is important to note that these fees are subject to change, and
-            advisable to consult the official website of the Registrar of
-            Companies in Kenya or contact them directly for the most up-to-date
-            information on registration fees and requirements. Additionally,
-            there might be additional costs associated with obtaining other
-            necessary licenses or permits depending on the nature of your
-            business.
-          </p>
-          <p>
-            Business Structure: Decide on the most suitable business structure
-            for your venture, such as a sole proprietorship, partnership,
-            limited liability company (LLC). Each structure has its own legal
-            requirements and implications. Sole Proprietorship, Partnership, and
-            Limited Liability Company (LLC) are three common forms of business
-            entities, each with its own characteristics and implications. Here
-            is a brief explanation of the differences:
-          </p>
-          <ol>
-            <li>
-              Sole Proprietorship:
-              <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
                 <li>
-                  Sole proprietorship is the simplest and most common form of
+                  ISole proprietorship is the simplest and most common form of
                   business ownership.
                 </li>
                 <li>
                   It is owned and operated by a single individual, who is solely
-                  responsible for the business&apos;s operations, profits, and
+                  responsible for the business&#39;s operations, profits, and
                   liabilities.
                 </li>
                 <li>
@@ -344,7 +312,7 @@ export default function Guides() {
                 </li>
                 <li>
                   In a general partnership, partners have unlimited personal
-                  liability for the partnership&apos;s debts and obligations.
+                  liability for the partnership&#39;s debts and obligations.
                 </li>
                 <li>
                   In a limited partnership, there are general partners (with
@@ -353,13 +321,13 @@ export default function Guides() {
                 </li>
                 <li>
                   Partnerships are not separate legal entities, and the partners
-                  are personally liable for the partnership&apos;s obligations.
+                  are personally liable for the partnership&#39;s obligations.
                 </li>
               </ul>
             </li>
             <li>
               Limited Liability Company (LLC):
-              <ul>
+              <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
                 <li>
                   An LLC is a hybrid business structure that combines elements
                   of a corporation and a partnership.
@@ -377,14 +345,14 @@ export default function Guides() {
                   options, and profit distribution.
                 </li>
                 <li>
-                  The company&apos;s existence is separate from its members,
+                  The company&#39;s existence is separate from its members,
                   providing a distinct legal entity.
                 </li>
               </ul>
             </li>
           </ol>
-          <p>Key differences:</p>
           <ul>
+            Key Differences:
             <li>
               Sole proprietorship and partnership offer simplicity and personal
               liability for owners, while an LLC provides limited liability
@@ -400,20 +368,28 @@ export default function Guides() {
             </li>
             <li>
               LLCs require more formalities in terms of registration,
-              governance, and record-keeping compared to sole proprietorship or
+              governance, and record- keeping compared to sole proprietorship or
               partnership.
             </li>
           </ul>
+
           <p>
-            Permits and Licenses: Identify any specific permits or licenses
-            required for your type of business. This could include trade
-            licenses, sector-specific licenses, health and safety permits,
-            environmental permits, and more. Obtain the necessary licenses from
-            the relevant government agencies. In Kenya, you can obtain permits
-            and licenses for various aspects of your business from different
-            government agencies and regulatory bodies. Here are some common
-            places to acquire specific permits:
+            Permits and Licenses: Licenses:To conduct any business in Kenya you
+            need a Single Business Permit from the County Government where you
+            intend to establish your business. The type of business permit you
+            will be issued will depend on a variety of factors including the
+            physical location of the business, your business type and number of
+            employees. In Nairobi County there is the unified business permit
+            which consolidates all the licenses required to run a business in
+            Kenya into one. All business entities need to have a trading license
+            and a fire clearance certificate. Additionally, businesses dealing
+            with food are required to have a health certificate and food hygiene
+            license. The unified business permit application enables business
+            owners to apply for different licenses in one application without
+            having to go to different institutions and government offices. The
+            permit is valid for one calendar year.
           </p>
+
           <ol>
             <li>
               Trade License:
@@ -545,6 +521,7 @@ export default function Guides() {
             venture capital to support business startups. Here are a few notable
             ones:
           </p>
+
           <ol>
             <li>
               <b>Kenya Commercial Bank (KCB) Foundation</b>: KCB offers various
@@ -597,6 +574,7 @@ export default function Guides() {
               businesses with potential investors.
             </li>
           </ol>
+
           <p>
             It is important to research each organization&apos;s specific
             criteria, application process, and eligibility requirements to
@@ -605,6 +583,7 @@ export default function Guides() {
             a business advisor or seek professional guidance when exploring
             funding options for your startup.
           </p>
+
           <p>
             Business Bank Account: Open a dedicated business bank account to
             separate personal and business finances. This will facilitate
@@ -613,6 +592,7 @@ export default function Guides() {
             of the notable banks that offer services and support tailored to the
             needs of startups:
           </p>
+
           <ol>
             <li>
               Kenya Commercial Bank (KCB): KCB offers a range of business
@@ -665,6 +645,7 @@ export default function Guides() {
               management services.
             </li>
           </ol>
+
           <p>
             It is important to carefully consider factors such as account fees,
             transaction charges, accessibility of banking services, customer
@@ -673,12 +654,14 @@ export default function Guides() {
             the offerings and features of different banks to find the one that
             best aligns with your business requirements
           </p>
+
           <p>
             Employment and Labor Laws: Familiarize yourself with employment and
             labor laws in Kenya if you plan to hire employees. Ensure compliance
             with regulations regarding employment contracts, minimum wages,
             working hours, social security, and employee benefits.{" "}
           </p>
+
           <ol>
             <li>
               Employment Contracts: Employers are required to provide written
@@ -719,6 +702,7 @@ export default function Guides() {
               obligated to provide them.
             </li>
           </ol>
+
           <p>
             It is important for employers to familiarize themselves with the
             specific laws and regulations related to employment in Kenya, as
@@ -728,6 +712,14 @@ export default function Guides() {
             clarity on specific obligations and benefits for both employers and
             employees.
           </p>
+
+          <p>
+            Business Insurance: Consider obtaining business insurance coverage
+            to protect against potential risks and liabilities. This may include
+            general liability insurance, property insurance, professional
+            indemnity insurance, or specific coverage relevant to your industry.
+          </p>
+
           <p>
             Record-Keeping and Compliance: Maintain accurate records of business
             transactions, financial statements, tax filings, and any other
@@ -737,6 +729,7 @@ export default function Guides() {
             returns in Kenya involves several steps. Here is a general outline
             of the process:
           </p>
+
           <ol>
             <li>
               Annual Financial Statements: Prepare your company&apos;s annual
@@ -797,7 +790,7 @@ export default function Guides() {
           </p>
         </div>
         <div id="how-to-open-a-bank-account">
-          <h2>How to open a bank account in Kenya</h2>
+          <h2>How do you open a bank account in Kenya</h2>
           <p>
             To open a bank account in Kenya, you can follow these general steps:
           </p>

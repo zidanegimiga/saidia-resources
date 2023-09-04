@@ -23,7 +23,7 @@ export default function Inclusivity() {
       <Nav />
       <SideNav />
       <div className={styles.article} id="">
-        {/* <h2>
+        <h2>
           Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and
           Understanding
         </h2>
@@ -41,8 +41,8 @@ export default function Inclusivity() {
           is crucial for promoting inclusivity and respect for all individuals.
           Let&aposs delve into what sexual orientations and gender identities
           entail:
-        </p> */}
-        {/* <p id={"types-of-sexualities"}>Sexual Orientations:</p>
+        </p>
+        <p id={"types-of-sexualities"}>Sexual Orientations:</p>
         <ol>
           <li>
             Heterosexual (Straight): Individuals who are attracted to
@@ -64,8 +64,8 @@ export default function Inclusivity() {
             Asexual: Individuals who do not experience sexual attraction to
             anyone or have a lack of interest in sexual activities
           </li>
-        </ol> */}
-        {/* <p id={"gender-identities"}>Gender Identities:</p>
+        </ol>
+        <p id={"gender-identities"}>Gender Identities:</p>
         <ol>
           <li>
             Cisgender: Individuals whose gender identity aligns with the sex
@@ -109,7 +109,7 @@ export default function Inclusivity() {
           orientation or gender identity. It all starts with acknowledging the
           shared humanity that unites us and working towards a world that
           embraces empathy, understanding, and love for all
-        </p> */}
+        </p>
       </div>
       <div className={styles.article} id="pronouns">
         <h2>Pronouns</h2>

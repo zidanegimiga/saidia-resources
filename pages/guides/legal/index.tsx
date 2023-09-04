@@ -16,10 +16,12 @@ export default function Guides() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <Nav />
       <SideNav />
+
       <div className={styles.article} id="fines-cash-bails-and-bonds">
-        <h2>Fines, Cash bail, and Bonds</h2>
+        <h2>Fines, Cash Bails and Bonds</h2>
         <p>
           In the Kenyan context, fines, cash bail, and bonds are fundamental
           components of the legal system, each serving unique roles in legal
@@ -257,7 +259,9 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="uganda-antilaw">
-        <h2>Uganda Anti-LGBTQ Law</h2>
+        <h2>
+          Uganda&apos;s Anti-LGBTQ Law: A Struggle for Equality and Human Rights
+        </h2>
         <p>
           In recent years, Uganda has been at the center of international
           attention due to its controversial and deeply concerning Anti-LGBTQ
@@ -536,7 +540,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="changing-your-name-and-gender-marker">
-        <h2>How to change your name in Kenya</h2>
+        <h2>The Process of Changing your Name and Gender Marker</h2>
         <p>
           In Kenya, the process of legally changing one&apos;s name is governed
           by The Registration of Persons Act, The Births and Deaths Registration
@@ -996,8 +1000,9 @@ export default function Guides() {
           </p>
         </div>
       </div>
+
       <div className={styles.article} id="repeal-162">
-        <h2>What is Repeal 162?</h2>
+        <h2>Repeal 162</h2>
         <p>
           Repeal 162 refers to the campaign and advocacy efforts aimed at
           repealing Section 162 of the Kenyan Penal Code. Section 162
@@ -1465,6 +1470,7 @@ export default function Guides() {
           administering justice and resolving legal disputes within the country.
         </p>
       </div>
+
       <div className={styles.article} id="work-permits">
         <h2>Work Permits</h2>
         <p>
@@ -1625,6 +1631,7 @@ export default function Guides() {
           country.
         </p>
       </div>
+
       <div className={styles.article} id="reporting-a-case">
         <h2>Reporting a Case</h2>
         <p>
@@ -1727,8 +1734,9 @@ export default function Guides() {
           </p>
         </div>
       </div>
+
       <div className={styles.article} id="same-sex-marriage-not-possible">
-        <h2>Why can&apos;t people of the same sex get married in Kenya?</h2>
+        <h2>Why can&apos;t people of the same-sex get married in Kenya?</h2>
         <p>
           Same-sex marriage is not legally recognized in Kenya. The
           country&apos;s Marriage Act defines marriage as a union between a man

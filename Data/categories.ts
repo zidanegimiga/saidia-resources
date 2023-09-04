@@ -4,16 +4,16 @@ export const legal = [
     url: "/guides/legal/#fines-cash-bails-and-bonds",
   },
   {
-    title: "Obtain and Replace Your ID",
+    title: "How to obtain and replace your Identification Card",
     url: "/guides/legal/#id-replacement",
   },
   {
     title:
-      "Instances when police officers refuse to provide service",
+      "Understanding Police Service: Reasons for Potential Refusal and Delays",
     url: "/guides/legal/#understanding-police-service",
   },
   {
-    title: "How to report police misconduct",
+    title: "Reporting Police Misconduct in Kenya: Steps to File a Complaint",
     url: "/guides/legal/#reporting-police-misconduct",
   },
   {
@@ -21,7 +21,7 @@ export const legal = [
     url: "/guides/legal/#uganda-antilaw",
   },
   {
-    title: "Protesting in Kenya",
+    title: "Protesting",
     url: "/guides/legal/#protesting",
   },
   // {
@@ -36,12 +36,12 @@ export const legal = [
     title: "Repeal 162",
     url: "/guides/legal/#repeal-162",
   },
+  // {
+  //   title: "Lost ID Card",
+  //   url: "/guides/legal/#lost-id",
+  // },
   {
-    title: "Lost ID Card",
-    url: "/guides/legal/#lost-id",
-  },
-  {
-    title: "What to do when arrested",
+    title: "What happens when you have just been arrested in Kenya?",
     url: "/guides/legal/#when-arrested",
   },
   {
@@ -53,14 +53,14 @@ export const legal = [
     url: "/guides/legal/#reporting-a-case",
   },
   {
-    title: "Why same-sex marriage is not possible in Kenya",
+    title: "Why can't people of the same-sex get married in Kenya?",
     url: "/guides/legal/#same-sex-marriage-not-possible",
   },
 ];
 
 export const business = [
   {
-    title: "Empowering Careers: Acquiring Vocational Skills in Nairobi's Diverse Landscape",
+    title: "Vocational Skills in Kenya",
     url: "/guides/business/",
   },
   // {
@@ -130,7 +130,7 @@ export const events = [
 
 export const inclusivity = [
   {
-    title: "Learn more about  what LGBTQ+ means",
+    title: "Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and Understanding",
     url: "/guides/inclusivity/",
   },
   // {
@@ -162,13 +162,11 @@ export const inclusivity = [
   //   url: "/guides/inclusivity/#pronouns-gender-change-orgs",
   // },
   {
-    title:
-      "Discovering the Vibrant History of Ballroom Culture: A Safe Haven for the LGBTQ+ Community",
+    title: "Discovering the Vibranty History of Ballroom Culture",
     url: "/guides/inclusivity/#ballroom-culture",
   },
   {
-    title:
-      "Vigils: Celebrating LGBTQ+ lives",
+    title: "Vigils: Celebrating LGBTQ+ lives",
     url: "/guides/inclusivity/#vigils",
   },
 ];
@@ -178,39 +176,39 @@ export const selfCare = [
     title: "Self-care and Mindfulness",
     url: "/guides/self-care/",
   },
+  // {
+  //   title: "Mindfulness Exercises",
+  //   url: "/guides/self-care/#mindfulness-exercises",
+  // },
+  // {
+  //   title: "Relaxation techniques",
+  //   url: "/guides/self-care/#relaxation-techniques",
+  // },
+  // {
+  //   title: "Self-care Apps",
+  //   url: "/guides/self-care/#selfcare-apps",
+  // },
   {
-    title: "Mindfulness Exercises",
-    url: "/guides/self-care/#mindfulness-exercises",
-  },
-  {
-    title: "Relaxation techniques",
-    url: "/guides/self-care/#relaxation-techniques",
-  },
-  {
-    title: "Self-care Apps",
-    url: "/guides/self-care/#selfcare-apps",
-  },
-  {
-    title: "Group therapy sessions for the LGBTQ community",
+    title: "Group therapy sessions for the LGBTQ+ community",
     url: "/guides/self-care/#group-therapy",
   },
   {
     title: "Therapists in Kenya",
     url: "/guides/self-care/#finding-a-therapist",
   },
-  {
-    title: "How to know a therapist is queer-friendly",
-    url: "/guides/self-care/#queer-friendly-therapist",
-  },
-  {
-    title: "Organizations providing mental health support",
-    url: "/guides/self-care/#mental-health-support-orgs",
-  },
+  // {
+  //   title: "How to know a therapist is queer-friendly",
+  //   url: "/guides/self-care/#queer-friendly-therapist",
+  // },
+  // {
+  //   title: "Organizations providing mental health support",
+  //   url: "/guides/self-care/#mental-health-support-orgs",
+  // },
 ];
 
 export const eWaste = [
   {
-    title: "E-waste: Managing Electronic Waste for a Circular Economy in Kenya",
+    title: "Unravel the World of E-waste",
     url: "/guides/e-waste/",
   },
 ];

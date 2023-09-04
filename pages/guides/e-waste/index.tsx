@@ -23,9 +23,7 @@ export default function SelfCare() {
       <Nav />
       <SideNav />
       <div className={styles.article}>
-        <h2>
-          Unravel the world of e-waste
-        </h2>
+        <h2>Unravel the World of E-waste</h2>
         <p>
           E-waste, or electronic waste, is a term used to describe discarded
           electronic devices that have reached the end of their useful life, or
