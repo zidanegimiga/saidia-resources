@@ -175,10 +175,9 @@ export default function Events() {
             artistic experiences.
           </li>
           <li>
-            The Godown Arts Centre: Located in Nairobi&apos;s Industrial Area,
-            The Godown Arts Centre hosts art exhibitions, workshops,
-            performances, and cultural events. It aims to support and promote
-            contemporary African art.
+            The Godown Arts Centre: Located in Kilimani, The Godown Arts Centre
+            hosts art exhibitions, workshops, performances, and cultural events.
+            It aims to support and promote contemporary African art.
           </li>
           <li>
             One Off Contemporary Art Gallery: This gallery in Nairobi displays

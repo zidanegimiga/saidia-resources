@@ -16,7 +16,7 @@ export default function Guides() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <Nav />
       <SideNav />
 
@@ -81,6 +81,18 @@ export default function Guides() {
           <li>
             Eligibility: You must be a Kenyan citizen and at least 18 years old
             to apply for an ID.
+          </li>
+          <li>
+            Documents required:
+            <ul>
+              <li>Original birth certificate and a photocopy.</li>
+              <li>
+                If you are 18 years or older, a copy of your National Health
+                Insurance Fund (NHIF) card or a written confirmation from the
+                chief or assistant chief in your area.
+              </li>
+              <li>Two recent passport-sized photos</li>
+            </ul>
           </li>
           <li>
             Visit the Huduma Centre: Go to the nearest Huduma Centre, which is a
@@ -484,7 +496,7 @@ export default function Guides() {
           respect for diverse
         </p>
         <div id="activist-organizations">
-          <h2>Activists Organizations you can get support in Kenya </h2>
+          <h2>Activist Organizations where you can get support in Kenya</h2>
           <p>
             There are several activist organizations in Kenya that focus on
             various social, political, and human rights issues. Here are a few
@@ -590,7 +602,7 @@ export default function Guides() {
         </p>
 
         <h2>How do you write a deed poll?</h2>
-        <h2>To write a deed poll, follow these general steps:</h2>
+        <p>To write a deed poll, follow these general steps:</p>
 
         <ol>
           <li>
@@ -766,7 +778,7 @@ export default function Guides() {
           Registrar and to avoid potential rejection of the name change request.
         </p>
 
-        <h2>What are the consequences to changing your name?</h2>
+        <h2>What are the consequences of changing your name?</h2>
         <p>
           When you change your name, there can be several consequences that
           arise in various aspects of your life. Here are some common
@@ -818,7 +830,7 @@ export default function Guides() {
           provide you with specific guidance and assistance throughout the
           process.
         </p>
-        <p>How long does it take to change your name officially?</p>
+        <h2>How long does it take to change your name officially?</h2>
         <p>
           The duration to officially change your name can vary depending on
           various factors, including the legal requirements and procedures of
@@ -1667,7 +1679,7 @@ export default function Guides() {
             of lives lost within the queer community in recent years.
           </p>
           <p>
-            The Fear of Reporting: According to GLACK+, an LGBTQ+ rights
+            The Fear of Reporting: According to GALCK+, an LGBTQ+ rights
             organization in Kenya, a staggering 29% of LGBTQ+ individuals choose
             not to report assault cases. This hesitancy stems from the slow
             response of authorities and the fear of further harassment,
@@ -1681,7 +1693,7 @@ export default function Guides() {
             protection of human rights.
           </p>
           <p>
-            GLACK+&apos;s Disturbing Monthly Reports: GLACK+ receives an average
+            GALCK+&apos;s Disturbing Monthly Reports: GALCK+ receives an average
             of at least 10 reports of violence against LGBTQ+ individuals every
             month. These cases shed light on the pervasive nature of
             discrimination and violence faced by the queer community and the

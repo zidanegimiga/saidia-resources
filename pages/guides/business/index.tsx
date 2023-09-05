@@ -34,26 +34,28 @@ export default function Guides() {
           passions and career aspirations.
         </p>
         <p>
-          IVocational skills, also known as technical or job-specific skills,
-          are the essential abilities and knowledge directly related to a
-          specific occupation or trade. Unlike traditional academic education,
-          vocational skills are highly practical and enable individuals to
-          perform specific tasks or jobs effectively. These skills are acquired
-          through specialized training, education, or hands-on experience,
-          allowing you to become job-ready and industry-savvy.
+          Vocational skills, also known as technical or job-specific skills, are
+          the essential abilities and knowledge directly related to a specific
+          occupation or trade. Unlike traditional academic education, vocational
+          skills are highly practical and enable individuals to perform specific
+          tasks or jobs effectively. These skills are acquired through
+          specialized training, education, or hands-on experience, allowing you
+          to become job-ready and industry-savvy.
         </p>
         <p>
           Imagine mastering the art of wiring installations, electrical
-          troubleshooting, and understanding circuitry as an electrician. Or
+          troubleshooting, and understanding circuitry as an electrician, or
           honing your woodworking skills, mastering joinery techniques, and
-          confidently using power tools as a carpenter. Picture yourself
-          providing patient care, administering medications, and skillfully
-          dressing wounds as a compassionate and skilled nurse. As an automotive
-          technician, visualize confidently diagnosing vehicle issues, repairing
-          engines, and maintaining brake and electrical systems. If you are
-          creatively inclined, you can explore graphic design, becoming
-          proficient in graphic design software, layout design, typography,
-          color theory, and image editing.
+          confidently using power tools as a carpenter.Or honing your
+          woodworking skills, mastering joinery techniques, and confidently
+          using power tools as a carpenter. Picture yourself providing patient
+          care, administering medications, and skillfully dressing wounds as a
+          compassionate and skilled nurse. As an automotive technician,
+          visualize confidently diagnosing vehicle issues, repairing engines,
+          and maintaining brake and electrical systems. If you are creatively
+          inclined, you can explore graphic design, becoming proficient in
+          graphic design software, layout design, typography, color theory, and
+          image editing.
         </p>
         <p>
           For those with a passion for working with metals, welding skills such

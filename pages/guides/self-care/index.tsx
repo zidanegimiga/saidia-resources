@@ -75,11 +75,16 @@ export default function SelfCare() {
             to a friend. Practice positive self-talk and embrace
             self-acceptance.
           </li>
-          <li></li>
           <li>
             Limit Screen Time: Set boundaries on the amount of time you spend on
             electronic devices, social media, and watching screens. Take breaks
             from technology and engage in activities that do not involve screens
+          </li>
+          <li>
+            Seek Support: Don&apos;t hesitate to reach out for professional help
+            or support when needed. Therapists, counselors, or support groups
+            can provide guidance and a safe space for exploring your emotions
+            and concerns.
           </li>
         </ol>
         <p>
@@ -224,7 +229,7 @@ export default function SelfCare() {
           </p>
         </div>
         <div>
-          <h2>Finding Inner Calm</h2>
+          <h2>Practical Relaxation Exercise: Finding Inner Calm</h2>
           <p>Duration: 10 minutes</p>
           <p>
             Introduction: &quot;Welcome to this guided meditation session.
@@ -365,16 +370,16 @@ export default function SelfCare() {
           </li>
           <li>
             Gay and Lesbian Coalition of Kenya (GALCK): GALCK is a prominent
-            LGBTQIA+ advocacy organization in Kenya. They collaborate with
+            LGBTQ+ advocacy organization in Kenya. They collaborate with
             mental health professionals to offer group therapy sessions and
-            support groups for LGBTQIA+ individuals seeking a safe space to
+            support groups for LGBTQ+ individuals seeking a safe space to
             share their experiences and receive guidance.
           </li>
           <li>
             AFRA Kenya focuses on several key areas, including advocacy, the
             creation of safe spaces, feminism, and healing. Through their
             advocacy efforts, they work to advance the rights and well-being of
-            individuals within the LGBTQIA+ community in Kenya. They also
+            individuals within the LGBTQ+ community in Kenya. They also
             prioritize the establishment of safe spaces where individuals can
             freely express themselves, share experiences, and find support.
           </li>
