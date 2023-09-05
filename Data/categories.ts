@@ -4,7 +4,7 @@ export const legal = [
     url: "/guides/legal/#fines-cash-bails-and-bonds",
   },
   {
-    title: "How to obtain and replace your Identification Card",
+    title: "Obtaining and Replacing your Identification Card",
     url: "/guides/legal/#id-replacement",
   },
   {

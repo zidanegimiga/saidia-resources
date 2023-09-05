@@ -271,7 +271,7 @@ export default function Guides() {
             <li> Company Limited by guarantee: 10,000ksh</li>
             <li> Limited Liability Partnership: 25,000ksh</li>
           </ol>
-
+          <br/>
           <p>
             Business Structure: Decide on the most suitable business structure
             for your venture, such as a sole proprietorship, partnership,
@@ -383,6 +383,8 @@ export default function Guides() {
               partnership.
             </li>
           </ul>
+
+          <br/>
 
           <p>
             Permits and Licenses: Licenses:To conduct any business in Kenya you
@@ -659,6 +661,8 @@ export default function Guides() {
               management services.
             </li>
           </ol>
+
+          <br/>
 
           <p>
             It is important to carefully consider factors such as account fees,
