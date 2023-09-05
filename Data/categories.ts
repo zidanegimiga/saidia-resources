@@ -8,16 +8,15 @@ export const legal = [
     url: "/guides/legal/#id-replacement",
   },
   {
-    title:
-      "Understanding Police Service: Reasons for Potential Refusal and Delays",
+    title: "Instances when police officers refuse to provide services",
     url: "/guides/legal/#understanding-police-service",
   },
   {
-    title: "Reporting Police Misconduct in Kenya: Steps to File a Complaint",
+    title: "How to report police misconduct",
     url: "/guides/legal/#reporting-police-misconduct",
   },
   {
-    title: "Uganda's Anti-LGBTQ Law: A Struggle for Equality and Human Rights",
+    title: "Uganda's Anti-LGBTQ Law",
     url: "/guides/legal/#uganda-antilaw",
   },
   {
@@ -103,8 +102,7 @@ export const organizations = [
   //   url: "/guides/organizations/#violence-statistics",
   // },
   {
-    title:
-      "Audrey's Journey",
+    title: "Audrey's Journey",
     url: "/guides/organizations/#audrey",
   },
 ];
@@ -130,7 +128,8 @@ export const events = [
 
 export const inclusivity = [
   {
-    title: "Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and Understanding",
+    title:
+      "Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and Understanding",
     url: "/guides/inclusivity/",
   },
   // {
