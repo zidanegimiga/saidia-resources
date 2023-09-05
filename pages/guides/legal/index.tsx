@@ -74,7 +74,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="id-replacement">
-        <h2>How to Obtain and Replace Your Identification Card</h2>
+        <h2>Obtaining and Replacing Your Identification Card</h2>
 
         <p>To get an ID (Identification Card) in Kenya, follow these steps:</p>
         <ol>
@@ -164,9 +164,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="understanding-police-service">
-        <h2>
-          Understanding Police Service: Reasons for Potential Refusal and Delays{" "}
-        </h2>
+        <h2>Instances when police officers refuse to provide services </h2>
         <p>
           As a young adult, it&apos;s essential to understand that while police
           officers have a vital role in serving and protecting the community,
@@ -232,7 +230,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="reporting-police-misconduct">
-        <h2>Reporting Police Misconduct in Kenya: Steps to File a Complaint</h2>
+        <h2>How to report police misconduct</h2>
         <p>
           In Kenya, if you wish to file a complaint regarding police misconduct,
           you can follow these steps:
@@ -271,9 +269,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="uganda-antilaw">
-        <h2>
-          Uganda&apos;s Anti-LGBTQ Law: A Struggle for Equality and Human Rights
-        </h2>
+        <h2>Uganda's Anti-LGBTQ Law</h2>
         <p>
           In recent years, Uganda has been at the center of international
           attention due to its controversial and deeply concerning Anti-LGBTQ
