@@ -230,7 +230,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="reporting-police-misconduct">
-        <h2>How to report police misconduct</h2>
+        <h2>How to Report Police Misconduct</h2>
         <p>
           In Kenya, if you wish to file a complaint regarding police misconduct,
           you can follow these steps:
@@ -269,7 +269,7 @@ export default function Guides() {
       </div>
 
       <div className={styles.article} id="uganda-antilaw">
-        <h2>Uganda's Anti-LGBTQ Law</h2>
+        <h2>Uganda&apos;s Anti-LGBTQ Law</h2>
         <p>
           In recent years, Uganda has been at the center of international
           attention due to its controversial and deeply concerning Anti-LGBTQ
@@ -512,7 +512,7 @@ export default function Guides() {
               community empowerment.
             </li>
             <li>
-              African Women&aposs Development and Communication Network
+              African Women&apos;s Development and Communication Network
               (FEMNET): FEMNET is a pan-African feminist organization that
               advocates for gender equality, women&apos;s rights, and social
               justice. They work to amplify the voices of women and girls across

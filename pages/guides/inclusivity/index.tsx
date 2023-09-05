@@ -23,10 +23,7 @@ export default function Inclusivity() {
       <Nav />
       <SideNav />
       <div className={styles.article} id="">
-        <h2>
-          Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and
-          Understanding
-        </h2>
+        <h2>Learn more about what LGBTQ+ means</h2>
         <p>
           The LGBTQ+ community encompasses a beautiful array of identities, each
           contributing a unique and valuable human experience. From Lesbians and
@@ -378,10 +375,7 @@ export default function Inclusivity() {
         </p>
       </div>
       <div className={styles.article} id="vigils">
-        <h2>
-          Vigils: Celebrating Life and Honoring the Lives of Kenyans in the
-          LGBTQ+ Community
-        </h2>
+        <h2>Vigils: Celebrating LGBTQ+ Lives</h2>
         <p>
           Vigils hold a significant place in the hearts of the LGBTQ+ community
           in Kenya and across the world. These gatherings serve as powerful

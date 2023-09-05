@@ -233,6 +233,7 @@ export default function Guides() {
             your objectives, target market, products or services, marketing
             strategies, and financial projections
           </p>
+          
           <p>
             Business Name and Registration: To register your name you can visit
             any Huduma Center or use the e-Citizen portal. Conduct a business
@@ -255,18 +256,22 @@ export default function Guides() {
             business status, once your business is registered you will receive a
             certificate of incorporation.
           </p>
+
           <p>
             The fees for registering a business in Kenya will cost between
             950-25,000ksh(as at 2023), the costs of business registration are as
             follows:
           </p>
+
           <ol>
             <li>Registration of Business name: 950ksh</li>
             <li> Private Limited Company: 10,650ksh</li>
             <li> Public Limited Company: 10,650ksh</li>
+            <li> Unlimited Companies: 20,050ksh</li>
             <li> Company Limited by guarantee: 10,000ksh</li>
             <li> Limited Liability Partnership: 25,000ksh</li>
           </ol>
+
           <p>
             Business Structure: Decide on the most suitable business structure
             for your venture, such as a sole proprietorship, partnership,
@@ -276,6 +281,7 @@ export default function Guides() {
             entities, each with its own characteristics and implications. Here
             is a brief explanation of the differences:
           </p>
+
           <ol>
             <li>
               Sole Proprietorship Business Name Registration:
@@ -353,6 +359,9 @@ export default function Guides() {
               </ul>
             </li>
           </ol>
+
+          <br />
+
           <ul>
             Key Differences:
             <li>
@@ -392,7 +401,7 @@ export default function Guides() {
             permit is valid for one calendar year.
           </p>
 
-          <ol>
+          {/* <ol>
             <li>
               Trade License:
               <ul>
@@ -456,7 +465,8 @@ export default function Guides() {
                 </li>
               </ul>
             </li>
-          </ol>
+          </ol> */}
+
           <p>
             Tax Obligations: Register for tax obligations with the Kenya Revenue
             Authority (KRA). This typically involves obtaining a Personal
@@ -468,6 +478,7 @@ export default function Guides() {
             applicable laws. Here are the general percentages for the common
             taxes:
           </p>
+
           <ol>
             <li>
               Pay As You Earn (PAYE):
@@ -499,6 +510,7 @@ export default function Guides() {
               </p>
             </li>
           </ol>
+
           <p>
             It is important to note that tax regulations and rates may be
             subject to change, so it is recommended to consult the latest tax
@@ -697,6 +709,14 @@ export default function Guides() {
               benefits.
             </li>
             <li>
+              National Health Insurance Fund (NHIF) is responsible for providing
+              medical insurance cover to all its members  and their declared
+              dependents. NHIF membership is open to all Kenyans aged 18 years
+              and older, it is mandatory for all formal employers to register
+              with NHIF and to deduct employees’ contributions to the fund every
+              month.
+            </li>
+            <li>
               Employee Benefits: Kenya has various statutory benefits and
               employee entitlements. These include annual leave, sick leave,
               maternity leave, and public holidays. The law defines the minimum
@@ -816,8 +836,8 @@ export default function Guides() {
                 </li>
                 <li>Passport-size Photos: Usually two or three photos.</li>
                 <li>
-                  Tax Identification Number (TIN): You may need to provide your
-                  TIN if you have one.
+                  Tax Personal Identification Number (TIN): You may need to
+                  provide your TIN if you have one.
                 </li>
               </ul>
             </li>
@@ -992,6 +1012,13 @@ export default function Guides() {
             for entrepreneurs and business start-ups:
           </p>
           <ol>
+            <li>
+              Equity Bank: Equity Bank has a reputation for supporting small and
+              medium- sized enterprises (SMEs) and offering customized banking
+              solutions for business start-ups. They provide business loans,
+              business accounts, and other financial products and services
+              specifically designed for entrepreneurs.
+            </li>
             <li>
               KCB Bank: KCB Bank has a dedicated department that focuses on
               serving SMEs and start-up businesses. They offer business

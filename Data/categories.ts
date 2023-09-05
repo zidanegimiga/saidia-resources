@@ -128,8 +128,7 @@ export const events = [
 
 export const inclusivity = [
   {
-    title:
-      "Embracing Diversity in the LGBTQ+ Community: A Journey of Empathy and Understanding",
+    title: "Learn more about what LGBTQ+ means",
     url: "/guides/inclusivity/",
   },
   // {

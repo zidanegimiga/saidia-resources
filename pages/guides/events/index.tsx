@@ -23,9 +23,7 @@ export default function Events() {
       <Nav />
       <SideNav />
       <div className={styles.article} id="inclusive-events">
-        <h2>
-          Embracing LGBTQ+ Inclusivity: Fun Events and Activities in Kenya
-        </h2>
+        <h2>Queer-friendly events you can attend</h2>
         <p>
           In recent years, there has been a growing acceptance and recognition
           of the LGBTQ+ community in Kenya, leading to the emergence of
@@ -77,6 +75,19 @@ export default function Events() {
             build networks, enhance skills, and create a supportive community
             environment. Uzima Camp serves as a platform for personal growth and
             empowerment within the LGBTQ+ community.
+          </li>
+          <li>
+            Podcasts: Podcasts such as Blooms in the Dark, The Spread, and
+            Channelke also provide platforms for discussions about sexuality,
+            gender and sexual expression. Blooms in the Dark (a podcast by
+            Creatives Garage) is a collection of short, fictional stories about
+            various individuals&apos; experiences navigating the challenges they face
+            as a result of their sexual orientation or gender identity. The
+            Spread is a podcast hosted by Kaz that offers sexual education for
+            everyone regardless of their sexual orientation or gender identity.
+            Channelke is a podcast that was started by @magicdyke to teach her
+            audience about drag as a tool of liberation and encourage them to be
+            proud of their sexual orientation.
           </li>
         </ol>
         <p>

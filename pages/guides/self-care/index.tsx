@@ -23,10 +23,7 @@ export default function SelfCare() {
       <Nav />
       <SideNav />
       <div className={styles.article}>
-        <h2>
-          A collection of self-care strategies, mindfulness exercises, and
-          relaxation techniques to support emotional well-being and balance.
-        </h2>
+        <h2>Self-care and Mindfulness</h2>
         <p>
           Self-care is essential for maintaining overall well-being and managing
           stress. Here are some self-care strategies that can be helpful:
@@ -370,10 +367,10 @@ export default function SelfCare() {
           </li>
           <li>
             Gay and Lesbian Coalition of Kenya (GALCK): GALCK is a prominent
-            LGBTQ+ advocacy organization in Kenya. They collaborate with
-            mental health professionals to offer group therapy sessions and
-            support groups for LGBTQ+ individuals seeking a safe space to
-            share their experiences and receive guidance.
+            LGBTQ+ advocacy organization in Kenya. They collaborate with mental
+            health professionals to offer group therapy sessions and support
+            groups for LGBTQ+ individuals seeking a safe space to share their
+            experiences and receive guidance.
           </li>
           <li>
             AFRA Kenya focuses on several key areas, including advocacy, the
@@ -406,7 +403,7 @@ export default function SelfCare() {
         </p>
       </div>
       <div className={styles.article} id={"finding-a-therapist"}>
-        <h2>Therapist in Kenya</h2>
+        <h2>Therapists in Kenya</h2>
         <p>
           To find a therapist that works for you, you can follow these steps:
         </p>
