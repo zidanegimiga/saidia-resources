@@ -233,7 +233,7 @@ export default function Guides() {
             your objectives, target market, products or services, marketing
             strategies, and financial projections
           </p>
-          
+
           <p>
             Business Name and Registration: To register your name you can visit
             any Huduma Center or use the e-Citizen portal. Conduct a business
@@ -287,7 +287,7 @@ export default function Guides() {
               Sole Proprietorship Business Name Registration:
               <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
                 <li>
-                  ISole proprietorship is the simplest and most common form of
+                  Sole proprietorship is the simplest and most common form of
                   business ownership.
                 </li>
                 <li>
@@ -802,6 +802,7 @@ export default function Guides() {
               licenses, permits, and industry-specific reporting obligations.
             </li>
           </ol>
+
           <p>
             It is important to note that the specific requirements and timelines
             may vary based on the type of business entity (e.g., company,
