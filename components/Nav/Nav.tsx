@@ -38,48 +38,52 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <div
-          className={styles.navOverlay}
-          style={{
-            top: navOpen ? "0" : "-1100%",
-            transitionDelay: navOpen ? "0s" : "0s",
-          }}
-        >
-          <ul className={styles.navLinks}>
-            <li className={styles.navItem}>
-              <Link href={"/"}>HOME</Link>
-              <div className={styles.navItemWrapper}></div>
-            </li>
-            <li className={styles.navItem}>
-              <Link href={"/guides"}>GUIDES & RESOURCES</Link>
-              <div className={styles.navItemWrapper}></div>
-            </li>
-            <li className={styles.navItem}>
-              <Link href={"/about"}>ABOUT THE GAME</Link>
-              <div className={styles.navItemWrapper}></div>
-            </li>
-            <li className={styles.navItem}>
-              <Link href={"/about-us"}>CREATIVES GARAGE</Link>
-              <div className={styles.navItemWrapper}></div>
-            </li>
-            <li className={styles.navItem}>
-              <Link href={"/credits"}>GAME CREDITS</Link>
-              <div className={styles.navItemWrapper}></div>
-            </li>
-          </ul>
-          <div className={styles.navFooter}>
-            <div className={styles.footerItem}>
-              <span>
-                <Link href={"/privacy-policy"}>Privacy Policy</Link>
-              </span>
-            </div>
-            <div className={styles.footerItem}>
-              <span>
-                <Link href={"/terms-and-conditions"}>Terms and Conditions</Link>
-              </span>
+        {navOpen && (
+          <div
+            className={styles.navOverlay}
+            style={{
+              // top: navOpen ? "0" : "-1100%",
+              transitionDelay: navOpen ? "0s" : "0s",
+            }}
+          >
+            <ul className={styles.navLinks}>
+              <li className={styles.navItem}>
+                <Link href={"/"}>HOME</Link>
+                <div className={styles.navItemWrapper}></div>
+              </li>
+              <li className={styles.navItem}>
+                <Link href={"/guides"}>GUIDES & RESOURCES</Link>
+                <div className={styles.navItemWrapper}></div>
+              </li>
+              <li className={styles.navItem}>
+                <Link href={"/about"}>ABOUT THE GAME</Link>
+                <div className={styles.navItemWrapper}></div>
+              </li>
+              <li className={styles.navItem}>
+                <Link href={"/about-us"}>CREATIVES GARAGE</Link>
+                <div className={styles.navItemWrapper}></div>
+              </li>
+              <li className={styles.navItem}>
+                <Link href={"/credits"}>GAME CREDITS</Link>
+                <div className={styles.navItemWrapper}></div>
+              </li>
+            </ul>
+            <div className={styles.navFooter}>
+              <div className={styles.footerItem}>
+                <span>
+                  <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                </span>
+              </div>
+              <div className={styles.footerItem}>
+                <span>
+                  <Link href={"/terms-and-conditions"}>
+                    Terms and Conditions
+                  </Link>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
