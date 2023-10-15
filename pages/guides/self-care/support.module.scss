@@ -15,7 +15,7 @@
 .article {
     margin-left: 22%;
     color: black;
-    background: rgba(233, 231, 215, 0.69);
+    // background: rgba(233, 231, 215, 0.69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
@@ -27,13 +27,15 @@
 
     h2 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 28px;
         margin-top: 24px;
         margin-bottom: 8px;
     }
 
     ol {
         margin-top: 16px;
+        background: #e9e7d788;
+        padding: 24px;
     }
 
     li {
@@ -44,6 +46,6 @@
 
     @media (max-width: 452px) {
         width: 100%;
-        margin-left: 0px;
+        margin-left: 16px;
     }
 }
