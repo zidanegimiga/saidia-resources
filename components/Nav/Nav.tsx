@@ -41,7 +41,7 @@ const Nav = () => {
         <div
           className={styles.navOverlay}
           style={{
-            top: navOpen ? "0" : "-100%",
+            top: navOpen ? "0" : "-1100%",
             transitionDelay: navOpen ? "0s" : "0s",
           }}
         >
