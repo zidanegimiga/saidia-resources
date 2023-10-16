@@ -3,8 +3,10 @@ import styles from "./legal.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import SideNav from "@/components/SideNav";
+import useHashChange from "@/hooks/useHashChange";
 
 export default function Guides() {
+  const activeSection = useHashChange();
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -20,7 +22,7 @@ export default function Guides() {
       <Nav />
       <SideNav />
 
-      <div className={styles.article} id="fines-cash-bails-and-bonds">
+      <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Fines, Cash Bails and Bonds</h2>
         <p>
           In the Kenyan context, fines, cash bail, and bonds are fundamental
@@ -73,7 +75,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="id-replacement">
+      <div className={styles.article} id="id-replacement" style={{ display: activeSection === "id-replacement" ? "block" : "none" }}>
         <h2>Obtaining and Replacing Your Identification Card</h2>
 
         <p>To get an ID (Identification Card) in Kenya, follow these steps:</p>
@@ -163,7 +165,7 @@ export default function Guides() {
         </ol>
       </div>
 
-      <div className={styles.article} id="understanding-police-service">
+      <div className={styles.article} id="understanding-police-service" style={{ display: activeSection === "understanding-police-service" ? "block" : "none" }}>
         <h2>Instances when police officers refuse to provide services </h2>
         <p>
           As a young adult, it&apos;s essential to understand that while police
@@ -229,7 +231,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="reporting-police-misconduct">
+      <div className={styles.article} id="reporting-police-misconduct" style={{ display: activeSection === "reporting-police-misconduct" ? "block" : "none" }}>
         <h2>How to Report Police Misconduct</h2>
         <p>
           In Kenya, if you wish to file a complaint regarding police misconduct,
@@ -268,7 +270,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="uganda-antilaw">
+      <div className={styles.article} id="uganda-antilaw" style={{ display: activeSection === "uganda-antilaw" ? "block" : "none" }}>
         <h2>Uganda&apos;s Anti-LGBTQ Law</h2>
         <p>
           In recent years, Uganda has been at the center of international
@@ -357,7 +359,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="protesting">
+      <div className={styles.article} id="protesting" style={{ display: activeSection === "protesting" ? "block" : "none" }}>
         <h2>Protesting</h2>
         <p>
           Protesting is a powerful form of expression and collective action that
@@ -547,7 +549,7 @@ export default function Guides() {
         </div>
       </div>
 
-      <div className={styles.article} id="changing-your-name-and-gender-marker">
+      <div className={styles.article} id="changing-your-name-and-gender-marker" style={{ display: activeSection === "changing-your-name-and-gender-marker" ? "block" : "none" }}>
         <h2>The Process of Changing your Name and Gender Marker</h2>
         <p>
           In Kenya, the process of legally changing one&apos;s name is governed
@@ -1009,7 +1011,7 @@ export default function Guides() {
         </div>
       </div>
 
-      <div className={styles.article} id="repeal-162">
+      <div className={styles.article} id="repeal-162" style={{ display: activeSection === "repeal-162" ? "block" : "none" }}>
         <h2>Repeal 162</h2>
         <p>
           Repeal 162 refers to the campaign and advocacy efforts aimed at
@@ -1286,7 +1288,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="when-arrested">
+      <div className={styles.article} id="when-arrested" style={{ display: activeSection === "when-arrested" ? "block" : "none" }}>
         <h2>What happens when you have just been arrested in Kenya?</h2>
         <p>
           When a person is arrested in Kenya, they have certain rights protected
@@ -1479,7 +1481,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="work-permits">
+      <div className={styles.article} id="work-permits" style={{ display: activeSection === "work-permits" ? "block" : "none" }}>
         <h2>Work Permits</h2>
         <p>
           Obtaining a work permit in Kenya is necessary for individuals who wish
@@ -1640,7 +1642,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="reporting-a-case">
+      <div className={styles.article} id="reporting-a-case" style={{ display: activeSection === "reporting-a-case" ? "block" : "none" }}>
         <h2>Reporting a Case</h2>
         <p>
           When reporting an incident to the police, it&apos;s important to
@@ -1743,7 +1745,7 @@ export default function Guides() {
         </div>
       </div>
 
-      <div className={styles.article} id="same-sex-marriage-not-possible">
+      <div className={styles.article} id="same-sex-marriage-not-possible" style={{ display: activeSection === "same-sex-marriage-not-possible" ? "block" : "none" }}>
         <h2>Why can&apos;t people of the same-sex get married in Kenya?</h2>
         <p>
           Same-sex marriage is not legally recognized in Kenya. The

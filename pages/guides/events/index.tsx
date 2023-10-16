@@ -7,8 +7,10 @@ import { setOriginalNode } from "typescript";
 import { legal, business } from "@/Data/categories";
 import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
+import useHashChange from "@/hooks/useHashChange";
 
 export default function Events() {
+  const activeSection = useHashChange();
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -22,7 +24,7 @@ export default function Events() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} id="inclusive-events">
+      <div className={styles.article} id="inclusive-events" style={{ display: activeSection === "inclusive-events" ? "block" : "none" }}>
         <h2>Queer-friendly events you can attend</h2>
         <p>
           In recent years, there has been a growing acceptance and recognition
@@ -105,7 +107,7 @@ export default function Events() {
           attending or participating
         </p>
       </div>
-      <div className={styles.article} id="fun-things-to-do">
+      <div className={styles.article} id="fun-things-to-do" style={{ display: activeSection === "fun-things-to-do" ? "block" : "none" }}>
         <h2>Fun things to do in Nairobi</h2>
         <p>
           There are plenty of fun activities to do in Nairobi. Here are some

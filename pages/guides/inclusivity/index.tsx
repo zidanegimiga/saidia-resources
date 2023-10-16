@@ -7,8 +7,10 @@ import { setOriginalNode } from "typescript";
 import { legal, business } from "@/Data/categories";
 import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
+import useHashChange from "@/hooks/useHashChange";
 
 export default function Inclusivity() {
+  const activeSection = useHashChange();
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -22,7 +24,7 @@ export default function Inclusivity() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} id="">
+      <div className={styles.article} id="" style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Learn more about what LGBTQ+ means</h2>
         <p>
           The LGBTQ+ community encompasses a beautiful array of identities, each
@@ -108,7 +110,7 @@ export default function Inclusivity() {
           embraces empathy, understanding, and love for all
         </p>
       </div>
-      <div className={styles.article} id="pronouns">
+      <div className={styles.article} id="pronouns" style={{ display: activeSection === "pronouns" ? "block" : "none" }}>
         <h2>Pronouns</h2>
         <p>
           People&apos;s pronouns are the pronouns they prefer to be addressed
@@ -306,7 +308,7 @@ export default function Inclusivity() {
           </ol>
         </div>
       </div>
-      <div className={styles.article} id="ballroom-culture">
+      <div className={styles.article} id="ballroom-culture" style={{ display: activeSection === "ballroom-culture" ? "block" : "none" }}>
         <h2>
           Discovering the Vibrant History of Ballroom Culture: A Safe Haven for
           the LGBTQ+ Community
@@ -374,7 +376,7 @@ export default function Inclusivity() {
           society for everyone.
         </p>
       </div>
-      <div className={styles.article} id="vigils">
+      <div className={styles.article} id="vigils" style={{ display: activeSection === "vigils" ? "block" : "none" }}>
         <h2>Vigils: Celebrating LGBTQ+ Lives</h2>
         <p>
           Vigils hold a significant place in the hearts of the LGBTQ+ community

@@ -7,8 +7,10 @@ import { setOriginalNode } from "typescript";
 import { legal, business } from "@/Data/categories";
 import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
+import useHashChange from "@/hooks/useHashChange";
 
 export default function SelfCare() {
+  const activeSection = useHashChange();
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -22,7 +24,7 @@ export default function SelfCare() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article}>
+      <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Unravel the World of E-waste</h2>
         <p>
           E-waste, or electronic waste, is a term used to describe discarded

@@ -7,8 +7,10 @@ import { setOriginalNode } from "typescript";
 import { legal, business } from "@/Data/categories";
 import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
+import useHashChange from "@/hooks/useHashChange";
 
 export default function Guides() {
+  const activeSection = useHashChange();
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -22,7 +24,7 @@ export default function Guides() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article}>
+      <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Vocational Skills in Kenya</h2>
         <p>
           In Nairobi, the bustling capital city of Kenya, the opportunity to

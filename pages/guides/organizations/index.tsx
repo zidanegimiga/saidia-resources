@@ -3,8 +3,10 @@ import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import SideNav from "@/components/SideNav";
+import useHashChange from "@/hooks/useHashChange";
 
 const Support = () => {
+  const activeSection = useHashChange();
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -19,7 +21,7 @@ const Support = () => {
       <Nav />
       <SideNav />
       <div className={styles.article}>
-        <h2 id="organisations-supporting-the-lgbtq"> Organizations supporting the Kenyan LGBTQ+ community </h2>
+        <h2 id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "" ? "block" : "none" }}> Organizations supporting the Kenyan LGBTQ+ community </h2>
         <p>
           These organizations play a crucial role in promoting inclusivity,
           advocating for equal rights, and providing support to LGBTQ+
@@ -174,7 +176,7 @@ const Support = () => {
           </li>
         </ol>
       </div>
-      <div className={styles.article} id={"audrey"}>
+      <div className={styles.article} id={"audrey"} style={{ display: activeSection === "audrey" ? "block" : "none" }}>
         <h2>
           Audrey&apos;s Journey: Breaking Barriers for Transgender Rights in
           Kenya
