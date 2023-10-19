@@ -1,10 +1,8 @@
 .pageWrapper {
-    // background-image: url('../../../public/homepageBg.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-color: #1e2832;
     min-height: 100vh;
     padding-top: 48px;
-    padding-right: 64px;
+    padding-right: 80px;
 
     @media (max-width: 452px) {
         padding-right: 16px;
@@ -15,34 +13,83 @@
 .article {
     margin-left: 22%;
     color: black;
-    background: rgba(233, 231, 215, 0.69);
+    // background: rgba(233, 231, 215, 0.69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
 
-    p {
-        font-size: 16px;
-        margin-top: 16px;
-    }
-
     h2 {
-        font-weight: 500;
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 48px;
         margin-top: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        color: #3184d6;
+    }
+
+    ul {
+        list-style: none;
+        display: grid
+    }
+
+    p{
         margin-bottom: 8px;
-    }
-
-    ol {
-        margin-top: 16px;
-    }
-
-    li {
-        font-size: 16px;
-        margin-left: 12px;
+        color: rgb(231, 231, 231);
+        font-size: 18px;
     }
 
     @media (max-width: 452px) {
         width: 100%;
         margin-left: 0px;
+    }
+}
+
+.articleDescription {
+    font-size: 18px;
+    margin-top: 16px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    line-height: 146%;
+    color: #d9e8f7;
+    font-weight: 400;
+    padding: 48px
+}
+
+.organizationsContainer {
+    padding: 24px;
+}
+
+.organizationContainerTopCorners {
+    padding: 32px;
+    background-image: url("./../../../public/topCorner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.organizationContainerBottomCorners {
+    padding: 32px;
+    background-image: url("./../../../public/bottomCorners.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+.organization {
+    width: 100%;
+    height: auto;
+    padding: 28px;
+    border-radius: 8px;
+    color: white;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 24px;
+    }
+
+    .contacts{
+        margin-top: 8px;
     }
 }

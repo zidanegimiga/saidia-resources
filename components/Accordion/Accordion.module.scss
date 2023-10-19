@@ -1,15 +1,13 @@
 .accordionWrapper {
     padding: 16px;
-    color: black;
+    color: #fff9f9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: solid 1px black;
     margin-top: 8px;
-    background-color: #f0ebe1;
+    background-color: #1e2b38;
     height: fit-content;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 
     &:hover {
-        background-color: #f0e3ca;
     }
 }
 
@@ -24,11 +22,12 @@
         font-size: 20px;
         font-weight: 500;
         transition: all 0.2s ease-in;
+        color: white
     }
 
     &:hover {
         p {
-            color: #53CD9C;
+            font-weight: 600;
         }
     }
 }
@@ -40,8 +39,8 @@
 }
 
 .accordionHeaderTitle {
-    font-size: 18px;
-    color: #242424;
+    font-size: 20px;
+    color: #ffffff;
 
     &:hover {
         color: #53CD9C;
