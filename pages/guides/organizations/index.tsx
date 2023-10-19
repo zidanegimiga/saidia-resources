@@ -33,7 +33,7 @@ const Support = () => {
             founded in 2008. They work towards creating an enabling environment
             for LGBTQ+ individuals and the general population to thrive in
             Kenya.<br/>
-            <em>info@pemakenya.org</em>
+            <em>info@pemakenya.org</em> <br />
           </li>
           <li>
             GALCK+ (Gay and Lesbian Coalition of Kenya): GALCK+ is the national
@@ -41,7 +41,7 @@ const Support = () => {
             bridge the gap between the general population and the LGBTQ+
             community through alliances and relationships with government
             institutions and civil society organizations. <br/>
-            <em>+254 202 426 060</em>
+            <em>+254 202 426 060</em> <br />
           </li>
           <li>
             NGLHRC (National Gay and Lesbian Human Rights Commission): NGLHRC
@@ -50,14 +50,14 @@ const Support = () => {
             discrimination based on sexual orientation and gender identity,
             aiming to protect the human rights of LGBTQ+ individuals.<br/>
             <strong>+254 792 400 528</strong><br/>
-            <strong>+254 700 010 815</strong>
+            <strong>+254 700 010 815</strong> <br />
           </li>
           <li>
             Jinsiangu Kenya: Jinsiangu is an organization established in 2012
             that focuses on creating safe spaces and enhancing the well-being of
             intersex, transgender, and gender non-conforming individuals in
             Kenya.<br/>
-            <strong>jinsiangu@gmail.com</strong>
+            <strong>jinsiangu@gmail.com</strong> <br />
           </li>
           <li>
             Q-Initiative: Q-Initiative was founded in 2010 by lesbian, gay, and
@@ -72,7 +72,7 @@ const Support = () => {
             on empowering young women and gender non-conforming individuals in
             exercising their rights, particularly in producing and accessing
             critical information on gender and sexuality.<br/>
-            <a href="https//twitter.com/queerhive_kenya" target="_blank"><strong>Twitter profile</strong></a>
+            <a href="https//twitter.com/queerhive_kenya" target="_blank"><strong>Twitter profile</strong></a> <br />
           </li>
           <li>
             LEHA (Lesbian, Bisexual, and Queer Activists): LEHA was formed in
@@ -87,27 +87,27 @@ const Support = () => {
             in sexual and reproductive health, legal issues, and economic
             empowerment for sexual and gender minorities in South Coast and
             Kwale County<br />
-            <strong>+254 020 2426 060</strong>
+            <strong>+254 020 2426 060</strong> <br />
           </li>
           <li>
             Ishtar MSM: Ishtar MSM is a lobby and advocacy platform for men who
             have sex with men (MSM) in Kenya. They focus on advancing sexual
             health, providing service delivery, community development, and
             research for MSM in the country.<br />
-            <a href="https//ishtarmsm.org" target="_blank"><strong>Ishtar Website</strong></a>
+            <a href="https//ishtarmsm.org" target="_blank"><strong>Ishtar Website</strong></a> <br />
           </li>
           <li>
             Talanta Africa: Talanta Africa is a network of artists and activists
             who use art, culture, media, and technology to amplify the voices of
             LGBTQI+ individuals and youth.<br/>
-            <strong><a href="hello@talanta-africa.org" target="_blank" type="email">Email address</a></strong>
+            <strong><a href="hello@talanta-africa.org" target="_blank" type="email">Email address</a></strong> <br />
           </li>
           <li>
             HOYMAS (Health Options for Young Men on HIV/AIDS/STI): HOYMAS,
             founded in 2009, is a community-based organization that serves male
             sex workers and young men, providing knowledge on safe sex,
             preventive materials, general information, and economic empowerment.<br />
-            <strong><a href="info@hoymaskenya.or.ke" target="_blank" type="email">Email address</a></strong>
+            <strong><a href="info@hoymaskenya.or.ke" target="_blank" type="email">Email address</a></strong> <br />
           </li>
           <li>
             LBTQ (CBO) Western Kenya LBQT Feminist Forum: This organization
@@ -115,7 +115,7 @@ const Support = () => {
             intersectional feminism in their advocacy efforts, with a specific
             focus on lesbian, bisexual, trans*, intersex, and
             gender-nonconforming individuals.<br/>
-            <a href="https//twitter.com/rwokwomen" target="_blank"><strong>Twitter profile</strong></a>
+            <a href="https//twitter.com/rwokwomen" target="_blank"><strong>Twitter profile</strong></a> <br />
           </li>
           <li>
             Nadharia Kenya is a vibrant organization that focuses on supporting
@@ -152,7 +152,7 @@ const Support = () => {
             Through their work, they strive to bring about positive change and
             create a society where LBQ women are recognized, respected, and
             embraced.<br/>
-            <strong>+254 708 791 323</strong>
+            <strong>+254 708 791 323</strong><br />
           </li>
           <li>
             Bold Network is a firm committed to telling real and inspiring
@@ -165,7 +165,7 @@ const Support = () => {
             proud and bold! We want people to know that the queer community is
             more than just their sexuality. They are inspiring visionaries,
             movers and shakers. Above all, they are human beings.<br/>
-            <strong><a href="hey@boldnetworkafrica.com" target="_blank" type="email">Email address</a></strong>
+            <strong><a href="hey@boldnetworkafrica.com" target="_blank" type="email">Email address</a></strong><br />
           </li>
           <li>
             Creatives Garage: Creatives Garage, a dynamic and multifaceted
@@ -188,7 +188,7 @@ const Support = () => {
             their unique perspectives and experiences to the organization. This
             diversity fosters an environment where everyone&apos;s voices are
             valued and respected.<br />
-            <strong><a href="awesome@creativesgarage.org" target="_blank" type="email">Email address</a></strong>
+            <strong><a href="awesome@creativesgarage.org" target="_blank" type="email">Email address</a></strong><br />
           </li>
         </ol>
       </div>
