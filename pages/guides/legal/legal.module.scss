@@ -5,6 +5,7 @@
     min-height: 100vh;
     padding-top: 48px;
     padding-right: 64px;
+    background-color: #1e2832;
 
     @media (max-width: 452px) {
         padding-right: 16px;
@@ -14,8 +15,7 @@
 
 .article {
     margin-left: 22%;
-    color: black;
-    background: rgba(233, 231, 215, 0.69);
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;

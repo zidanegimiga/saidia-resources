@@ -22,7 +22,7 @@ export default function Guides() {
       <Nav />
       <SideNav />
 
-      <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "" ? "block" : "none" }}>
+      <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" ? "block" : "none" }}>
         <h2>Fines, Cash Bails and Bonds</h2>
         <p>
           In the Kenyan context, fines, cash bail, and bonds are fundamental
