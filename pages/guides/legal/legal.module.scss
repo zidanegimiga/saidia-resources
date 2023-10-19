@@ -13,6 +13,13 @@
     }
 }
 
+.organizationContainerTopCorners {
+    padding: 32px;
+    background-image: url("./../../../public/topCorner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .article {
     margin-left: 22%;
     color: white;
@@ -23,13 +30,15 @@
     p {
         font-size: 16px;
         margin-top: 16px;
+        line-height: 2em;
     }
 
     h2 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 38px;
         margin-top: 24px;
-        margin-bottom: 8px;
+        margin-bottom: 36px;
+        text-align: center;
     }
 
     ol {

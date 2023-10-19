@@ -23,6 +23,7 @@ export default function Guides() {
       <SideNav />
 
       <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" ? "block" : "none" }}>
+        <div className={styles.organizationContainerTopCorners}></div>
         <h2>Fines, Cash Bails and Bonds</h2>
         <p>
           In the Kenyan context, fines, cash bail, and bonds are fundamental
@@ -30,7 +31,7 @@ export default function Guides() {
           proceedings and financial obligations.
         </p>
         <p>
-          A fine is a monetary penalty imposed by a court as a form of
+          A <strong>fine</strong> is a monetary penalty imposed by a court as a form of
           punishment for a criminal offense. When an individual is found guilty
           of a crime, the court may order them to pay a specific amount of money
           as a fine. The purpose of the fine is twofold: to provide a form of
@@ -40,7 +41,7 @@ export default function Guides() {
           cases, imprisonment.
         </p>
         <p>
-          On the other hand, cash bail is a mechanism used to secure the release
+          A <strong>cash bail</strong> is a mechanism used to secure the release
           of a defendant from custody while awaiting trial. It serves as a
           guarantee to the court that the accused person will appear for all
           scheduled court hearings. When granted bail, the defendant or their
