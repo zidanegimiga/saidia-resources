@@ -25,11 +25,13 @@ export default function Guides() {
       <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" ? "block" : "none" }}>
         <div className={styles.organizationContainerTopCorners}></div>
         <h2>Fines, Cash Bails and Bonds</h2>
+
         <p>
           In the Kenyan context, fines, cash bail, and bonds are fundamental
           components of the legal system, each serving unique roles in legal
           proceedings and financial obligations.
         </p>
+
         <p>
           A <strong>fine</strong> is a monetary penalty imposed by a court as a form of
           punishment for a criminal offense. When an individual is found guilty
@@ -40,6 +42,7 @@ export default function Guides() {
           further legal consequences, such as additional penalties or, in some
           cases, imprisonment.
         </p>
+
         <p>
           A <strong>cash bail</strong> is a mechanism used to secure the release
           of a defendant from custody while awaiting trial. It serves as a
@@ -52,20 +55,34 @@ export default function Guides() {
           ensuring that the defendant remains accountable and appears for their
           trial, thereby safeguarding the integrity of the legal process.
         </p>
-        <p>
-          In some cases, individuals may not be able to afford the full cash
-          bail amount. This is where the concept of a bond, also known as a
-          surety bond or bail bond, comes into play. A bond is a written
-          agreement involving three parties: the defendant, a surety (often a
-          bail bond agent), and the court. Instead of paying the full cash bail
-          amount, the defendant or their representative pays a percentage of the
-          bail amount (typically around 10%) to the surety. The surety, in turn,
-          provides a guarantee to the court that the defendant will fulfill
-          their obligations and appear for all court proceedings. If the
-          defendant fails to appear, the surety may be held liable for the full
-          bail amount, potentially resulting in financial loss for the surety.
-        </p>
-        <p>
+
+        <div className={styles.talkBubbleContainer}>
+          <p>
+            A <strong>cash bail</strong> is a mechanism used to secure the release
+            of a defendant from custody while awaiting trial. It serves as a
+            guarantee to the court that the accused person will appear for all
+            scheduled court hearings. When granted bail, the defendant or their
+            representative is required to pay the full bail amount in cash or
+            through a bank deposit. The cash bail is refundable, provided that the
+            defendant complies with all court requirements, attends all hearings,
+            and meets the conditions set by the court. Cash bail is a means of
+            ensuring that the defendant remains accountable and appears for their
+            trial, thereby safeguarding the integrity of the legal process.
+          </p>
+          <p>
+            In some cases, individuals may not be able to afford the full cash
+            bail amount. This is where the concept of a bond, also known as a
+            surety bond or bail bond, comes into play. A bond is a written
+            agreement involving three parties: the defendant, a surety (often a
+            bail bond agent), and the court. Instead of paying the full cash bail
+            amount, the defendant or their representative pays a percentage of the
+            bail amount (typically around 10%) to the surety. The surety, in turn,
+            provides a guarantee to the court that the defendant will fulfill
+            their obligations and appear for all court proceedings. If the
+            defendant fails to appear, the surety may be held liable for the full
+            bail amount, potentially resulting in financial loss for the surety.
+          </p>
+          <p>
           It&apos;s crucial to recognize that legal procedures and terminology
           can vary depending on the jurisdiction and the nature of the case.
           Seeking the guidance of a qualified lawyer or seeking legal advice is
@@ -74,6 +91,7 @@ export default function Guides() {
           rights of all parties involved, and ensure fair treatment and due
           process for those facing legal issues in Kenya.
         </p>
+        </div>
       </div>
 
       <div className={styles.article} id="id-replacement" style={{ display: activeSection === "id-replacement" ? "block" : "none" }}>
