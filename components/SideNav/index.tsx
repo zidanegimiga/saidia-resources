@@ -7,15 +7,9 @@ import { business, legal, organizations, inclusivity, events, selfCare, eWaste }
 const SideNav = () => {
   const [isMobileSideBarActive, setMobileSideBarActive] = React.useState<boolean>(false)
 
-  const sideBarStyles = {
-    top: isMobileSideBarActive ? "0%" : "90%",
-    height: isMobileSideBarActive ? "100%" : "0%",
-    display: isMobileSideBarActive ? "block" : "none",
-    transition: "all ease-in-out 0.5s"
-  }
   return (
     <div style={{position: "relative"}}>
-      <div className={styles.sideNav} style={sideBarStyles}>
+      <div className={isMobileSideBarActive ? styles.sideNav + " " + styles.mobileSideBarStylesActive : styles.sideNav} >
         <Accordion categoryTitle="Legal" categoryArticles={legal} />
         <Accordion categoryTitle="E-Waste" categoryArticles={eWaste} />
         <Accordion
