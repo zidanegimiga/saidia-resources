@@ -32,40 +32,47 @@ const Support = () => {
             PEMA-Kenya: PEMA-Kenya is an LGBTQ+ membership-based organization
             founded in 2008. They work towards creating an enabling environment
             for LGBTQ+ individuals and the general population to thrive in
-            Kenya.
+            Kenya.<br/>
+            <em>info@pemakenya.org</em>
           </li>
           <li>
             GALCK+ (Gay and Lesbian Coalition of Kenya): GALCK+ is the national
             umbrella body representing all LGBTQ+ voices in Kenya. They aim to
             bridge the gap between the general population and the LGBTQ+
             community through alliances and relationships with government
-            institutions and civil society organizations.
+            institutions and civil society organizations. <br/>
+            <em>+254 202 426 060</em>
           </li>
           <li>
             NGLHRC (National Gay and Lesbian Human Rights Commission): NGLHRC
             was founded in 2012 and provides a national legal aid response
             mechanism for Kenya&apos;s LGBTQ+ community. They address
             discrimination based on sexual orientation and gender identity,
-            aiming to protect the human rights of LGBTQ+ individuals.
+            aiming to protect the human rights of LGBTQ+ individuals.<br/>
+            <strong>+254 792 400 528</strong><br/>
+            <strong>+254 700 010 815</strong>
           </li>
           <li>
             Jinsiangu Kenya: Jinsiangu is an organization established in 2012
             that focuses on creating safe spaces and enhancing the well-being of
             intersex, transgender, and gender non-conforming individuals in
-            Kenya.
+            Kenya.<br/>
+            <strong>jinsiangu@gmail.com</strong>
           </li>
           <li>
             Q-Initiative: Q-Initiative was founded in 2010 by lesbian, gay, and
             bisexual students from Moi University. They provide a safe space for
             queer youth to convene, discuss their issues, and promote
             empowerment and awareness among the lesbian, gay, and bisexual youth
-            community
+            community. <br/>
+            
           </li>
           <li>
             Queer Hive: Queer Hive is a Nairobi-based organization that focuses
             on empowering young women and gender non-conforming individuals in
             exercising their rights, particularly in producing and accessing
-            critical information on gender and sexuality.
+            critical information on gender and sexuality.<br/>
+            <a href="https//twitter.com/queerhive_kenya" target="_blank"><strong>Twitter profile</strong></a>
           </li>
           <li>
             LEHA (Lesbian, Bisexual, and Queer Activists): LEHA was formed in
@@ -79,31 +86,36 @@ const Support = () => {
             organization that provides capacity building, advocacy, and support
             in sexual and reproductive health, legal issues, and economic
             empowerment for sexual and gender minorities in South Coast and
-            Kwale County
+            Kwale County<br />
+            <strong>+254 020 2426 060</strong>
           </li>
           <li>
             Ishtar MSM: Ishtar MSM is a lobby and advocacy platform for men who
             have sex with men (MSM) in Kenya. They focus on advancing sexual
             health, providing service delivery, community development, and
-            research for MSM in the country.
+            research for MSM in the country.<br />
+            <a href="https//ishtarmsm.org" target="_blank"><strong>Ishtar Website</strong></a>
           </li>
           <li>
             Talanta Africa: Talanta Africa is a network of artists and activists
             who use art, culture, media, and technology to amplify the voices of
-            LGBTQI+ individuals and youth.
+            LGBTQI+ individuals and youth.<br/>
+            <strong><a href="hello@talanta-africa.org" target="_blank" type="email">Email address</a></strong>
           </li>
           <li>
             HOYMAS (Health Options for Young Men on HIV/AIDS/STI): HOYMAS,
             founded in 2009, is a community-based organization that serves male
             sex workers and young men, providing knowledge on safe sex,
-            preventive materials, general information, and economic empowerment.
+            preventive materials, general information, and economic empowerment.<br />
+            <strong><a href="info@hoymaskenya.or.ke" target="_blank" type="email">Email address</a></strong>
           </li>
           <li>
             LBTQ (CBO) Western Kenya LBQT Feminist Forum: This organization
             focuses on women&apos;s rights and is led by women. They center
             intersectional feminism in their advocacy efforts, with a specific
             focus on lesbian, bisexual, trans*, intersex, and
-            gender-nonconforming individuals.
+            gender-nonconforming individuals.<br/>
+            <a href="https//twitter.com/rwokwomen" target="_blank"><strong>Twitter profile</strong></a>
           </li>
           <li>
             Nadharia Kenya is a vibrant organization that focuses on supporting
@@ -122,7 +134,8 @@ const Support = () => {
             of the safe house. By providing a safe environment, economic
             opportunities, and capacity building, Nadharia Kenya seeks to
             empower and uplift the lives of transgender and non-binary
-            individuals in Kenya.
+            individuals in Kenya.<br/>
+            <a href="https//www.nadharia.org/" target="_blank"><strong>Nadharia Website</strong></a>
           </li>
           <li>
             AFRA Kenya, which stands for Artists For Recognition and Acceptance,
@@ -138,7 +151,8 @@ const Support = () => {
             to an awakened, liberal, equitable, and inclusive society in Kenya.
             Through their work, they strive to bring about positive change and
             create a society where LBQ women are recognized, respected, and
-            embraced.
+            embraced.<br/>
+            <strong>+254 708 791 323</strong>
           </li>
           <li>
             Bold Network is a firm committed to telling real and inspiring
@@ -150,7 +164,8 @@ const Support = () => {
             disenfranchised, encouraging people in the queer community to be
             proud and bold! We want people to know that the queer community is
             more than just their sexuality. They are inspiring visionaries,
-            movers and shakers. Above all, they are human beings.
+            movers and shakers. Above all, they are human beings.<br/>
+            <strong><a href="hey@boldnetworkafrica.com" target="_blank" type="email">Email address</a></strong>
           </li>
           <li>
             Creatives Garage: Creatives Garage, a dynamic and multifaceted
@@ -172,7 +187,8 @@ const Support = () => {
             portion of their team is comprised of LGBTQ+ individuals, who bring
             their unique perspectives and experiences to the organization. This
             diversity fosters an environment where everyone&apos;s voices are
-            valued and respected.
+            valued and respected.<br />
+            <strong><a href="awesome@creativesgarage.org" target="_blank" type="email">Email address</a></strong>
           </li>
         </ol>
       </div>
