@@ -20,7 +20,7 @@ const Support = () => {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "organisations-supporting-the-lgbtq" ? "block" : "none" }}>
+      <div className={styles.article} id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "organisations-supporting-the-lgbtq" || " " ? "block" : "none" }}>
         <div className={styles.organizationContainerTopCorners}></div>
         <h2> Organizations supporting the Kenyan LGBTQ+ community </h2>
         <p className={styles.articleDescription}>

@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import localFont from "next/font/local";
+import { useEffect } from 'react';
 
 // Load font
 const raster = localFont({
@@ -13,7 +14,13 @@ const raster = localFont({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <>
+  useEffect(()=>{
+    console.log("App loaded")
+    window.localStorage.setItem('token', "777")
+    const token = window.localStorage.getItem('token')
+    console.log("Got token: ", token)
+  }, [])
+  return (<>
       <style jsx global>{`
         :root {
           /* ... */
@@ -21,5 +28,5 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <Component {...pageProps} />
-    </>
+    </>)
 }
