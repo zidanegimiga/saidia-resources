@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
@@ -11,6 +11,20 @@ import useHashChange from "@/hooks/useHashChange";
 
 export default function SelfCare() {
   const activeSection = useHashChange();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollY(window.scrollY);
+      console.log("Scroll Y: ", window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -24,6 +38,11 @@ export default function SelfCare() {
       </Head>
       <Nav />
       <SideNav />
+      {
+        <div className={styles.header} style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 160 ? 0 : -80, transition: "ease-in-out 0.5s all",   }}>
+            <h2 style={{color: "white", fontFamily: "sans-serif"}}> Unravel the World of E-Waste </h2>
+        </div>
+      }
       <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Unravel the World of E-waste</h2>
         <p>
@@ -34,16 +53,16 @@ export default function SelfCare() {
           refrigerators, washing machines, printers, cameras, and consumer
           electronics.
         </p>
-        <p>There are two main categories of e-waste:</p>
-        <ol>
+        <h3 style={{ marginTop: 32, marginBottom: 16 }}>Categories of e-waste</h3>
+        <ol className={styles.eWasteCategories}>
           <li>
-            Consumer Electronics: This includes devices used by individuals or
+            <span>Consumer Electronics:</span> This includes devices used by individuals or
             households for personal or entertainment purposes, like smartphones,
             laptops, tablets, gaming consoles, televisions, and audio/video
             equipment.
           </li>
           <li>
-            Information Technology (IT) and Telecommunication Equipment: This
+            <span>Information Technology (IT) and Telecommunication Equipment:</span> This
             category comprises devices used in commercial or business settings,
             including computers, servers, routers, networking equipment, office
             telephones, and fax machines.
@@ -63,45 +82,45 @@ export default function SelfCare() {
           reduces the demand for new resources, while ensuring hazardous
           substances are handled safely and do not pollute the environment.
         </p>
-        <p>Some interesting facts about e-waste include:</p>
-        <ol>
+        <h3 style={{ marginTop: 32, marginBottom: 16 }}>Some interesting facts about e-waste</h3>
+        <ol className={styles.eWasteFacts}>
           <li>
-            Connect with Others: Cultivate and maintain healthy relationships.
+            <span> Connect with Others:</span> Cultivate and maintain healthy relationships.
             Spend quality time with loved ones, engage in meaningful
             conversations, and seek support from friends and family when needed.
           </li>
           <li>
-            E-waste Generation: The world generated about 53.6 million metric
+            <span>E-waste Generation:</span> The world generated about 53.6 million metric
             tons of e-waste in 2019, according to the Global E-waste Monitor
             2020 report.
           </li>
           <li>
-            E-waste Growth: E-waste is increasing rapidly, with the amount
+            <span>E-waste Growth:</span> E-waste is increasing rapidly, with the amount
             generated growing by 21% in the last five years
           </li>
           <li>
-            Recycling Rate: The recycling rate for e-waste is relatively low,
+            <span>Recycling Rate:</span> The recycling rate for e-waste is relatively low,
             with only about 17.4% of e-waste generated in 2019 being formally
             documented as recycled.
           </li>
           <li>
-            E-waste Composition: E-waste consists of various electronic devices
+            <span>E-waste Composition:</span> E-waste consists of various electronic devices
             and equipment, with computers, mobile phones, televisions, and
             household appliances being common items found in e-waste.
           </li>
           <li>
-            Toxic Substances: E-waste contains hazardous materials like lead,
+            <span>Toxic Substances:</span> E-waste contains hazardous materials like lead,
             mercury, cadmium, and brominated flame retardants, which can lead to
             environmental pollution and health risks if not handled properly.
           </li>
           <li>
-            Informal Recycling: A significant portion of e-waste is managed
+            <span>Informal Recycling:</span> A significant portion of e-waste is managed
             through informal recycling processes, often in developing countries,
             which can pose risks to workers health and the environment due to
             inadequate safety measures.
           </li>
           <li>
-            Economic Value: E-waste represents a significant economic
+            <span>Economic Value:</span> E-waste represents a significant economic
             opportunity, with the value of raw materials estimated at
             approximately $57 billion, highlighting the potential for recycling
             and resource recovery.
@@ -116,29 +135,29 @@ export default function SelfCare() {
           recovery systems, encouraging shared use of products and services, and
           promoting renewable energy sources.
         </p>
-        <p>Collecting e-waste is crucial for several reasons:</p>
-        <ol>
+        <h3 style={{marginTop: 32, marginBottom: 16}}>Collecting e-waste is crucial for several reasons</h3>
+        <ol className={styles.eWasteFacts}>
           <li>
-            Environmental Protection: Properly disposing of e-waste prevents
+            <span>Environmental Protection:</span> Properly disposing of e-waste prevents
             hazardous substances from polluting the environment, safeguarding
             human health and natural ecosystems.
           </li>
           <li>
-            Resource Conservation: Recycling e-waste allows valuable materials
+            <span>Resource Conservation:</span> Recycling e-waste allows valuable materials
             to be recovered and reused, reducing the need for new resource
             extraction and conserving natural resources
           </li>
           <li>
-            Energy Efficiency: Recycling e-waste consumes less energy than
+            <span>Energy Efficiency:</span> Recycling e-waste consumes less energy than
             extracting and processing raw materials for new electronics,
             contributing to energy conservation.
           </li>
           <li>
-            Job Creation and Economic Benefits: E-waste management and recycling
+            <span>Job Creation and Economic Benefits:</span> E-waste management and recycling
             create job opportunities and contribute to economic growth.
           </li>
           <li>
-            Compliance with Regulations: Collecting e-waste helps individuals
+            <span>Compliance with Regulations:</span> Collecting e-waste helps individuals
             and businesses comply with regulations and ensure responsible
             disposal.
           </li>

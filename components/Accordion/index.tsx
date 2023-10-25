@@ -8,7 +8,7 @@ interface IAccordion {
 }
 
 export const Accordion = ({ categoryTitle, categoryArticles }: IAccordion) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className={styles.accordionWrapper}>
@@ -23,13 +23,13 @@ export const Accordion = ({ categoryTitle, categoryArticles }: IAccordion) => {
         <Link href={""}>
           <h2 className={styles["accordionHeaderTitle"]}> {categoryTitle}</h2>
         </Link>
-        <p>&gt;</p>
+        <div>&gt;</div>
       </div>
       {open && (
         <ul className={styles["accordionArticleTitlesList"]}>
           {categoryArticles?.map((article: any, index: number) => {
             return (
-              <div key={index}>
+              <div key={index} className={styles.listItem}>
                 <Link href={article?.url}>
                   <li className={styles.accordionArticleTitle}>
                     {article?.title}

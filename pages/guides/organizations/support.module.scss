@@ -42,6 +42,15 @@
     @media (max-width: 452px) {
         width: 100%;
         margin-left: 0px;
+        padding: 16px;
+
+        p{
+            font-size: 15px;
+        }
+
+        h2{
+            margin-bottom: 4px;
+        }
     }
 }
 
@@ -53,11 +62,19 @@
     line-height: 146%;
     color: #d9e8f7;
     font-weight: 400;
-    padding: 48px
+    padding: 48px;
+
+    @media (max-width: 452px) {
+        padding: 16px
+    }
 }
 
 .organizationsContainer {
     padding: 24px;
+
+    @media (max-width: 452px) {
+        padding: 16px
+    }
 }
 
 .organizationContainerTopCorners {
@@ -65,7 +82,12 @@
     background-image: url("./../../../public/topCorner.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 452px) {
+        padding: 16px;
+    }
 }
+
 .organizationContainerBottomCorners {
     padding: 32px;
     background-image: url("./../../../public/bottomCorners.png");
@@ -73,6 +95,10 @@
     background-size: cover;
     height: auto;
     width: auto;
+
+    @media (max-width: 452px) {
+        margin-bottom: 16px;
+    }
 }
 
 .organization {
@@ -89,7 +115,11 @@
         margin-bottom: 24px;
     }
 
-    .contacts{
+    .contacts {
         margin-top: 8px;
+    }
+
+    @media (max-width: 452px) {
+        padding: 8px;
     }
 }

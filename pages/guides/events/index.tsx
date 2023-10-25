@@ -24,7 +24,7 @@ export default function Events() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} id="inclusive-events" style={{ display: activeSection === "inclusive-events" ? "block" : "none" }}>
+      <div className={styles.article} id="inclusive-events" style={{ display: activeSection === "inclusive-events" || " " ? "block" : "none" }}>
         <h2>Queer-friendly events you can attend</h2>
         <p>
           In recent years, there has been a growing acceptance and recognition

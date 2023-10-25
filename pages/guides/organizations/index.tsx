@@ -1,12 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
+import { useRouter } from "next/router";
 
 const Support = () => {
   const activeSection = useHashChange();
+  const [scrollTop, setScrollTop] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollY(window.scrollY);
+      console.log("Scroll Y: ", window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
+
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -20,7 +37,13 @@ const Support = () => {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "organisations-supporting-the-lgbtq" || " " ? "block" : "none" }}>
+      {
+        // scrollY > 288 && 
+        <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px"  }}>
+            <h2 style={{color: "white", fontFamily: "sans-serif"}}> Organizations supporting the Kenyan LGBTQ+ community </h2>
+        </div>
+      }
+      <div className={styles.article} id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "organisations-supporting-the-lgbtq" || " " ? "block" : "none" }} >
         <div className={styles.organizationContainerTopCorners}></div>
         <h2> Organizations supporting the Kenyan LGBTQ+ community </h2>
         <p className={styles.articleDescription}>

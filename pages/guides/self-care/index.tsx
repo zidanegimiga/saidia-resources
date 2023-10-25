@@ -6,6 +6,16 @@ import Head from "next/head";
 import SideNav from "@/components/SideNav";
 import { useRouter } from "next/router";
 import useHashChange from "@/hooks/useHashChange";
+import Calendar from "../../../public/el_calendar (1).svg"
+import Sleep from "../../../public/tdesign_sleep.svg"
+import PhysicalActivity from "../../../public/mdi_gym.svg"
+import Meditation from "../../../public/mdi_meditation.svg"
+import Paint from "../../../public/mdi_paint-outline.svg"
+import Community from "../../../public/fluent_people-community-20-filled.svg"
+import SleepingCircle from "../../../public/solar_sleeping-circle-bold.svg"
+import SelfLove from "../../../public/mdi_head-love.svg"
+import ScreenTime from "../../../public/screen_time.svg"
+import ThreeFriends from "../../../public/game-icons_three-friends.svg"
 
 export default function SelfCare() {
   const router = useRouter();
@@ -31,71 +41,84 @@ export default function SelfCare() {
           managing stress. Here are some self-care strategies that can be
           helpful:
         </p>
-        <ol>
-          <li>
-            Establish a Daily Routine: Create a structured daily routine that
-            includes time for rest, relaxation, and engaging in activities
-            that bring you joy and fulfillment.
-          </li>
-          <li>
-            Prioritize Sleep: Ensure you are getting enough sleep each night.
-            Maintain a consistent sleep schedule and create a relaxing bedtime
-            routine to promote quality sleep.
-          </li>
-          <li>
-            Engage in Physical Activity: Regular exercise not only benefits
-            your physical health but also contributes to mental well-being.
-            Find activities you enjoy, such as walking, dancing, yoga, or any
-            form of exercise that gets your body moving.
-          </li>
-          <li>
-            Practice Mindfulness and Meditation: Set aside time for
-            mindfulness or meditation practices. This can involve deep
-            breathing exercises, guided meditation, or simply being fully
-            present in the moment.
-          </li>
-          <li>
-            Connect with Others: Cultivate and maintain healthy relationships.
-            Spend quality time with loved ones, engage in meaningful
-            conversations, and seek support from friends and family when
-            needed.
-          </li>
-          <li>
-            Engage in Hobbies and Creative Outlets: Explore activities that
-            bring you joy and allow for self-expression. This could include
-            painting, writing, playing an instrument, gardening, or any hobby
-            that sparks your interest.
-          </li>
-          <li>
-            Take Breaks and Rest: Allow yourself regular breaks throughout the
-            day to recharge. Step away from work or other responsibilities to
-            engage in relaxing activities or simply rest.
-          </li>
-          <li>
-            Practice Self-Compassion: Be kind and gentle with yourself. Treat
-            yourself with the same understanding and compassion you would
-            offer to a friend. Practice positive self-talk and embrace
-            self-acceptance.
-          </li>
-          <li>
-            Limit Screen Time: Set boundaries on the amount of time you spend
-            on electronic devices, social media, and watching screens. Take
-            breaks from technology and engage in activities that do not
-            involve screens
-          </li>
-          <li>
-            Seek Support: Don&apos;t hesitate to reach out for professional
-            help or support when needed. Therapists, counselors, or support
-            groups can provide guidance and a safe space for exploring your
-            emotions and concerns.
-          </li>
+        <ol className={styles.selfcareStrategiesList}>
+          <div className={styles.selfcareStrategiesListItem}>
+            <Calendar/>
+            <div>
+              <h3>1. Establish a Daily Routine</h3>
+              <p>Create a structured daily routine that includes time for rest, relaxation, and engaging in activities that bring you joy and fulfillment.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <Sleep/>
+            <div>
+              <h3>2. Prioritize Sleep</h3>
+              <p>Ensure you are getting enough sleep each night. Maintain a consistent sleep schedule and create a relaxing bedtime routine to promote quality sleep.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <PhysicalActivity/>
+            <div>
+              <h3>3. Physical Activity</h3>
+              <p>Regular exercise not only benefits your physical health but also contributes to mental well-being. Find activities you enjoy, such as walking, dancing, yoga, or any form of exercise that gets your body moving.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <Meditation/>
+            <div>
+              <h3>4. Practice Mindfulness and Meditation:</h3>
+              <p>Set aside time for mindfulness or meditation practices. This can involve deep breathing exercises, guided meditation, or simply being fully present in the moment.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <Community/>
+            <div>
+              <h3>5. Connect with Others</h3>
+              <p>Cultivate and maintain healthy relationships. Spend quality time with loved ones, engage in meaningful conversations, and seek support from friends and family when needed.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <Paint/>
+            <div><h3>6. Engage in Hobbies and Creative Outlets</h3>
+              <p>Explore activities that bring you joy and allow for self-expression. This could include painting, writing, playing an instrument, gardening, or any hobby that sparks your interest.</p></div> 
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <SleepingCircle/>
+            <div>
+              <h3>7. Take Breaks and Rest</h3>
+              <p>Allow yourself regular breaks throughout the day to recharge. Step away from work or other responsibilities to engage in relaxing activities or simply rest.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <SelfLove/>
+            <div>
+              <h3>8. Practice Self-Compassion</h3>
+              <p>Be kind and gentle with yourself. Treat yourself with the same understanding and compassion you would offer to a friend. Practice positive self-talk and embrace self-acceptance.</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <ScreenTime/>
+            <div>
+              <h3>9. Limit Screen Time</h3>
+              <p>Set boundaries on the amount of time you spend on electronic devices, social media, and watching screens. Take breaks from technology and engage in activities that do not involve screens</p>
+            </div>
+          </div>
+          <div className={styles.selfcareStrategiesListItem}>
+            <ThreeFriends/>
+            <div>
+              <h3>10. Seek Support</h3>
+              <p>Don&apos;t hesitate to reach out for professional help or support when needed. Therapists, counselors, or support groups can provide guidance and a safe space for exploring your emotions and concerns.</p>
+            </div>
+          </div>
         </ol>
+
         <p>
           Remember, self-care looks different for everyone, so it is important
           to find strategies that resonate with you and align with your needs
           and values. Regularly assess your well-being and make adjustments to
           your self-care routine as necessary.
         </p>
+
         <div id="mindfulness-exercises">
           <h2>Mindfullness Exercises</h2>
           <p>

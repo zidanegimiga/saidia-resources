@@ -1,10 +1,8 @@
 .pageWrapper {
-    // background-image: url('../../../public/homepageBg.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-color: #1e2832;
     min-height: 100vh;
     padding-top: 48px;
-    padding-right: 64px;
+    padding-right: 80px;
 
     @media (max-width: 452px) {
         padding-right: 16px;
@@ -14,35 +12,86 @@
 
 .article {
     margin-left: 22%;
-    color: black;
-    background: rgba(233, 231, 215, 0.69);
+    color: white;
+    // background: rgba(233, 231, 215, 0.69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
 
-    p {
-        font-size: 16px;
-        margin-top: 16px;
-    }
-
     h2 {
-        font-weight: 500;
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 48px;
         margin-top: 24px;
+        margin-bottom: 24px;
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        color: #ffffff;
+    }
+
+    ul {
+        list-style: none;
+        display: grid
+    }
+
+    p {
         margin-bottom: 8px;
-    }
-
-    ol {
-        margin-top: 16px;
-    }
-
-    li {
-        font-size: 16px;
-        margin-left: 12px;
+        color: rgb(231, 231, 231);
+        font-size: 18px;
     }
 
     @media (max-width: 452px) {
         width: 100%;
         margin-left: 0px;
+        padding: 16px;
+
+        p {
+            font-size: 15px;
+        }
+
+        h2 {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.header {
+    padding-left: 132px;
+
+    @media (max-width: 452px) {
+        padding-left: 0;
+    }
+}
+
+.eWasteCategories {
+    background-color: #061729;
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    li span {
+        color: #0163c5;
+        font-weight: 600
+    }
+}
+
+.eWasteFacts {
+    background-color: #061729;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    list-style-type: disc;
+
+    li span {
+        color: #0163c5;
+        font-weight: 600
     }
 }

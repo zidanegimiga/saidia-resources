@@ -146,85 +146,9 @@ export default function Guides() {
           career path, and make your mark, Nairobi&apos;s vocational skills
           training is the perfect place to start your journey to success.
         </p>
-
-        {/* <div className={styles.article} id="business-management">
-        <h2>Exploring Business Management: Your Gateway to Success</h2>
-        <p>
-          Did you know that a Business Management course is widely available in
-          most colleges across the country? This introductory survey delves into
-          the principles and conventions associated with managing a successful
-          business, covering essential concepts such as accounting, marketing,
-          and compliance.
-        </p>
-        <p>
-          In the fast-paced world of commerce, understanding the fundamentals of
-          Business Management is key to unlocking opportunities for success.
-          Whether you dream of running your own venture or becoming a valuable
-          asset in a corporate setting, this course equips you with the
-          knowledge and skills to navigate the dynamic business landscape.
-        </p>
-        <p>
-          So, what can you expect to learn in a Business Management course? The
-          curriculum encompasses a diverse range of topics that form the
-          foundation of effective business practices. You&apos;ll delve into the
-          intricacies of financial management, gaining insights into accounting
-          principles and techniques for budgeting and financial analysis
-        </p>
-        <p>
-          Marketing strategies and consumer behavior are also on the agenda,
-          enabling you to grasp how to identify target markets and create
-          compelling campaigns that resonate with customers. Understanding the
-          legal and compliance aspects of business operations ensures that you
-          navigate ethical and regulatory frameworks responsibly.
-        </p>
-        <p>
-          Ready to take the plunge into the world of Business Management?
-          Several reputable colleges offer comprehensive courses tailored to
-          your needs. Let&apos;s explore some of the institutions that can
-          kickstart your journey to success:
-        </p>
-        <ol>
-          <li>
-            Kenya Institute of Management (KIM): Established in 1954, KIM is a
-            premier management organization committed to promoting excellence
-            and integrity in the practice of management. Their courses encompass
-            accountancy, finance, governance, information technology, and more.
-          </li>
-          <li>
-            College of Human Resource Management: As a professional body of
-            Human Resource Management practitioners, this institute aims to
-            enhance human resource management practices. They offer In-House
-            training, Open training, and Continuing Professional Development to
-            shape skilled HR professionals.
-          </li>
-          <li>
-            Amity Global Institute: Known for offering quality educational
-            programs and management development modules, Amity Global Institute
-            equips students with practical knowledge and skills needed for
-            today&apos;s competitive business environment.
-          </li>
-          <li>
-            East Africa School of Management (EASM): A private college founded
-            in 1999, EASM focuses on providing top-notch business management
-            courses that empower students to excel in their careers.
-          </li>
-          <li>
-            Atlas College: Located in Nairobi&apos;s vibrant Eastleigh area,
-            Atlas College is dedicated to producing thoroughly trained
-            professionals by offering courses in business, accountancy, and
-            other related disciplines.
-          </li>
-        </ol>
-        <p>
-          Embark on your journey to success with a Business Management course
-          that aligns with your aspirations. Whether you envision
-          entrepreneurship or becoming an invaluable asset to a corporation,
-          these courses provide the stepping stones to realizing your goals.
-          Equip yourself with the tools, knowledge, and confidence to thrive in
-          the ever-evolving world of business. The possibilities are boundless,
-          and your future awaits!
-        </p>
-      </div> */}
+        <div>
+          <Link href="/guides/business#starting-a-business-in-kenya">Starting a business</Link>
+        </div>
       </div>
       <div className={styles.article}>
         <div id="starting-a-business-in-kenya">
@@ -405,72 +329,7 @@ export default function Guides() {
             permit is valid for one calendar year.
           </p>
 
-          {/* <ol>
-            <li>
-              Trade License:
-              <ul>
-                <li>
-                  Trade licenses are obtained from the county government where
-                  your business is located.
-                </li>
-                <li>
-                  Contact the County Government Office or the Local Authority to
-                  inquire about the specific requirements and application
-                  process for obtaining a trade license.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Sector-Specific Licenses:
-              <ul>
-                <li>
-                  Depending on the nature of your business, you may require
-                  sector-specific licenses or permits.
-                </li>
-                <li>
-                  These licenses can vary based on the industry, such as
-                  manufacturing, construction, healthcare, food services,
-                  transportation, etc.
-                </li>
-                <li>
-                  Identify the relevant regulatory authority or government
-                  department overseeing your industry to inquire about the
-                  specific licenses required.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Health and Safety Permits:
-              <ul>
-                <li>
-                  Health and safety permits ensure compliance with health and
-                  safety standards in your business operations.
-                </li>
-                <li>
-                  Contact the Directorate of Occupational Health and Safety
-                  Services (DOHSS) under the Ministry of Labor and Social
-                  Protection to inquire about health and safety permits.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Environmental Permits:
-              <ul>
-                <li>
-                  Environmental permits are necessary for businesses that may
-                  have an impact on the environment, such as waste management,
-                  manufacturing, or energy production.
-                </li>
-                <li>
-                  The National Environment Management Authority (NEMA) is
-                  responsible for issuing environmental permits. Contact them to
-                  understand the specific requirements and procedures for
-                  obtaining environmental permits.
-                </li>
-              </ul>
-            </li>
-          </ol> */}
-
+          
           <p>
             Tax Obligations: Register for tax obligations with the Kenya Revenue
             Authority (KRA). This typically involves obtaining a Personal
