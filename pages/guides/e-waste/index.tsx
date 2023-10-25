@@ -38,11 +38,13 @@ export default function SelfCare() {
       </Head>
       <Nav />
       <SideNav />
+      
       {
         <div className={styles.header} style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 160 ? 0 : -80, transition: "ease-in-out 0.5s all",   }}>
             <h2 style={{color: "white", fontFamily: "sans-serif"}}> Unravel the World of E-Waste </h2>
         </div>
       }
+
       <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Unravel the World of E-waste</h2>
         <p>
