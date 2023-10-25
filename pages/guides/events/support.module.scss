@@ -1,21 +1,24 @@
 .pageWrapper {
-    // background-image: url('../../../public/homepageBg.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
     min-height: 100vh;
     padding-top: 48px;
     padding-right: 64px;
+    background-color: #1e2832;
+
+    @media (max-width: 769px) {
+        padding-right: 16px;
+        padding-top: 64px;
+    }
 
     @media (max-width: 452px) {
         padding-right: 16px;
         padding-top: 64px;
+        padding-left: 0;
     }
 }
 
 .article {
     margin-left: 22%;
-    color: black;
-    background: rgba(233, 231, 215, 0.69);
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
@@ -23,13 +26,15 @@
     p {
         font-size: 16px;
         margin-top: 16px;
+        line-height: 1.5em;
     }
 
     h2 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 38px;
         margin-top: 24px;
-        margin-bottom: 8px;
+        margin-bottom: 36px;
+        text-align: center;
     }
 
     ol {
@@ -41,8 +46,27 @@
         margin-left: 12px;
     }
 
-    @media (max-width: 452px) {
+    @media (max-width: 1441px) {}
+
+    @media (max-width: 769px) {
         width: 100%;
         margin-left: 0px;
+    }
+}
+
+.eWasteCategories {
+    background-color: #061729;
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    li span {
+        color: #0163c5;
+        font-weight: 600
     }
 }

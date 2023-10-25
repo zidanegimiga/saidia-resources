@@ -122,24 +122,24 @@ export default function Inclusivity() {
           you are unsure, and then use those pronouns when referring to
           them.Some commonly used pronouns include:
         </p>
-        <ol>
-          <li>He/Him: Typically used by individuals who identify as male.</li>
+        <ol className={styles.eWasteCategories}>
+          <li><span>He/Him:</span> Typically used by individuals who identify as male.</li>
           <li>
-            She/Her: Typically used by individuals who identify as female.
+            <span> She/Her:</span> Typically used by individuals who identify as female.
           </li>
           <li>
-            They/Them: This set of pronouns is commonly used by non-binary
+            <span>They/Them:</span> This set of pronouns is commonly used by non-binary
             individuals or those who do not exclusively identify as male or
             female.
           </li>
           <li>
-            Ze/Hir: These pronouns are sometimes used by individuals who
+            <span>Ze/Hir:</span> These pronouns are sometimes used by individuals who
             identify outside of the traditional gender binary. &quot;Ze&quot; is
             used in place of he/she, and &quot;hir&quot; is used in place of
             him/her.
           </li>
           <li>
-            Xe/Xem: These pronouns are used by some individuals who identify
+            <span>Xe/Xem:</span>These pronouns are used by some individuals who identify
             outside of the gender binary. &quot;Xe&quot; is used in place of
             he/she, and &quot;xem&quot; is used in place of him/her.
           </li>

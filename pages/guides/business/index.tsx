@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
@@ -11,6 +11,20 @@ import useHashChange from "@/hooks/useHashChange";
 
 export default function Guides() {
   const activeSection = useHashChange();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollY(window.scrollY);
+      console.log("Scroll Y: ", window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -24,6 +38,15 @@ export default function Guides() {
       </Head>
       <Nav />
       <SideNav />
+      {
+        <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px" }}>
+          <h2 style={{ color: "white", fontFamily: "sans-serif" }}> 
+            {
+              activeSection === "" ? "Vocational Skills in Kenya" : "Starting a Business in Kenya"
+            }
+          </h2>
+        </div>
+      }
       <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Vocational Skills in Kenya</h2>
         <p>
@@ -146,11 +169,8 @@ export default function Guides() {
           career path, and make your mark, Nairobi&apos;s vocational skills
           training is the perfect place to start your journey to success.
         </p>
-        <div>
-          <Link href="/guides/business#starting-a-business-in-kenya">Starting a business</Link>
-        </div>
       </div>
-      <div className={styles.article}>
+      <div className={styles.article} style={{ display: activeSection === "starting-a-business-in-kenya" ? "block" : "none" }}>
         <div id="starting-a-business-in-kenya">
           <h2>Setting up a business in Kenya</h2>
           <p>
@@ -182,24 +202,27 @@ export default function Guides() {
             business status, once your business is registered you will receive a
             certificate of incorporation.
           </p>
+          <br/>
 
           <p>
             The fees for registering a business in Kenya will cost between
             950-25,000ksh(as at 2023), the costs of business registration are as
             follows:
           </p>
+          <br/>
 
-          <ol>
-            <li>Registration of Business name: 950ksh</li>
-            <li> Private Limited Company: 10,650ksh</li>
-            <li> Public Limited Company: 10,650ksh</li>
-            <li> Unlimited Companies: 20,050ksh</li>
-            <li> Company Limited by guarantee: 10,000ksh</li>
-            <li> Limited Liability Partnership: 25,000ksh</li>
+          <ol className={styles.eWasteCategories}>
+            <li>Registration of Business name: <strong>950ksh</strong></li>
+            <li> Private Limited Company: <strong>10,650ksh</strong></li>
+            <li> Public Limited Company: <strong>10,650ksh</strong></li>
+            <li> Unlimited Companies: <strong>20,050ksh</strong></li>
+            <li> Company Limited by guarantee: <strong>10,000ksh</strong></li>
+            <li> Limited Liability Partnership: <strong>25,000ksh</strong></li>
           </ol>
           <br/>
+
           <p>
-            Business Structure: Decide on the most suitable business structure
+            <strong>Business Structure:</strong> Decide on the most suitable business structure
             for your venture, such as a sole proprietorship, partnership,
             limited liability company (LLC). Each structure has its own legal
             requirements and implications. Sole Proprietorship, Partnership, and
@@ -208,9 +231,9 @@ export default function Guides() {
             is a brief explanation of the differences:
           </p>
 
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
-              Sole Proprietorship Business Name Registration:
+              <span>Sole Proprietorship Business Name Registration:</span>
               <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
                 <li>
                   Sole proprietorship is the simplest and most common form of
@@ -232,8 +255,9 @@ export default function Guides() {
                 </li>
               </ul>
             </li>
+            <br/>
             <li>
-              Partnership:
+              <span>Partnership:</span>
               <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
                 <li>
                   A partnership is formed when two or more individuals come
@@ -259,8 +283,9 @@ export default function Guides() {
                 </li>
               </ul>
             </li>
+            <br/>
             <li>
-              Limited Liability Company (LLC):
+              <span>Limited Liability Company (LLC):</span>
               <ul style={{ listStyleType: "lower-alpha", paddingBottom: "0" }}>
                 <li>
                   An LLC is a hybrid business structure that combines elements
@@ -284,12 +309,13 @@ export default function Guides() {
                 </li>
               </ul>
             </li>
+            <br/>
           </ol>
 
           <br />
 
-          <ul>
-            Key Differences:
+          <ul className={styles.eWasteCategories}>
+            <strong>Key Differences:</strong>
             <li>
               Sole proprietorship and partnership offer simplicity and personal
               liability for owners, while an LLC provides limited liability
@@ -313,7 +339,7 @@ export default function Guides() {
           <br/>
 
           <p>
-            Permits and Licenses: Licenses:To conduct any business in Kenya you
+            <strong>Permits and Licenses:</strong> Licenses:To conduct any business in Kenya you
             need a Single Business Permit from the County Government where you
             intend to establish your business. The type of business permit you
             will be issued will depend on a variety of factors including the
@@ -331,7 +357,7 @@ export default function Guides() {
 
           
           <p>
-            Tax Obligations: Register for tax obligations with the Kenya Revenue
+            <strong>Tax Obligations:</strong> Register for tax obligations with the Kenya Revenue
             Authority (KRA). This typically involves obtaining a Personal
             Identification Number (PIN) and registering for Value Added Tax
             (VAT), Pay-As-You-Earn (PAYE) for employees, and other relevant
@@ -342,10 +368,10 @@ export default function Guides() {
             taxes:
           </p>
 
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
-              Pay As You Earn (PAYE):
-              <p>
+              <span>Pay As You Earn (PAYE):</span>
+              <p style={{marginTop: "-1px"}}>
                 PAYE is the tax deducted from employees salaries or wages. The
                 tax rates for PAYE are progressive, meaning they increase with
                 higher income levels. The rates for PAYE can range from 10% to
@@ -353,8 +379,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Value Added Tax (VAT):
-              <p>
+              <span>Value Added Tax (VAT):</span>
+              <p style={{ marginTop: "-1px" }}>
                 VAT is a consumption tax applied to the sale of goods and
                 services. The standard VAT rate in Kenya is currently 16%. Some
                 goods and services may be exempted or subject to a zero-rated
@@ -362,8 +388,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Corporate Income Tax:
-              <p>
+              <span>Corporate Income Tax:</span>
+              <p style={{ marginTop: "-1px" }}>
                 Corporate income tax is applicable to the profits earned by a
                 company or business. The standard corporate income tax rate in
                 Kenya is currently 30% for resident companies and permanent
@@ -399,7 +425,7 @@ export default function Guides() {
             ones:
           </p>
 
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
               <b>Kenya Commercial Bank (KCB) Foundation</b>: KCB offers various
               financing options, including the 2Jiajiri program, which provides
@@ -470,54 +496,54 @@ export default function Guides() {
             needs of startups:
           </p>
 
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
-              Kenya Commercial Bank (KCB): KCB offers a range of business
+              <span>Kenya Commercial Bank (KCB):</span> KCB offers a range of business
               banking services, including business accounts, loans, trade
               finance, and business advisory services.
             </li>
             <li>
-              Equity Bank: Equity Bank provides various banking services for
+              <span>Equity Bank:</span> Equity Bank provides various banking services for
               startups, such as business accounts, loans, asset financing, and
               merchant services.
             </li>
             <li>
-              Cooperative Bank of Kenya: Cooperative Bank offers business
+              <span>Cooperative Bank of Kenya:</span> Cooperative Bank offers business
               accounts, business loans, asset financing, trade finance, and
               other tailored services for startups.
             </li>
             <li>
-              Standard Chartered Bank: Standard Chartered Bank provides business
+              <span>Standard Chartered Bank:</span> Standard Chartered Bank provides business
               banking solutions, including accounts, loans, cash management, and
               trade finance services.
             </li>
             <li>
-              Absa Bank (formerly Barclays Bank of Kenya): Absa Bank offers
+              <span> Absa Bank (formerly Barclays Bank of Kenya):</span>Absa Bank offers
               business accounts, business loans, trade finance, and specialized
               banking solutions for startups.
             </li>
             <li>
-              Commercial Bank of Africa (CBA): CBA provides business banking
+              <span>Commercial Bank of Africa (CBA):</span> CBA provides business banking
               services, including business accounts, loans, trade finance, and
               asset financing.
             </li>
             <li>
-              NIC Bank (NCBA Bank): NIC Bank (now NCBA Bank) offers business
+              <span>NIC Bank (NCBA Bank):</span> NIC Bank (now NCBA Bank) offers business
               banking services, including business accounts, loans, trade
               finance, and cash management solutions.
             </li>
             <li>
-              Stanbic Bank Kenya: Stanbic Bank provides business banking
+              <span>Stanbic Bank Kenya:</span> Stanbic Bank provides business banking
               solutions, including business accounts, loans, trade finance, and
               treasury services.
             </li>
             <li>
-              I&M Bank: I&M Bank offers business banking services, including
+              <span>I&M Bank:</span> I&M Bank offers business banking services, including
               business accounts, loans, trade finance, and cash management
               solutions.
             </li>
             <li>
-              Diamond Trust Bank (DTB): DTB provides business banking solutions,
+              <span>Diamond Trust Bank (DTB):</span> DTB provides business banking solutions,
               including business accounts, loans, trade finance, and cash
               management services.
             </li>
@@ -541,23 +567,23 @@ export default function Guides() {
             working hours, social security, and employee benefits.{" "}
           </p>
 
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
-              Employment Contracts: Employers are required to provide written
+              <strong>Employment Contracts:</strong> Employers are required to provide written
               employment contracts to their employees within three months of
               their start date. The contract should include terms and conditions
               of employment, such as job description, working hours,
               remuneration, leave entitlements, and termination procedures.
             </li>
             <li>
-              Minimum Wages: The minimum wage in Kenya varies depending on the
+              <strong>Minimum Wages:</strong> The minimum wage in Kenya varies depending on the
               industry and location. The government periodically reviews and
               sets minimum wage rates through the Minimum Wage Order. It is
               essential for employers to comply with the minimum wage
               requirements relevant to their sector.
             </li>
             <li>
-              Working Hours: The standard working hours for adult employees in
+              <strong>Working Hours:</strong> The standard working hours for adult employees in
               Kenya are 52 hours per week, with a maximum of 12 hours per day.
               However, the law also specifies specific working hour limits for
               certain sectors, such as manufacturing, construction, and mining.
@@ -565,7 +591,7 @@ export default function Guides() {
               by the law.
             </li>
             <li>
-              Social Security: The National Social Security Fund (NSSF) is
+              <strong>Social Security:</strong> The National Social Security Fund (NSSF) is
               responsible for social security in Kenya. Employers are required
               to register their employees with the NSSF and contribute a
               percentage of their employees earnings to the fund. The
@@ -574,7 +600,7 @@ export default function Guides() {
               benefits.
             </li>
             <li>
-              National Health Insurance Fund (NHIF) is responsible for providing
+              <strong>National Health Insurance Fund (NHIF)</strong> is responsible for providing
               medical insurance cover to all its members  and their declared
               dependents. NHIF membership is open to all Kenyans aged 18 years
               and older, it is mandatory for all formal employers to register
@@ -582,7 +608,7 @@ export default function Guides() {
               month.
             </li>
             <li>
-              Employee Benefits: Kenya has various statutory benefits and
+              <strong>Employee Benefits:</strong> Kenya has various statutory benefits and
               employee entitlements. These include annual leave, sick leave,
               maternity leave, and public holidays. The law defines the minimum
               duration and conditions for these benefits, and employers are
@@ -617,9 +643,9 @@ export default function Guides() {
             of the process:
           </p>
 
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
-              Annual Financial Statements: Prepare your company&apos;s annual
+              <strong>Annual Financial Statements:</strong> Prepare your company&apos;s annual
               financial statements in accordance with the International
               Financial Reporting Standards (IFRS) or the applicable reporting
               framework. Ensure accuracy and completeness of financial records,
@@ -627,14 +653,14 @@ export default function Guides() {
               statements.
             </li>
             <li>
-              Appointment of Auditors: If your company meets the audit threshold
+              <strong>Appointment of Auditors:</strong> If your company meets the audit threshold
               requirements, appoint a registered auditor to conduct an annual
               audit of your financial statements. The Companies Act provides
               guidelines on audit requirements based on the company&apos;s size,
               turnover, and number of shareholders.
             </li>
             <li>
-              Audit and Reporting: Provide necessary documentation and access to
+              <strong>Audit and Reporting:</strong> Provide necessary documentation and access to
               your company&apos;s financial records to the appointed auditor.
               The auditor will conduct an independent examination of your
               financial statements and issue an audit report, which provides an
@@ -642,27 +668,27 @@ export default function Guides() {
               presented.
             </li>
             <li>
-              Annual General Meeting (AGM): Hold an AGM within six months after
+              <strong>Annual General Meeting (AGM):</strong> Hold an AGM within six months after
               the end of your company&apos;s financial year. During the AGM,
               shareholders review and approve the audited financial statements,
               elect directors, and discuss other important matters related to
               the company&apos;s operations.
             </li>
             <li>
-              Annual Returns: Prepare and submit annual returns to the Registrar
+              <strong>Annual Returns:</strong> Prepare and submit annual returns to the Registrar
               of Companies. Annual returns include details about your
               company&apos;s shareholders, directors, registered office address,
               and share capital. These returns must be filed within 42 days
               after the AGM.
             </li>
             <li>
-              Tax Compliance: Ensure compliance with tax obligations, such as
+              <strong>Tax Compliance:</strong> Ensure compliance with tax obligations, such as
               filing tax returns and paying corporate taxes. This includes
               submitting regular tax filings (e.g., monthly or quarterly) and an
               annual tax return.
             </li>
             <li>
-              Other Regulatory Compliance: Comply with any other sector-specific
+              <strong>Other Regulatory Compliance:</strong> Comply with any other sector-specific
               regulatory requirements that may apply to your business, such as
               licenses, permits, and industry-specific reporting obligations.
             </li>
@@ -678,11 +704,11 @@ export default function Guides() {
           </p>
         </div>
         <div id="how-to-open-a-bank-account">
-          <h2>How do you open a bank account in Kenya</h2>
+          <h3 style={{marginTop: 32, marginBottom: 16}}>How do you open a bank account in Kenya</h3>
           <p>
             To open a bank account in Kenya, you can follow these general steps:
           </p>
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
               Choose a Bank: Research and select a bank that suits your needs.
               Consider factors such as the bank&apos;s reputation, services
@@ -753,20 +779,20 @@ export default function Guides() {
           </p>
         </div>
         <div id="banks-in-kenya">
-          <h2>Which banks operate in Kenya</h2>
+          <h3 style={{marginTop: 32, fontSize: 28}}>Which banks operate in Kenya</h3>
           <p>Here is a summary of some prominent banks in Kenya:</p>
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
-              Equity Bank:
-              <p>
+              <strong><span>Equity Bank:</span></strong>
+              <p style={{marginTop: "-1px"}}>
                 Largest bank in terms of customer base. Offers a wide range of
                 banking products and services. Known for its innovative mobile
                 banking platform, Equitel.
               </p>
             </li>
             <li>
-              KCB Bank (Kenya Commercial Bank):
-              <p>
+              <strong><span>KCB Bank:</span></strong>
+              <p style={{ marginTop: "-1px" }}>
                 One of the oldest and largest banks in Kenya. Offers various
                 banking services, including personal banking, business banking,
                 and corporate banking. Has an extensive branch and ATM network
@@ -774,8 +800,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Cooperative Bank of Kenya:
-              <p>
+              <strong><span>Cooperative Bank of Kenya:</span></strong>
+              <p style={{ marginTop: "-1px" }}>
                 Provides banking services to individuals, SMEs, and corporate
                 clients. Known for its cooperative model and focus on supporting
                 the agricultural sector. Offers a range of financial products,
@@ -783,8 +809,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Standard Chartered Bank Kenya:
-              <p>
+              <strong> <span>Standard Chartered Bank Kenya:</span> </strong>
+              <p style={{ marginTop: "-1px" }}>
                 Part of the global Standard Chartered Group. Offers a wide range
                 of banking and financial services to individuals, businesses,
                 and corporate clients. Provides international banking services,
@@ -792,8 +818,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              ABSA
-              <p>
+              <strong><span>ABSA</span></strong>
+              <p style={{ marginTop: "-1px" }}>
                 Operates as Absa Kenya following the rebranding from Barclays
                 Bank of Kenya. Offers personal banking, business banking, and
                 corporate banking services. Provides digital banking solutions
@@ -801,8 +827,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Stanbic Bank Kenya:
-              <p>
+              <span>Stanbic Bank Kenya:</span>
+              <p style={{ marginTop: "-1px" }}>
                 Part of the Standard Bank Group. Offers corporate and investment
                 banking services, as well as personal banking solutions.
                 Provides a range of financial products, including loans, savings
@@ -810,8 +836,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Commercial Bank of Kenya:
-              <p>
+              <span>Commercial Bank of Kenya:</span>
+              <p style={{ marginTop: "-1px" }}>
                 Merged with NIC Bank to form NCBA Bank. Offers retail banking,
                 corporate banking, and treasury services. Known for its mobile
                 banking platform, M-Shwari, which provides micro-loans and
@@ -819,8 +845,8 @@ export default function Guides() {
               </p>
             </li>
             <li>
-              Diamond Trust Bank:
-              <p>
+              <span>Diamond Trust Bank:</span>
+              <p style={{ marginTop: "-1px" }}>
                 Operates in Kenya and other East African countries. Provides
                 banking services to individuals, businesses, and corporate
                 clients. Offers a variety of financial products, including
@@ -830,7 +856,7 @@ export default function Guides() {
           </ol>
         </div>
         <div id="banks-with-the-best-rates">
-          <h2>Which Bank has the best interest rates</h2>
+          <h3 style={{ marginTop: 32, fontSize: 28 }}>Which Bank has the best interest rates</h3>
           <p>
             Determining the bank with the best interest rates in Kenya can
             depend on various factors, including the type of account, the
@@ -839,7 +865,7 @@ export default function Guides() {
             banks to get the most up-to-date information. Here are a few banks
             that are known for offering competitive interest rates:
           </p>
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
               Sidian Bank: Known for its attractive interest rates on savings
               accounts and fixed deposits.
@@ -871,13 +897,13 @@ export default function Guides() {
           </p>
         </div>
         <div id="banks-best-for-startups">
-          <h2>What banks are best for Business Start ups</h2>
+          <h3 style={{ marginTop: 32, fontSize: 28 }}>What banks are best for Business Start ups</h3>
           <p>
             Several banks in Kenya offer services and support tailored to
             business start-ups. Here are a few banks that are often recommended
             for entrepreneurs and business start-ups:
           </p>
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
               Equity Bank: Equity Bank has a reputation for supporting small and
               medium- sized enterprises (SMEs) and offering customized banking

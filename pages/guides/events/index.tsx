@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
@@ -11,6 +11,21 @@ import useHashChange from "@/hooks/useHashChange";
 
 export default function Events() {
   const activeSection = useHashChange();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollY(window.scrollY);
+      console.log("Scroll Y: ", window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -24,7 +39,16 @@ export default function Events() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} id="inclusive-events" style={{ display: activeSection === "inclusive-events" || " " ? "block" : "none" }}>
+      {
+        <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px" }}>
+          <h2 style={{ color: "white", fontFamily: "sans-serif" }}>
+            {
+              activeSection === "inclusive-events" ? "Queer-friendly events you can attend" : "Fun things to do in Nairobi"
+            }
+          </h2>
+        </div>
+      }
+      <div className={styles.article} id="inclusive-events" style={{ display: activeSection === "inclusive-events" ? "block" : "none" }}>
         <h2>Queer-friendly events you can attend</h2>
         <p>
           In recent years, there has been a growing acceptance and recognition
@@ -33,28 +57,28 @@ export default function Events() {
           events may vary, here are some examples of queer-friendly events that
           have taken place or are likely to occur in Kenya:
         </p>
-        <ol>
+        <ol className={styles.eWasteCategories}>
           <li>
-            Nairobi Queer Film Festival: This annual event showcases a selection
+            <span>Nairobi Queer Film Festival:</span> This annual event showcases a selection
             of films that explore LGBTQ+ themes and experiences. It provides a
             platform for queer filmmakers to share their work and for the
             community to come together and engage in dialogue.
           </li>
           <li>
-            Art Exhibitions: Various art exhibitions in Kenya feature queer
+            <span>Art Exhibitions: </span>Various art exhibitions in Kenya feature queer
             artists and explore LGBTQ+ themes. These exhibitions provide a space
             for artistic expression and create opportunities for dialogue and
             understanding.
           </li>
           <li>
-            LGBTQ+ Workshops and Talks: Organizations like AFRA Kenya and other
+            <span>LGBTQ+ Workshops and Talks:</span> Organizations like AFRA Kenya and other
             LGBTQ+ rights groups often organize workshops, panel discussions,
             and talks on topics related to sexual orientation, gender identity,
             and LGBTQ+ rights. These events aim to educate and create awareness
             while fostering a supportive environment.
           </li>
           <li>
-            Queer Parties and Social Gatherings: There are occasional queer
+            <span>Queer Parties and Social Gatherings:</span> There are occasional queer
             parties and social gatherings organized in Kenya, particularly in
             urban areas like Nairobi. These events provide a space for the
             LGBTQ+ community and allies to socialize, connect, and celebrate.
@@ -63,14 +87,14 @@ export default function Events() {
             the Wanderlust Party.
           </li>
           <li>
-            Sports events: Nadharia Kenya has launched Nadharia football and
+            <span>Sports events:</span> Nadharia Kenya has launched Nadharia football and
             basketball teams, specifically catering to queer women. These sports
             teams aim to provide a safe and inclusive space where queer women
             can engage in sports without facing discrimination, fostering
             dialogue and camaraderie among participants.
           </li>
           <li>
-            Camps: NGLHRC (National Gay and Lesbian Human Rights Commission)
+            <span>Camps: NGLHRC (National Gay and Lesbian Human Rights Commission)</span>
             organizes an annual transformative experience called Uzima Camp.
             This camp is designed to meet the unique needs of LBQ
             Trans*diverse/non-binary individuals. It offers an opportunity to
@@ -79,7 +103,7 @@ export default function Events() {
             empowerment within the LGBTQ+ community.
           </li>
           <li>
-            Podcasts: Podcasts such as Blooms in the Dark, The Spread, and
+            <span>Podcasts:</span> Podcasts such as Blooms in the Dark, The Spread, and
             Channelke also provide platforms for discussions about sexuality,
             gender and sexual expression. Blooms in the Dark (a podcast by
             Creatives Garage) is a collection of short, fictional stories about
@@ -92,7 +116,7 @@ export default function Events() {
             proud of their sexual orientation.
           </li>
           <li>
-            Kings of Kenya Events: Founded by @Magicdyke, Kings of Kenya is a
+            <span>Kings of Kenya Events:</span> Founded by @Magicdyke, Kings of Kenya is a
             collection of Drag Kings in Kenya that host entertainment events
             like Drag Brunch and also offer Drag make-up classes.
           </li>
@@ -113,33 +137,33 @@ export default function Events() {
           There are plenty of fun activities to do in Nairobi. Here are some
           suggestions:
         </p>
-        <ol>
+        <ol className={styles.eWasteCategories}>
           <li>
-            Visit Nairobi National Park: Explore the wildlife and go on a safari
+            <span>Visit Nairobi National Park:</span> Explore the wildlife and go on a safari
             within the city. Nairobi National Park offers an opportunity to see
             animals like lions, giraffes, zebras, and rhinos in their natural
             habitat.
           </li>
           <li>
-            Explore the David Sheldrick Wildlife Trust: Visit the elephant
+            <span>Explore the David Sheldrick Wildlife Trust:</span> Visit the elephant
             orphanage and learn about their conservation efforts. You can
             witness the feeding and playful interactions of the adorable baby
             elephants.
           </li>
           <li>
-            Enjoy the Nairobi Railway Museum: Discover the rich history of
+            <span>Enjoy the Nairobi Railway Museum:</span> Discover the rich history of
             Kenya&apos;s railways at the Nairobi Railway Museum. Explore vintage
             locomotives, carriages, and artifacts that showcase the
             country&apos;s railway heritage
           </li>
           <li>
-            Wander through Karura Forest: Take a nature walk or go cycling in
+            <span>Wander through Karura Forest:</span> Take a nature walk or go cycling in
             Karura Forest. This urban oasis offers beautiful trails, waterfalls,
             picnic spots, and even a treetop canopy walk for an immersive
             outdoor experience.
           </li>
           <li>
-            Visit the Karen Blixen Museum: Step into the world of the famous
+            <span>Visit the Karen Blixen Museum:</span> Step into the world of the famous
             Danish author Karen Blixen, known for her book &quot;Out of
             Africa.&quot; Explore her former home, now a museum, and learn about
             her life in colonial Kenya.
@@ -151,131 +175,130 @@ export default function Events() {
             unique gifts and support local artisans.
           </li>
           <li>
-            Enjoy Nairobi&apos;s Food Scene: Indulge in the diverse culinary
+            <span>Enjoy Nairobi&apos;s Food Scene:</span> Indulge in the diverse culinary
             offerings of Nairobi. From local street food to international
             cuisines, the city boasts a wide range of restaurants, cafes, and
             food markets to satisfy your taste buds.
           </li>
           <li>
-            Visit the Nairobi National Museum: Explore Kenya&apos;s rich
+            <span>Visit the Nairobi National Museum:</span> Explore Kenya&apos;s rich
             cultural and natural heritage at the Nairobi National Museum.
             Discover fascinating exhibits on art, history, paleontology, and
             archaeology, including the famous fossil exhibits.
           </li>
           <li>
-            Discover the Nairobi Railway Station: Marvel at the stunning
+            <span>Discover the Nairobi Railway Station:</span> Marvel at the stunning
             architecture of the Nairobi Railway Station, an iconic landmark in
             the city. Take a stroll around the area and appreciate the
             historical significance of the railway network.
           </li>
           <li>
-            Experience Nairobi&apos;s Nightlife: Enjoy the vibrant nightlife
+            <span>Experience Nairobi&apos;s Nightlife:</span> Enjoy the vibrant nightlife
             scene in Nairobi. From trendy bars and clubs to live music venues,
             there are plenty of options to dance,socialize, and have a great
             time.
           </li>
           <li>
-            Kuona Trust: This art center in Nairobi organizes regular
+            <span>Kuona Trust:</span> This art center in Nairobi organizes regular
             exhibitions, workshops, and art talks. It serves as a platform for
             local artists to showcase their creations and engage with the art
             community.
           </li>
           <li>
-            The Goethe-Institut is a renowned cultural institution that promotes
+            <span>The Goethe-Institute</span> is a renowned cultural institution that promotes
             German language and culture worldwide. The Goethe-Institut Nairobi,
             located in Nairobi, Kenya, plays a significant role in fostering
             cultural exchange
           </li>
           <li>
-            Alliance Française: Alliance Française Nairobi regularly hosts art
+            <span>Alliance Française:</span> Alliance Française Nairobi regularly hosts art
             exhibitions, cultural events, and performances. It promotes both
             Kenyan and international artists, providing a diverse range of
             artistic experiences.
           </li>
           <li>
-            The Godown Arts Centre: Located in Kilimani, The Godown Arts Centre
+            <span>The Godown Arts Centre:</span> Located in Kilimani, The Godown Arts Centre
             hosts art exhibitions, workshops, performances, and cultural events.
             It aims to support and promote contemporary African art.
           </li>
           <li>
-            One Off Contemporary Art Gallery: This gallery in Nairobi displays
+            <span>One Off Contemporary Art Gallery:</span> This gallery in Nairobi displays
             contemporary art from established and emerging artists. It hosts
             regular exhibitions, offering a platform for artists to showcase
             their unique creations.
           </li>
           <li>
-            Nairobi Art Week: This annual event celebrates Nairobi&apos;s
+            <span>Nairobi Art Week:</span> This annual event celebrates Nairobi&apos;s
             vibrant art scene by organizing exhibitions, art tours, workshops,
             and artist talks. It brings together artists, collectors, and art
             enthusiasts to celebrate and appreciate local talent.
           </li>
           <li>
-            Circle Art Agency: Circle Art Agency is an art consultancy that
+            <span>Circle Art Agency:</span> Circle Art Agency is an art consultancy that
             organizes biannual art auctions in Nairobi. It showcases artworks by
             prominent East African artists, providing an opportunity to purchase
             and collect art.
           </li>
           <li>
-            Nairobi Art Centre: This art center hosts exhibitions, workshops,
+            <span>Nairobi Art Centre:</span> This art center hosts exhibitions, workshops,
             and art classes. It aims to nurture and promote artistic talent by
             providing a space for artists to showcase their works and engage
             with the community.
           </li>
           <li>
-            Nairobi International Film Festival: This annual film festival
+            <span>Nairobi International Film Festival:</span> This annual film festival
             showcases a diverse selection of local and international films,
             including feature films, documentaries, and short films. It provides
             a platform for filmmakers to share their stories and promotes
             cinematic appreciation in Nairobi.
           </li>
           <li>
-            Nairobi Restaurant Week: As a celebration of Nairobi culinary scene,
+            <span>Nairobi Restaurant Week:</span> As a celebration of Nairobi culinary scene,
             this event brings together numerous restaurants across the city.
             During the designated week, participating restaurants offer special
             menus and discounts, allowing food enthusiasts to explore a wide
             range of cuisines
           </li>
           <li>
-            Nairobi Fashion Week: This fashion event showcases the talents of
-            Kenyan and African fashion designers. It features runway shows,
+            <span>Kenyan and African fashion designers</span>. It features runway shows,
             exhibitions, and panel discussions, offering a platform for emerging
             and established designers to display their collections.
           </li>
           <li>
-            Koroga Festival: Known as one of the biggest music festivals in
+            <span>Koroga Festival</span>: Known as one of the biggest music festivals in
             Nairobi, Koroga Festival combines live music performances, food, and
             art. It features renowned local and international artists from
             various genres, attracting music lovers for a weekend of
             entertainment.
           </li>
           <li>
-            Nairobi Wine Festival: Wine enthusiasts can enjoy a selection of
+            <span>Nairobi Wine Festival:</span> Wine enthusiasts can enjoy a selection of
             local and international wines at the Nairobi Wine Festival. The
             event offers tastings, masterclasses, and food pairings, providing a
             unique experience for wine connoisseurs in the city.
           </li>
           <li>
-            Nairobi Jazz Festival: Jazz lovers can indulge in the smooth sounds
+            <span>Nairobi Jazz Festival:</span> Jazz lovers can indulge in the smooth sounds
             of local and international jazz musicians at the Nairobi Jazz
             Festival. The festival features live performances, jam sessions, and
             workshops, creating a vibrant atmosphere for jazz enthusiasts.
           </li>
           <li>
-            Nairobi Comic Con: This pop culture convention celebrates comics,
+            <span>Nairobi Comic Con:</span> This pop culture convention celebrates comics,
             gaming, animation, and cosplay. It features exhibitions, panel
             discussions, workshops, and competitions, providing a platform for
             fans and creators to come together and showcase their passion for
             geek culture.
           </li>
           <li>
-            Art Xperience: This art festival brings together artists, art
+            <span>Art Xperience:</span> This art festival brings together artists, art
             enthusiasts, and collectors to celebrate visual arts in Nairobi. It
             features exhibitions, art talks, workshops, and interactive art
             installations, fostering creativity and appreciation for different
             art forms.
           </li>
           <li>
-            Sondeka Festival is a notable creative arts festival in Nairobi,
+            <span>Sondeka Festival</span> is a notable creative arts festival in Nairobi,
             Kenya. It is an annual event that celebrates various forms of
             creativity, including music, art, fashion, film, and technology.
           </li>
@@ -292,7 +315,7 @@ export default function Events() {
             can learn and enhance their dancing skills. Here are some popular
             dance classes and studios in Kenya:
           </p>
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
               Sarakasi Trust: Located in Nairobi, Sarakasi Trust offers a wide
               range of dance classes, including contemporary, hip-hop, salsa,
@@ -339,7 +362,7 @@ export default function Events() {
             explore their creativity and engage with the local art scene. Here
             are some examples of painting events in Kenya:
           </p>
-          <ol>
+          <ol className={styles.eWasteCategories}>
             <li>
               Nairobi Art Week: Nairobi Art Week is an annual event that
               celebrates visual arts in Nairobi. It includes painting
