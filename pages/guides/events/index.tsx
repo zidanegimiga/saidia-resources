@@ -3,9 +3,6 @@ import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import Link from "next/link";
-import { setOriginalNode } from "typescript";
-import { legal, business } from "@/Data/categories";
-import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
 

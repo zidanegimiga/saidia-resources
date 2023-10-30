@@ -7,6 +7,7 @@ import useHashChange from "@/hooks/useHashChange";
 
 export default function Guides() {
   const activeSection = useHashChange();
+  console.log("Active Section: ", activeSection.length)
   return (
     <div className={styles.pageWrapper}>
       <Head>
@@ -22,7 +23,7 @@ export default function Guides() {
       <Nav />
       <SideNav />
 
-      <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" ? "block" : "none" }}>
+      <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" || activeSection.length === 0 ? "block" : "none" }}>
         <div className={styles.organizationContainerTopCorners}></div>
         <h2>Fines, Cash Bails and Bonds</h2>
 
