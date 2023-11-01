@@ -4,12 +4,17 @@ import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
+import { useDarkMode } from "@/components/ThemeProvider";
+import classnames from 'classnames';
+import { Tabs, Box, Text, Callout, Link } from "@radix-ui/themes";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 export default function Guides() {
   const activeSection = useHashChange();
-  console.log("Active Section: ", activeSection.length)
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+
   return (
-    <div className={styles.pageWrapper}>
+    <div className={classnames(styles.pageWrapper, {[styles.pageWrapperDarkMode]: isDarkMode})}>
       <Head>
         <title>Saidia - Guides/Legal</title>
         <meta
@@ -23,66 +28,79 @@ export default function Guides() {
       <Nav />
       <SideNav />
 
-      <div className={styles.article} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" || activeSection.length === 0 ? "block" : "none" }}>
-        <div className={styles.organizationContainerTopCorners}></div>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="fines-cash-bails-and-bonds" style={{ display: activeSection === "fines-cash-bails-and-bonds" || activeSection.length === 0 ? "block" : "none" }}>
+        {/* <div className={styles.organizationContainerTopCorners}></div> */}
         <h2>Fines, Cash Bails and Bonds</h2>
+        {/* <button onClick={toggleDarkMode}>Dark mode: {String(isDarkMode)}</button> */}
 
-        <p>
-          In the Kenyan context, fines, cash bail, and bonds are fundamental
-          components of the legal system, each serving unique roles in legal
-          proceedings and financial obligations.
-        </p>
-
-        <p>
-          A <strong>fine</strong> is a monetary penalty imposed by a court as a form of
-          punishment for a criminal offense. When an individual is found guilty
-          of a crime, the court may order them to pay a specific amount of money
-          as a fine. The purpose of the fine is twofold: to provide a form of
-          retribution for the committed offense and to act as a deterrent
-          against future unlawful behavior. Failure to pay the fine may lead to
-          further legal consequences, such as additional penalties or, in some
-          cases, imprisonment.
-        </p>
-
-        <p>
-          A <strong>cash bail</strong> is a mechanism used to secure the release
-          of a defendant from custody while awaiting trial. It serves as a
-          guarantee to the court that the accused person will appear for all
-          scheduled court hearings. When granted bail, the defendant or their
-          representative is required to pay the full bail amount in cash or
-          through a bank deposit. The cash bail is refundable, provided that the
-          defendant complies with all court requirements, attends all hearings,
-          and meets the conditions set by the court. Cash bail is a means of
-          ensuring that the defendant remains accountable and appears for their
-          trial, thereby safeguarding the integrity of the legal process.
-        </p>
-
-        <div className={styles.talkBubbleContainer}>
+        <Text size={"3"}>
           <p>
-            A <strong>cash bail</strong> is a mechanism used to secure the release
-            of a defendant from custody while awaiting trial. It serves as a
-            guarantee to the court that the accused person will appear for all
-            scheduled court hearings. When granted bail, the defendant or their
-            representative is required to pay the full bail amount in cash or
-            through a bank deposit. The cash bail is refundable, provided that the
-            defendant complies with all court requirements, attends all hearings,
-            and meets the conditions set by the court. Cash bail is a means of
-            ensuring that the defendant remains accountable and appears for their
-            trial, thereby safeguarding the integrity of the legal process.
+            In the Kenyan context, fines, cash bail, and bonds are fundamental
+            components of the legal system, each serving unique roles in legal
+            proceedings and financial obligations.
           </p>
-          <p>
-            In some cases, individuals may not be able to afford the full cash
-            bail amount. This is where the concept of a bond, also known as a
-            surety bond or bail bond, comes into play. A bond is a written
-            agreement involving three parties: the defendant, a surety (often a
-            bail bond agent), and the court. Instead of paying the full cash bail
-            amount, the defendant or their representative pays a percentage of the
-            bail amount (typically around 10%) to the surety. The surety, in turn,
-            provides a guarantee to the court that the defendant will fulfill
-            their obligations and appear for all court proceedings. If the
-            defendant fails to appear, the surety may be held liable for the full
-            bail amount, potentially resulting in financial loss for the surety.
-          </p>
+        </Text>
+        <Tabs.Root defaultValue="Fines" mt={"4"}>
+          <Tabs.List>
+            <Tabs.Trigger value="Fines">
+              <Text size={"4"}>Fines</Text>
+            </Tabs.Trigger>
+            <Tabs.Trigger value="Cash Bail"><Text size={"4"}>Cash Bail</Text></Tabs.Trigger>
+            <Tabs.Trigger value="Bond"><Text size={"4"}>Bonds</Text></Tabs.Trigger>
+          </Tabs.List>
+
+          <Box px="4" pt="3" pb="2">
+            <Tabs.Content value="Fines">
+              <Text size="3">
+                <p>
+                  A <strong>fine</strong> is a monetary penalty imposed by a court as a form of
+                  punishment for a criminal offense. When an individual is found guilty
+                  of a crime, the court may order them to pay a specific amount of money
+                  as a fine. The purpose of the fine is twofold: to provide a form of
+                  retribution for the committed offense and to act as a deterrent
+                  against future unlawful behavior. Failure to pay the fine may lead to
+                  further legal consequences, such as additional penalties or, in some
+                  cases, imprisonment.
+                </p>
+              </Text>
+            </Tabs.Content>
+
+            <Tabs.Content value="Cash Bail">
+              <Text size="3"><p>
+                A <strong>cash bail</strong> is a mechanism used to secure the release
+                of a defendant from custody while awaiting trial. It serves as a
+                guarantee to the court that the accused person will appear for all
+                scheduled court hearings. When granted bail, the defendant or their
+                representative is required to pay the full bail amount in cash or
+                through a bank deposit. The cash bail is refundable, provided that the
+                defendant complies with all court requirements, attends all hearings,
+                and meets the conditions set by the court. Cash bail is a means of
+                ensuring that the defendant remains accountable and appears for their
+                trial, thereby safeguarding the integrity of the legal process.
+              </p></Text>
+            </Tabs.Content>
+            <Tabs.Content value="Bond">
+              <Text size="3">
+                <p>
+                  In some cases, individuals may not be able to afford the full cash
+                  bail amount. This is where the concept of a <strong>bond</strong>, also known as a
+                  surety bond or bail bond, comes into play. A bond is a written
+                  agreement involving three parties: the defendant, a surety (often a
+                  bail bond agent), and the court. Instead of paying the full cash bail
+                  amount, the defendant or their representative pays a percentage of the
+                  bail amount (typically around 10%) to the surety. The surety, in turn,
+                  provides a guarantee to the court that the defendant will fulfill
+                  their obligations and appear for all court proceedings. If the
+                  defendant fails to appear, the surety may be held liable for the full
+                  bail amount, potentially resulting in financial loss for the surety.
+                </p>
+                </Text>
+            </Tabs.Content>
+          </Box>
+        </Tabs.Root>       
+
+        <Box p="3">
+          <Text size="3">         
           <p>
           It&apos;s crucial to recognize that legal procedures and terminology
           can vary depending on the jurisdiction and the nature of the case.
@@ -92,20 +110,23 @@ export default function Guides() {
           rights of all parties involved, and ensure fair treatment and due
           process for those facing legal issues in Kenya.
         </p>
-        </div>
+        </Text>
+        </Box>
       </div>
 
-      <div className={styles.article} id="id-replacement" style={{ display: activeSection === "id-replacement" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="id-replacement" style={{ display: activeSection === "id-replacement" ? "block" : "none" }}>
         <h2>Obtaining and Replacing Your Identification Card</h2>
 
-        <p>To get an ID (Identification Card) in Kenya, follow these steps:</p>
+        <Text size={"4"} weight={"bold"}>
+          To get an ID (Identification Card) in Kenya, follow these steps:
+        </Text>
         <ol>
           <li>
-            Eligibility: You must be a Kenyan citizen and at least 18 years old
+            <strong>Eligibility</strong>: You must be a Kenyan citizen and at least 18 years old
             to apply for an ID.
           </li>
           <li>
-            Documents required:
+            <strong>Documents required</strong>:
             <ul>
               <li>Original birth certificate and a photocopy.</li>
               <li>
@@ -117,75 +138,82 @@ export default function Guides() {
             </ul>
           </li>
           <li>
-            Visit the Huduma Centre: Go to the nearest Huduma Centre, which is a
+            <strong>Visit the Huduma Centre</strong>: Go to the nearest Huduma Centre, which is a
             one-stop shop for various government services, including ID
             registration.
           </li>
           <li>
-            Application form: Obtain and fill out an ID application form at the
+            <strong>Application form</strong>: Obtain and fill out an ID application form at the
             Huduma Centre or download it from the official government website.
           </li>
           <li>
-            Verification and Interview: Submit your application form and
+            <strong>Verification and Interview</strong>: Submit your application form and
             supporting documents to the registration officer. You may need to go
             through an interview for verification purposes.
           </li>
           <li>
-            Biometric data: Provide your fingerprints and have your photograph
+            <strong>Biometric data</strong>: Provide your fingerprints and have your photograph
             taken. This is part of the biometric registration process.
           </li>
           <li>
-            Processing fee: Pay the required processing fee, which may vary
+            <strong>Processing fee</strong>: Pay the required processing fee, which may vary
             depending on the type of application (first-time application,
             replacement, or renewal).
           </li>
           <li>
-            Collection: You will be informed about when and where to collect
+            <strong>Collection</strong>: You will be informed about when and where to collect
             your ID card. It may take a few weeks for processing and printing.
           </li>
           <li>
-            Receiving the ID card: Visit the designated location on the
+            <strong>Receiving the ID card</strong>: Visit the designated location on the
             specified date to collect your ID card. Make sure to carry the
             collection slip or any other relevant identification documents.
           </li>
         </ol>
-        <p>
-          Please note that the specific requirements and procedures may vary, so
-          it&apos;s essential to check the official government website or
-          consult with the Huduma Centre for the most up-to-date information
-          before starting the application process.
-        </p>
+        
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              Please note that the specific requirements and procedures may vary, so
+              it&apos;s essential to check the official government website or
+              consult with the Huduma Centre for the most up-to-date information
+              before starting the application process.
+            </p>
+            <p>
+              <b>If you&apos;ve lost your ID card in Kenya, follow these steps: </b>
+            </p>
 
-        <p>
-          <b>If you&apos;ve lost your ID card in Kenya, follow these steps: </b>
-        </p>
-
-        <ol>
-          <li>
-            Head to the nearest police station: Find the police station in your
-            area or the one where you think you lost your ID.
-          </li>
-          <li>
-            Inform the officer on duty: Let them know about the lost ID and
-            share any relevant details.
-          </li>
-          <li>
-            Fill out a Lost Property report: Complete a form with accurate
-            information about your ID, like your full name and any known
-            identification number.
-          </li>
-          <li>
-            Get a copy of the report: Ask for a copy of the Lost Property report
-            for your records.
-          </li>
-          <li>
-            Follow any additional instructions: The officer may provide further
-            guidance, so stay in touch or check back for updates.
-          </li>
-        </ol>
+            <ol>
+              <li>
+                Head to the nearest police station: Find the police station in your
+                area or the one where you think you lost your ID.
+              </li>
+              <li>
+                Inform the officer on duty: Let them know about the lost ID and
+                share any relevant details.
+              </li>
+              <li>
+                Fill out a Lost Property report: Complete a form with accurate
+                information about your ID, like your full name and any known
+                identification number.
+              </li>
+              <li>
+                Get a copy of the report: Ask for a copy of the Lost Property report
+                for your records.
+              </li>
+              <li>
+                Follow any additional instructions: The officer may provide further
+                guidance, so stay in touch or check back for updates.
+              </li>
+            </ol>
+          </Callout.Text>
+        </Callout.Root>
       </div>
 
-      <div className={styles.article} id="understanding-police-service" style={{ display: activeSection === "understanding-police-service" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="understanding-police-service" style={{ display: activeSection === "understanding-police-service" ? "block" : "none" }}>
         <h2>Instances when police officers refuse to provide services </h2>
         <p>
           As a young adult, it&apos;s essential to understand that while police
@@ -195,63 +223,70 @@ export default function Guides() {
         </p>
         <ol>
           <li>
-            Lack of Jurisdiction: Police officers have specific areas they are
+            <strong>Lack of Jurisdiction</strong>: Police officers have specific areas they are
             responsible for, and they may not have the authority to intervene in
             incidents occurring outside their designated jurisdiction.
           </li>
           <li>
-            Resource Constraints: Law enforcement agencies might face
+            <strong>Resource Constraints</strong>: Law enforcement agencies might face
             limitations in terms of personnel or equipment, affecting their
             ability to respond promptly to all situations.
           </li>
           <li>
-            Priority Cases: During emergencies or high-priority situations,
+            <strong>Priority Cases:</strong> During emergencies or high-priority situations,
             police officers may need to prioritize cases that require immediate
             attention, leading to delays in responding to non-emergency matters.
           </li>
           <li>
-            Safety Concerns: In potentially dangerous situations, officers must
+            <strong>Safety Concerns:</strong> In potentially dangerous situations, officers must
             consider their safety and that of others. They might request
             additional support before intervening.
           </li>
           <li>
-            Non-Criminal Matters: Police focus on criminal activities and
+            <strong>Non-Criminal Matters</strong>: Police focus on criminal activities and
             emergencies. For non-criminal issues, they may direct individuals to
             seek assistance from relevant government agencies or local
             authorities.
           </li>
           <li>
-            Miscommunication: Sometimes, misunderstandings between individuals
+            <strong>Miscommunication</strong>: Sometimes, misunderstandings between individuals
             and police can lead to perceived refusal of service. It&apos;s
             crucial to stay calm and cooperative during interactions.
           </li>
           <li>
-            Administrative Procedures: Certain situations may require
+            <strong>Administrative Procedures</strong>: Certain situations may require
             specialized units or follow specific protocols, resulting in a delay
             in service provision.
           </li>
           <li>
-            Personal Discretion: Officers have some discretion in handling
+            <strong>Personal Discretion:</strong> Officers have some discretion in handling
             situations. If they believe an alternative approach is more
             appropriate, it might seem like they are refusing service.
           </li>
           <li>
-            Shift Changes: During shift changes, there might be brief periods of
+            <strong>Shift Changes:</strong> During shift changes, there might be brief periods of
             transition, leading to slight delays in service response.
           </li>
         </ol>
-        <p>
-          Remember, police officers are bound by codes of conduct and duty, and
-          their primary goal is public safety. If you encounter difficulties in
-          receiving service, report the incident to the appropriate authorities
-          or the police department&apos;s internal affairs division for
-          investigation and resolution. Understanding these factors can help
-          foster better communication and cooperation with law enforcement in
-          various situations.
-        </p>
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              Remember, police officers are bound by codes of conduct and duty, and
+              their primary goal is public safety. If you encounter difficulties in
+              receiving service, report the incident to the appropriate authorities
+              or the police department&apos;s internal affairs division for
+              investigation and resolution. Understanding these factors can help
+              foster better communication and cooperation with law enforcement in
+              various situations.
+            </p>
+          </Callout.Text>
+        </Callout.Root>        
       </div>
 
-      <div className={styles.article} id="reporting-police-misconduct" style={{ display: activeSection === "reporting-police-misconduct" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="reporting-police-misconduct" style={{ display: activeSection === "reporting-police-misconduct" ? "block" : "none" }}>
         <h2>How to Report Police Misconduct</h2>
         <p>
           In Kenya, if you wish to file a complaint regarding police misconduct,
@@ -282,15 +317,22 @@ export default function Guides() {
             included if available
           </li>
         </ol>
-        <p>
-          Please note that procedures and contact information may change, so
-          it&apos;s advisable to visit the official websites or contact these
-          organizations directly for the most up-to-date instructions on filing
-          complaints against police misconduct in Kenya
-        </p>
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              Please note that procedures and contact information may change, so
+              it&apos;s advisable to visit the official websites or contact these
+              organizations directly for the most up-to-date instructions on filing
+              complaints against police misconduct in Kenya
+            </p>
+          </Callout.Text>
+        </Callout.Root>
       </div>
 
-      <div className={styles.article} id="uganda-antilaw" style={{ display: activeSection === "uganda-antilaw" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="uganda-antilaw" style={{ display: activeSection === "uganda-antilaw" ? "block" : "none" }}>
         <h2>Uganda&apos;s Anti-LGBTQ Law</h2>
         <p>
           In recent years, Uganda has been at the center of international
@@ -379,7 +421,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="protesting" style={{ display: activeSection === "protesting" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="protesting" style={{ display: activeSection === "protesting" ? "block" : "none" }}>
         <h2>Protesting</h2>
         <p>
           Protesting is a powerful form of expression and collective action that
@@ -569,7 +611,7 @@ export default function Guides() {
         </div>
       </div>
 
-      <div className={styles.article} id="changing-your-name-and-gender-marker" style={{ display: activeSection === "changing-your-name-and-gender-marker" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="changing-your-name-and-gender-marker" style={{ display: activeSection === "changing-your-name-and-gender-marker" ? "block" : "none" }}>
         <h2>The Process of Changing your Name and Gender Marker</h2>
         <p>
           In Kenya, the process of legally changing one&apos;s name is governed
@@ -1031,7 +1073,7 @@ export default function Guides() {
         </div>
       </div>
 
-      <div className={styles.article} id="repeal-162" style={{ display: activeSection === "repeal-162" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="repeal-162" style={{ display: activeSection === "repeal-162" ? "block" : "none" }}>
         <h2>Repeal 162</h2>
         <p>
           Repeal 162 refers to the campaign and advocacy efforts aimed at
@@ -1308,7 +1350,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="when-arrested" style={{ display: activeSection === "when-arrested" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="when-arrested" style={{ display: activeSection === "when-arrested" ? "block" : "none" }}>
         <h2>What happens when you have just been arrested in Kenya?</h2>
         <p>
           When a person is arrested in Kenya, they have certain rights protected
@@ -1501,7 +1543,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="work-permits" style={{ display: activeSection === "work-permits" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="work-permits" style={{ display: activeSection === "work-permits" ? "block" : "none" }}>
         <h2>Work Permits</h2>
         <p>
           Obtaining a work permit in Kenya is necessary for individuals who wish
@@ -1662,7 +1704,7 @@ export default function Guides() {
         </p>
       </div>
 
-      <div className={styles.article} id="reporting-a-case" style={{ display: activeSection === "reporting-a-case" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="reporting-a-case" style={{ display: activeSection === "reporting-a-case" ? "block" : "none" }}>
         <h2>Reporting a Case</h2>
         <p>
           When reporting an incident to the police, it&apos;s important to
@@ -1765,7 +1807,7 @@ export default function Guides() {
         </div>
       </div>
 
-      <div className={styles.article} id="same-sex-marriage-not-possible" style={{ display: activeSection === "same-sex-marriage-not-possible" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="same-sex-marriage-not-possible" style={{ display: activeSection === "same-sex-marriage-not-possible" ? "block" : "none" }}>
         <h2>Why can&apos;t people of the same-sex get married in Kenya?</h2>
         <p>
           Same-sex marriage is not legally recognized in Kenya. The

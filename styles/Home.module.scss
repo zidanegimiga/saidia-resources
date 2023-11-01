@@ -20,10 +20,11 @@
 }
 
 .saidiaText {
-  width: 98%;
+  // width: 98%;
+  color: #e41695;
 
   @media (max-width: 1441px) {
-    width: 100%
+    // width: 100%
   }
 }
 
@@ -85,10 +86,6 @@
   @media (max-width: 376px) {
     font-size: 64px;
   }
-}
-
-.saidiaText{
-  color: #e41695;
 }
 
 .saidiaTextTop{
