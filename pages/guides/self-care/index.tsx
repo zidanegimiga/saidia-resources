@@ -429,7 +429,7 @@ export default function SelfCare() {
           
         </div>
       </div>
-      <div className={styles.article} id={"finding-a-therapist"} style={{ display: activeSection === "finding-a-therapist" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id={"finding-a-therapist"} style={{ display: activeSection === "finding-a-therapist" ? "block" : "none" }}>
         <h2>Therapists in Kenya</h2>
         <p>
           To find a therapist that works for you, you can follow these
@@ -437,55 +437,63 @@ export default function SelfCare() {
         </p>
         <ol>
           <li>
-            Seek Referrals: Ask for recommendations from trusted friends,
+            <strong style={{ color: isDarkMode ? "white" : "#383636"}}>Seek Referrals:</strong> Ask for recommendations from trusted friends,
             family members, or healthcare professionals. They may have
             firsthand experience or know someone who has worked with a
             therapist in Kenya.
           </li>
           <li>
-            Online Directories: Utilize online directories that list
+            <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Online Directories:</strong> Utilize online directories that list
             therapists in Kenya. Websites like TherapyTribe
             (therapytribe.com) or Psychology Today (psychologytoday.com)
             often provide search filters to help you find therapists based
             on location, specialties, and preferences.
           </li>
           <li>
-            LGBTQ+ Organizations: If you are part of the LGBTQ+ community,
+            <strong style={{ color: isDarkMode ? "white" : "#383636" }}> LGBTQ+ Organizations:</strong> If you are part of the LGBTQ+ community,
             reach out to LGBTQ+ organizations like GALCK (Gay and Lesbian
             Coalition of Kenya) or TEA Kenya (Transgender Education and
             Advocacy Kenya). They may be able to provide recommendations
             for queer-friendly therapists in the country.
           </li>
           <li>
-            Online Search: Conduct an online search using keywords like
+            <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Online Search:</strong> Conduct an online search using keywords like
             &quote;therapist in Kenya&quote; or &quote;mental health
             services in Kenya.&quote; This can lead you to individual
             therapists&apos; websites or clinics that offer counseling
             services.
           </li>
           <li>
-            Contact Healthcare Facilities: Contact hospitals, clinics, or
+            <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Contact Healthcare Facilities:</strong> Contact hospitals, clinics, or
             healthcare centers in your area and inquire about their mental
             health services. They may have in-house therapists or be able
             to provide referrals to professionals in the community.
           </li>
           <li>
-            Consult with Primary Care Providers: Speak to your primary
+            <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Consult with Primary Care Providers:</strong> Speak to your primary
             care doctor or healthcare provider and discuss your mental
             health concerns. They may be able to refer you to a therapist
             or provide recommendations based on your specific needs
           </li>
         </ol>
-        <p>
-          Once you have a list of potential therapists, take the time to
-          research their backgrounds, read their profiles or websites, and
-          consider factors such as their specialties, experience, and
-          approach to therapy. It can also be helpful to have an initial
-          consultation or phone call with the therapist to discuss your
-          concerns and assess if they are the right fit for you.
-        </p>
+
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              Once you have a list of potential therapists, take the time to
+              research their backgrounds, read their profiles or websites, and
+              consider factors such as their specialties, experience, and
+              approach to therapy. It can also be helpful to have an initial
+              consultation or phone call with the therapist to discuss your
+              concerns and assess if they are the right fit for you.
+            </p>
+          </Callout.Text>
+        </Callout.Root>
         <div id="queer-friendly-therapist">
-          <h2>How do you know a therapist is queer friendly</h2>
+          <h2>How do you know a therapist is queer friendly?</h2>
           <p>
             Determining if a therapist is queer-friendly can be important
             in ensuring a safe and supportive therapeutic environment.
@@ -494,7 +502,7 @@ export default function SelfCare() {
           </p>
           <ol>
             <li>
-              Training and Experience: Inquire about the therapist&apos;s
+              <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Training and Experience:</strong> Inquire about the therapist&apos;s
               training and experience working with LGBTQ+ clients. Ask if
               they have received specific education or workshops on LGBTQ+
               issues, gender identity, and sexual orientation. Therapists
@@ -503,7 +511,7 @@ export default function SelfCare() {
               knowledgeable and affirming.
             </li>
             <li>
-              Affirming Language: Listen to the language the therapist
+              <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Affirming Language:</strong> Listen to the language the therapist
               uses during conversations or in their written materials.
               Queer-friendly therapists typically use inclusive language,
               such as using gender-neutral terms or avoiding assumptions
@@ -512,7 +520,7 @@ export default function SelfCare() {
               an inclusive and accepting environment for all clients.
             </li>
             <li>
-              Openness and Non-Judgment: A queer-friendly therapist should
+              <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Openness and Non-Judgment:</strong> A queer-friendly therapist should
               demonstrate a non-judgmental and open attitude towards
               diverse sexual orientations and gender identities. They
               should create a safe space where you feel comfortable
@@ -520,7 +528,7 @@ export default function SelfCare() {
               being judged or stigmatized.
             </li>
             <li>
-              Knowledge of LGBTQ+ Issues: A therapist who is
+              <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Knowledge of LGBTQ+ Issues:</strong> A therapist who is
               queer-friendly should have a basic understanding of LGBTQ+
               issues, including common challenges faced by the community,
               mental health disparities, and the impact of minority
@@ -528,7 +536,7 @@ export default function SelfCare() {
               and address your specific needs as an LGBTQ+ individual.
             </li>
             <li>
-              Acceptance and Support: A queer-friendly therapist should
+              <strong style={{ color: isDarkMode ? "white" : "#383636" }}>Acceptance and Support:</strong> A queer-friendly therapist should
               validate and affirm your sexual orientation and gender
               identity as integral parts of who you are. They should
               respect your self-identified pronouns and use inclusive
@@ -537,15 +545,23 @@ export default function SelfCare() {
               necessary.
             </li>
           </ol>
-          <p>
-            It is important to remember that the therapist-client
-            relationship is unique, and personal compatibility is
-            essential. Trust your instincts and consider having an initial
-            consultation or phone call with the therapist to discuss their
-            approach, values, and any concerns you may have. This can help
-            you gauge their queer-friendliness and determine if they are
-            the right fit for your needs.
-          </p>
+
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                It is important to remember that the therapist-client
+                relationship is unique, and personal compatibility is
+                essential. Trust your instincts and consider having an initial
+                consultation or phone call with the therapist to discuss their
+                approach, values, and any concerns you may have. This can help
+                you gauge their queer-friendliness and determine if they are
+                the right fit for your needs.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
         </div>
         <div id="mental-health-support-orgs">
           <h2>
@@ -589,26 +605,33 @@ export default function SelfCare() {
               and counseling.
             </li>
           </ol>
-          <p>
-            It is important to note that while these organizations may
-            provide mental health support and resources, they might not
-            have in-house therapists or counselors. However, they can
-            often refer individuals to mental health professionals who are
-            LGBTQ+ affirming or have experience working with the LGBTQ+
-            community.
-          </p>
-          <p>
-            If you or someone you know is seeking mental health support,
-            it is recommended to reach out to these organizations directly
-            or visit their websites for more information on the specific
-            services they offer and to inquire about mental therapy
-            options.
-          </p>
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                It is important to note that while these organizations may
+                provide mental health support and resources, they might not
+                have in-house therapists or counselors. However, they can
+                often refer individuals to mental health professionals who are
+                LGBTQ+ affirming or have experience working with the LGBTQ+
+                community.
+              </p>
+              <p>
+                If you or someone you know is seeking mental health support,
+                it is recommended to reach out to these organizations directly
+                or visit their websites for more information on the specific
+                services they offer and to inquire about mental therapy
+                options.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
         </div>
       </div>
-      <div className={styles.article} id="group-therapy" style={{ display: activeSection === "group-therapy" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="group-therapy" style={{ display: activeSection === "group-therapy" ? "block" : "none" }}>
         <h2>Group Therapy sessions for the LGBTQ+ community</h2>
-        <p>
+        <p style={{marginBottom: 24}}>
           In Kenya, there are various organizations and support groups
           that provide group therapy sessions specifically tailored for
           LGBTQ+ individuals. These sessions offer a safe and supportive
@@ -617,29 +640,31 @@ export default function SelfCare() {
           organizations in Kenya that offer group therapy sessions for
           queers include:
         </p>
-        <ol>
-          <li>
-            Minority Women in Action (MWA): MWA is an organization focused
+        <Grid columns={{ sm: "1", lg: "3" }} gap="3" width="auto">
+          <Card>
+            <Text as="p" weight={"bold"}>Minority Women in Action (MWA)</Text>
+            MWA is an organization focused
             on supporting queer women and non-binary individuals. They
             organize group therapy sessions and support groups to address
             mental health concerns and create a sense of community.
-          </li>
-          <li>
-            The East African Trans Health and Advocacy Network (EATHAN):
+          </Card>
+          <Card>
+            <Text as="p" weight={"bold"}>The East African Trans Health and Advocacy Network (EATHAN)</Text>
             EATHAN is dedicated to promoting the health and well-being of
             transgender and gender diverse individuals. They provide
             counseling services, including group therapy sessions, to
             address mental health challenges and facilitate peer support.
-          </li>
-          <li>
-            Gay and Lesbian Coalition of Kenya (GALCK): GALCK is a
-            prominent LGBTQ+ advocacy organization in Kenya. They
+          </Card>
+          <Card>
+            <Text as="p" weight={"bold"}>Gay and Lesbian Coalition of Kenya (GALCK)</Text>
+            GALCK is a prominent LGBTQ+ advocacy organization in Kenya. They
             collaborate with mental health professionals to offer group
             therapy sessions and support groups for LGBTQ+ individuals
             seeking a safe space to share their experiences and receive
             guidance.
-          </li>
-          <li>
+          </Card>
+          <Card>
+            <Text as="p" weight={"bold"}>AFRA Kenya</Text>
             AFRA Kenya focuses on several key areas, including advocacy,
             the creation of safe spaces, feminism, and healing. Through
             their advocacy efforts, they work to advance the rights and
@@ -647,30 +672,39 @@ export default function SelfCare() {
             Kenya. They also prioritize the establishment of safe spaces
             where individuals can freely express themselves, share
             experiences, and find support.
-          </li>
-          <li>
-            PEMA Kenya: PEMA Kenya focuses on advocating for the rights
+          </Card>
+          <Card>
+            <Text as="p" weight={"bold"}>PEMA Kenya</Text>
+            PEMA Kenya focuses on advocating for the rights
             and well-being of LGBTQ+ individuals in Kenya. They provide
             various support services, including group therapy sessions, to
             address mental health issues and foster a supportive
             community.
-          </li>
-          <li>
-            Nadharia Kenya plays a vital role in raising awareness about
+          </Card>
+          <Card>
+            <Text as="p" weight={"bold"}>Nadharia Kenya</Text>
+            Nadharia plays a vital role in raising awareness about
             mental health and providing resources and support to
             individuals who may be facing mental health challenges. They
             may offer counseling services, therapy programs, educational
             initiatives, and community outreach to promote mental
             well-being and reduce the stigma surrounding mental health.
-          </li>
-        </ol>
-        <p>
-          It is important to note that availability and schedules of group
-          therapy sessions may vary, so it is advisable to reach out to
-          these organizations directly or visit their websites for more
-          information on how to participate in their group therapy
-          sessions for queers.
-        </p>
+          </Card>
+        </Grid>
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              It is important to note that availability and schedules of group
+              therapy sessions may vary, so it is advisable to reach out to
+              these organizations directly or visit their websites for more
+              information on how to participate in their group therapy
+              sessions for queers.
+            </p>
+          </Callout.Text>
+        </Callout.Root>
       </div>
     </div>
   );
