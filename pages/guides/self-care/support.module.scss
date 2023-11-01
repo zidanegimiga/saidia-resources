@@ -1,61 +1,74 @@
+@import '../../../styles/dark-mode-variables.scss';
+
 .pageWrapper {
-    // background-image: url('../../../public/homepageBg.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
     min-height: 100vh;
     padding-top: 48px;
     padding-right: 64px;
-    background-color: #1e2832;
-    color: white;
+    background-color: $light-mode-background;
+
+    @media (max-width: 769px) {
+        padding-right: 16px;
+        padding-top: 64px;
+    }
 
     @media (max-width: 452px) {
         padding-right: 16px;
         padding-top: 64px;
+        padding-left: 0;
     }
+}
+
+.pageWrapperDarkMode {
+    background-color: $dark-mode-background;
+    color: $dark-mode-text;
 }
 
 .article {
     margin-left: 22%;
-    color: white;
-    // background: rgba(233, 231, 215, 0.69);
+    color: $light-mode-text;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
-
+    color: $light-mode-text;
 
     p {
         font-size: 16px;
         margin-top: 16px;
+        line-height: 1.5em;
     }
 
     h2 {
-        font-weight: 600;
-        font-size: 32px;
-        margin-top: 32px;
-        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 38px;
+        margin-top: 24px;
+        margin-bottom: 36px;
+        // text-align: center;
     }
 
     ol {
         margin-top: 16px;
-        // padding: 24px;
-        // border-radius: 8px;
     }
 
     li {
         font-size: 16px;
         margin-left: 12px;
-        margin-bottom: 16px;
-        color: rgb(230, 230, 230);
-        line-height: 150%;
-        // background-color: #304a66;
-        // list-style: none;
-        // padding: 16px
+        margin-top: 4px;
     }
 
-    @media (max-width: 452px) {
-        width: 100%;
-        // margin-left: 16px;
+    @media (max-width: 1441px) {
+        :nth-child(5) {
+            display: block;
+        }
     }
+
+    @media (max-width: 769px) {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+.articleDarkMode {
+    color: $dark-mode-text;
 }
 
 .selfcareStrategiesList{
@@ -68,10 +81,11 @@
     margin-bottom: 16px;
     color: rgb(230, 230, 230);
     line-height: 150%;
-    background-color: #304a66;
+    background-color: #2a4158;
     list-style: none;
     padding: 16px;
     display: flex;
+    flex-direction: column;
     gap: 16px;
     justify-content: flex-start;
     border-radius: 8px;

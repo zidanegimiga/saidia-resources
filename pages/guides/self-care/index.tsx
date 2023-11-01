@@ -16,13 +16,18 @@ import SleepingCircle from "../../../public/solar_sleeping-circle-bold.svg"
 import SelfLove from "../../../public/mdi_head-love.svg"
 import ScreenTime from "../../../public/screen_time.svg"
 import ThreeFriends from "../../../public/game-icons_three-friends.svg"
+import { useDarkMode } from "@/components/ThemeProvider";
+import { Blockquote, Callout, Card, Grid, Separator, Text } from "@radix-ui/themes";
+import classnames from 'classnames';
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 export default function SelfCare() {
   const router = useRouter();
-  const activeSection = useHashChange();  
+  const activeSection = useHashChange();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();  
 
   return (
-    <div className={styles.pageWrapper}>
+    <div className={classnames(styles.pageWrapper, { [styles.pageWrapperDarkMode]: isDarkMode })}>
       <Head>
         <title>Saidia - Guides/Legal</title>
         <meta
@@ -34,94 +39,101 @@ export default function SelfCare() {
       </Head>
       <Nav />
       <SideNav />
-      <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Self-care and Mindfulness</h2>
-        <p>
+        <p style={{marginBottom: 48}}>
           Self-care is essential for maintaining overall well-being and
           managing stress. Here are some self-care strategies that can be
           helpful:
         </p>
-        <ol className={styles.selfcareStrategiesList}>
-          <div className={styles.selfcareStrategiesListItem}>
+        <Grid columns={{ sm: "1", lg:"3" }} gap="3" width="auto" className={styles.selfcareStrategiesList}>
+          <Card variant="surface">
             <Calendar/>
             <div>
               <h3>1. Establish a Daily Routine</h3>
               <p>Create a structured daily routine that includes time for rest, relaxation, and engaging in activities that bring you joy and fulfillment.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card>
             <Sleep/>
             <div>
               <h3>2. Prioritize Sleep</h3>
               <p>Ensure you are getting enough sleep each night. Maintain a consistent sleep schedule and create a relaxing bedtime routine to promote quality sleep.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card>
             <PhysicalActivity/>
             <div>
               <h3>3. Physical Activity</h3>
               <p>Regular exercise not only benefits your physical health but also contributes to mental well-being. Find activities you enjoy, such as walking, dancing, yoga, or any form of exercise that gets your body moving.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <Meditation/>
             <div>
               <h3>4. Practice Mindfulness and Meditation:</h3>
               <p>Set aside time for mindfulness or meditation practices. This can involve deep breathing exercises, guided meditation, or simply being fully present in the moment.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <Community/>
             <div>
               <h3>5. Connect with Others</h3>
               <p>Cultivate and maintain healthy relationships. Spend quality time with loved ones, engage in meaningful conversations, and seek support from friends and family when needed.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <Paint/>
             <div><h3>6. Engage in Hobbies and Creative Outlets</h3>
               <p>Explore activities that bring you joy and allow for self-expression. This could include painting, writing, playing an instrument, gardening, or any hobby that sparks your interest.</p></div> 
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <SleepingCircle/>
             <div>
               <h3>7. Take Breaks and Rest</h3>
               <p>Allow yourself regular breaks throughout the day to recharge. Step away from work or other responsibilities to engage in relaxing activities or simply rest.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <SelfLove/>
             <div>
               <h3>8. Practice Self-Compassion</h3>
               <p>Be kind and gentle with yourself. Treat yourself with the same understanding and compassion you would offer to a friend. Practice positive self-talk and embrace self-acceptance.</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <ScreenTime/>
             <div>
               <h3>9. Limit Screen Time</h3>
               <p>Set boundaries on the amount of time you spend on electronic devices, social media, and watching screens. Take breaks from technology and engage in activities that do not involve screens</p>
             </div>
-          </div>
-          <div className={styles.selfcareStrategiesListItem}>
+          </Card>
+          <Card variant="surface">
             <ThreeFriends/>
             <div>
               <h3>10. Seek Support</h3>
               <p>Don&apos;t hesitate to reach out for professional help or support when needed. Therapists, counselors, or support groups can provide guidance and a safe space for exploring your emotions and concerns.</p>
             </div>
-          </div>
-        </ol>
+          </Card>
+        </Grid>
 
-        <p>
-          Remember, self-care looks different for everyone, so it is important
-          to find strategies that resonate with you and align with your needs
-          and values. Regularly assess your well-being and make adjustments to
-          your self-care routine as necessary.
-        </p>
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              Remember, self-care looks different for everyone, so it is important
+              to find strategies that resonate with you and align with your needs
+              and values. Regularly assess your well-being and make adjustments to
+              your self-care routine as necessary.
+            </p>
+          </Callout.Text>
+        </Callout.Root>
 
-        <div id="mindfulness-exercises">
-          <h2>Mindfullness Exercises</h2>
-          <p>
+        <div>
+          <h2 style={{ marginBottom: 0, marginTop: 64, fontSize: "28px"}}>Mindfullness Exercises</h2>
+          <p style={{ marginTop: "6px", fontSize: "16px" }}>
             Mindfulness exercises can help you cultivate present-moment
             awareness, reduce stress, and promote overall well-being. Here are
             a few mindfulness exercises you can try:
@@ -171,17 +183,27 @@ export default function SelfCare() {
               beings.
             </li>
           </ol>
-          <p>
-            Remember, mindfulness is a practice that requires patience and
-            consistency. Start with short sessions and gradually increase the
-            duration as you become more comfortable. Find what resonates with
-            you and incorporate mindfulness into your daily routine for
-            greater clarity and presence in your life.
-          </p>
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                Remember, mindfulness is a practice that requires patience and
+                consistency. Start with short sessions and gradually increase the
+                duration as you become more comfortable. Find what resonates with
+                you and incorporate mindfulness into your daily routine for
+                greater clarity and presence in your life.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
         </div>
+
+        <Separator orientation="horizontal" my="3" size="4" />
+        
         <div id="relaxation-techniques">
-          <h2>Relaxation Techniques</h2>
-          <p>
+          <h2 style={{ marginBottom: 0, marginTop: 64, fontSize: "28px" }}>Relaxation Techniques</h2>
+          <p style={{ marginTop: "6px", fontSize: "16px" }}>
             Relaxation techniques can help reduce stress, promote calmness,
             and induce a state of relaxation. Here are a few relaxation
             techniques you can try:
@@ -250,16 +272,25 @@ export default function SelfCare() {
               aromatherapy to enhance relaxation.
             </li>
           </ol>
-          <p>
-            Remember, relaxation techniques can be personalized based on your
-            preferences and what brings you the most calmness and tranquility.
-            Incorporate these practices into your routine regularly to
-            experience the benefits of relaxation and stress reduction.
-          </p>
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                Remember, relaxation techniques can be personalized based on your
+                preferences and what brings you the most calmness and tranquility.
+                Incorporate these practices into your routine regularly to
+                experience the benefits of relaxation and stress reduction.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
+          
         </div>
+
         <div>
-          <h2>Practical Relaxation Exercise: Finding Inner Calm</h2>
-          <p>Duration: 10 minutes</p>
+          <h2 style={{ marginTop: 64, marginBottom: 0, fontSize: "28px" }}>Practical Relaxation Exercise: Finding Inner Calm</h2>
+          <p style={{ marginTop: "6px", fontSize: "16px" }}>Duration: 10 minutes</p>
           <p>
             Introduction: &quot;Welcome to this guided meditation session.
             Today, we will focus on finding inner calm and cultivating a sense
@@ -309,70 +340,93 @@ export default function SelfCare() {
             </li>
           </ol>
           <p>Conclusion:</p>
-          <p>
-            &quot;Take a moment to express gratitude for this time of
-            stillness and self-care. When you&apos;re ready, slowly bring your
-            awareness back to the present moment. Wiggle your fingers and
-            toes, gently open your eyes, and carry this sense of inner calm
-            with you as you go about your day. Thank you for joining this
-            guided meditation.&quot;
-          </p>
+          <Blockquote highContrast>
+            <p>
+              &quot;Take a moment to express gratitude for this time of
+              stillness and self-care. When you&apos;re ready, slowly bring your
+              awareness back to the present moment. Wiggle your fingers and
+              toes, gently open your eyes, and carry this sense of inner calm
+              with you as you go about your day. Thank you for joining this
+              guided meditation.&quot;
+            </p>
+          </Blockquote>
         </div>
-        <div id="selfcare-apps">
-          <h2>Self-care Apps</h2>
-          <p>
+
+        <Separator orientation="horizontal" my="3" size="4" />
+
+        <div id="selfcare-apps" style={{marginTop: 48}}>
+          <h2 style={{ marginBottom: 0, marginTop: 64, fontSize: "28px" }}>Self-care Apps</h2>
+          <p style={{ marginTop: "8px", marginBottom: 24, fontSize: "16px" }}>
             There are several apps available that can help with mindfulness
             and self-care practices. Here are some popular ones:
           </p>
-          <ol>
-            <li>
-              Headspace: Headspace offers guided meditation sessions,
+
+          <Grid columns={{ sm: "1", lg: "3" }} gap="3" width="auto" mt={"3"}>
+            <Card variant="surface">
+              <Text as="div" weight="bold">Headspace</Text>
+               Headspace offers guided meditation sessions,
               mindfulness exercises, and sleep aids to help reduce stress,
               improve focus, and promote relaxation.
-            </li>
-            <li>
-              Calm: Calm provides a variety of guided meditations, breathing
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">Calm</Text>
+               Calm provides a variety of guided meditations, breathing
               exercises, sleep stories, and soothing music to support
               relaxation and mindfulness.
-            </li>
-            <li>
-              Insight Timer: Insight Timer offers a vast collection of guided
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">Insight Timer</Text>
+               Insight Timer offers a vast collection of guided
               meditations, music tracks, and talks from leading meditation
               teachers and mindfulness experts.
-            </li>
-            <li>
-              Stop, Breathe & Think: This app helps you check in with your
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">Stop, Breathe & Think</Text>
+              This app helps you check in with your
               emotions, recommends mindfulness activities based on your
               current state of mind, and provides guided meditations for
               relaxation and stress relief.
-            </li>
-            <li>
-              Smiling Mind: Smiling Mind offers mindfulness programs and
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">Smiling Mind</Text>
+               Smiling Mind offers mindfulness programs and
               meditation exercises designed for different age groups, from
               children to adults.
-            </li>
-            <li>
-              Aura: Aura provides personalized mindfulness exercises, daily
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">Aura</Text>
+              Aura provides personalized mindfulness exercises, daily
               reminders, and guided meditations to help reduce stress, improve
               sleep, and enhance overall well-being.
-            </li>
-            <li>
-              Breathe: Breathe offers guided meditations, relaxing music,
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">Breathe</Text>
+               Breathe offers guided meditations, relaxing music,
               bedtime stories, and breathing exercises to support mindfulness,
               stress reduction, and better sleep.
-            </li>
-            <li>
-              The Mindfulness App: This app provides guided meditations,
-              customizable meditation timers, and reminders to help
-              incorporate mindfulness into your daily routine.
-            </li>
-          </ol>
-          <p>
-            Remember to explore different apps and find the one that resonates
-            with you the most. These apps can serve as helpful tools in
-            incorporating mindfulness and self-care practices into your daily
-            life.
-          </p>
+            </Card>
+            <Card>
+              <Text as="div" weight="bold">The Mindfulness App</Text>
+              <p>This app provides guided meditations,
+                customizable meditation timers, and reminders to help
+                incorporate mindfulness into your daily routine.</p>
+            </Card>
+          </Grid>
+
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                Remember to explore different apps and find the one that resonates
+                with you the most. These apps can serve as helpful tools in
+                incorporating mindfulness and self-care practices into your daily
+                life.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
+          
         </div>
       </div>
       <div className={styles.article} id={"finding-a-therapist"} style={{ display: activeSection === "finding-a-therapist" ? "block" : "none" }}>
