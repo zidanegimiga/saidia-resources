@@ -1,6 +1,6 @@
 .nav {
     position: fixed;
-    z-index: 2;
+    z-index: 10;
 }
 
 .navBar {
@@ -20,6 +20,7 @@
 
 .menuToggle {
     cursor: pointer;
+    
 }
 
 .navOverlay {

@@ -8,10 +8,15 @@ import { legal, business } from "@/Data/categories";
 import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
+import { useDarkMode } from "@/components/ThemeProvider";
+import classnames from 'classnames';
+import { Callout } from "@radix-ui/themes";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 export default function Guides() {
   const activeSection = useHashChange();
   const [scrollY, setScrollY] = useState(0);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     function handleScroll() {
@@ -26,7 +31,7 @@ export default function Guides() {
     };
   }, []); 
   return (
-    <div className={styles.pageWrapper}>
+    <div className={classnames(styles.pageWrapper, { [styles.pageWrapperDarkMode]: isDarkMode })}>
       <Head>
         <title>Saidia - Guides/Legal</title>
         <meta
@@ -39,7 +44,7 @@ export default function Guides() {
       <Nav />
       <SideNav />
       {
-        <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px" }}>
+        <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px", zIndex: 2 }}>
           <h2 style={{ color: "white", fontFamily: "sans-serif" }}> 
             {
               activeSection === "" ? "Vocational Skills in Kenya" : "Starting a Business in Kenya"
@@ -47,7 +52,7 @@ export default function Guides() {
           </h2>
         </div>
       }
-      <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Vocational Skills in Kenya</h2>
         <p>
           In Nairobi, the bustling capital city of Kenya, the opportunity to
@@ -170,7 +175,7 @@ export default function Guides() {
           training is the perfect place to start your journey to success.
         </p>
       </div>
-      <div className={styles.article} style={{ display: activeSection === "starting-a-business-in-kenya" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection === "starting-a-business-in-kenya" ? "block" : "none" }}>
         <div id="starting-a-business-in-kenya">
           <h2>Setting up a business in Kenya</h2>
           <p>
@@ -209,9 +214,8 @@ export default function Guides() {
             950-25,000ksh(as at 2023), the costs of business registration are as
             follows:
           </p>
-          <br/>
 
-          <ol className={styles.eWasteCategories}>
+          <ol style={{}}>
             <li>Registration of Business name: <strong>950ksh</strong></li>
             <li> Private Limited Company: <strong>10,650ksh</strong></li>
             <li> Public Limited Company: <strong>10,650ksh</strong></li>
@@ -616,15 +620,22 @@ export default function Guides() {
             </li>
           </ol>
 
-          <p>
-            It is important for employers to familiarize themselves with the
-            specific laws and regulations related to employment in Kenya, as
-            there may be sector-specific variations and additional requirements.
-            Seeking professional advice or consulting with legal experts can
-            help ensure compliance with employment regulations and provide
-            clarity on specific obligations and benefits for both employers and
-            employees.
-          </p>
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                It is important for employers to familiarize themselves with the
+                specific laws and regulations related to employment in Kenya, as
+                there may be sector-specific variations and additional requirements.
+                Seeking professional advice or consulting with legal experts can
+                help ensure compliance with employment regulations and provide
+                clarity on specific obligations and benefits for both employers and
+                employees.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
 
           <p>
             Business Insurance: Consider obtaining business insurance coverage
@@ -643,7 +654,7 @@ export default function Guides() {
             of the process:
           </p>
 
-          <ol className={styles.eWasteCategories}>
+          <ol>
             <li>
               <strong>Annual Financial Statements:</strong> Prepare your company&apos;s annual
               financial statements in accordance with the International
@@ -694,14 +705,22 @@ export default function Guides() {
             </li>
           </ol>
 
-          <p>
-            It is important to note that the specific requirements and timelines
-            may vary based on the type of business entity (e.g., company,
-            partnership, sole proprietorship) and the applicable laws and
-            regulations. Therefore, it is recommended to seek professional
-            advice from a qualified accountant, lawyer, or business consultant
-            to ensure full compliance with all legal requirements.
-          </p>
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                It is important to note that the specific requirements and timelines
+                may vary based on the type of business entity (e.g., company,
+                partnership, sole proprietorship) and the applicable laws and
+                regulations. Therefore, it is recommended to seek professional
+                advice from a qualified accountant, lawyer, or business consultant
+                to ensure full compliance with all legal requirements.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
+          
         </div>
         <div id="how-to-open-a-bank-account">
           <h3 style={{marginTop: 32, marginBottom: 16}}>How do you open a bank account in Kenya</h3>
@@ -770,13 +789,20 @@ export default function Guides() {
               will provide you with account-related documents, including your
               account number, debit card (if applicable), and account statements
             </li>
-          </ol>
-          <p>
-            Remember, the exact requirements and procedures may vary slightly
-            between banks. It is advisable to contact your preferred bank or
-            visit their official website for specific information and to confirm
-            any additional requirements.
-          </p>
+          </ol>          
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                Remember, the exact requirements and procedures may vary slightly
+                between banks. It is advisable to contact your preferred bank or
+                visit their official website for specific information and to confirm
+                any additional requirements.
+              </p>
+            </Callout.Text>
+          </Callout.Root>          
         </div>
         <div id="banks-in-kenya">
           <h3 style={{marginTop: 32, fontSize: 28}}>Which banks operate in Kenya</h3>
@@ -887,14 +913,23 @@ export default function Guides() {
               on time deposits and savings accounts.
             </li>
           </ol>
-          <p>
-            It is important to note that interest rates can vary based on the
-            specific account type and the amount of funds deposited.
-            Additionally, banks may offer promotional rates or customized rates
-            for specific customers, so it is advisable to contact the banks
-            directly or visit their websites to get the most accurate and
-            up-to-date information on interest rates.
-          </p>
+
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                It is important to note that interest rates can vary based on the
+                specific account type and the amount of funds deposited.
+                Additionally, banks may offer promotional rates or customized rates
+                for specific customers, so it is advisable to contact the banks
+                directly or visit their websites to get the most accurate and
+                up-to-date information on interest rates.
+              </p>
+            </Callout.Text>
+          </Callout.Root>         
+
         </div>
         <div id="banks-best-for-startups">
           <h3 style={{ marginTop: 32, fontSize: 28 }}>What banks are best for Business Start ups</h3>
