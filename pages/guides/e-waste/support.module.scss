@@ -1,57 +1,71 @@
+@import '../../../styles/dark-mode-variables.scss';
+
 .pageWrapper {
-    background-color: #1e2832;
     min-height: 100vh;
     padding-top: 48px;
-    padding-right: 80px;
+    padding-right: 64px;
+    background-color: $light-mode-background;
+
+    @media (max-width: 769px) {
+        padding-right: 16px;
+        padding-top: 64px;
+    }
 
     @media (max-width: 452px) {
         padding-right: 16px;
         padding-top: 64px;
+        padding-left: 0;
     }
+}
+
+.pageWrapperDarkMode {
+    background-color: $dark-mode-background;
+    color: $dark-mode-text;
 }
 
 .article {
     margin-left: 22%;
-    color: white;
-    // background: rgba(233, 231, 215, 0.69);
+    color: $light-mode-text;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
-
-    h2 {
-        font-weight: 600;
-        font-size: 48px;
-        margin-top: 24px;
-        margin-bottom: 24px;
-        text-align: center;
-        font-family: Helvetica, sans-serif;
-        color: #ffffff;
-    }
-
-    ul {
-        list-style: none;
-        display: grid
-    }
+    color: $light-mode-text;
 
     p {
-        margin-bottom: 8px;
-        color: rgb(231, 231, 231);
-        font-size: 18px;
+        font-size: 16px;
+        margin-top: 16px;
+        line-height: 1.5em;
     }
 
-    @media (max-width: 452px) {
+    h2 {
+        font-weight: 500;
+        font-size: 38px;
+        margin-top: 24px;
+        margin-bottom: 36px;
+        // text-align: center;
+    }
+
+    ol {
+        margin-top: 16px;
+    }
+
+    li {
+        font-size: 16px;
+        margin-left: 12px;
+        margin-top: 4px;
+    }
+
+    @media (max-width: 1441px) {
+    }
+
+    @media (max-width: 769px) {
         width: 100%;
         margin-left: 0px;
-        padding: 16px;
-
-        p {
-            font-size: 15px;
-        }
-
-        h2 {
-            margin-bottom: 4px;
-        }
     }
+}
+
+.articleDarkMode {
+    color: $dark-mode-text;
 }
 
 .header {
@@ -63,7 +77,7 @@
 }
 
 .eWasteCategories {
-    background-color: #061729;
+    // background-color: #061729;
     list-style: none;
     padding: 16px;
     display: flex;
@@ -74,13 +88,13 @@
     margin-top: 16px;
 
     li span {
-        color: #0163c5;
+        // color: #0163c5;
         font-weight: 600
     }
 }
 
 .eWasteFacts {
-    background-color: #061729;
+    // background-color: #061729;
     padding: 28px;
     display: flex;
     flex-direction: column;
@@ -91,7 +105,7 @@
     list-style-type: disc;
 
     li span {
-        color: #0163c5;
+        // color: #0163c5;
         font-weight: 600
     }
 }

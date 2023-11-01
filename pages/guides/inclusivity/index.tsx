@@ -3,16 +3,19 @@ import styles from "./support.module.scss";
 import Nav from "@/components/Nav/Nav";
 import Head from "next/head";
 import Link from "next/link";
-import { setOriginalNode } from "typescript";
-import { legal, business } from "@/Data/categories";
-import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
+import { useDarkMode } from "@/components/ThemeProvider";
+import classnames from 'classnames';
+import { Tabs, Box, Text, Callout } from "@radix-ui/themes";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 export default function Inclusivity() {
   const activeSection = useHashChange();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+
   return (
-    <div className={styles.pageWrapper}>
+    <div className={classnames(styles.pageWrapper, { [styles.pageWrapperDarkMode]: isDarkMode })}>
       <Head>
         <title>Saidia - Guides/Legal</title>
         <meta
@@ -22,11 +25,12 @@ export default function Inclusivity() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Nav />
       <SideNav />
-      <div className={styles.article} id="" style={{ display: activeSection === "" ? "block" : "none" }}>
-        <h2>Learn more about what LGBTQ+ means</h2>
-        <p>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection.length === 0 ? "block" : "none" }}>
+        <h2 >Learn more about what LGBTQ+ means</h2>
+        <p >
           The LGBTQ+ community encompasses a beautiful array of identities, each
           contributing a unique and valuable human experience. From Lesbians and
           Gays to Bisexuals, Transgender individuals, Queer individuals,
@@ -41,7 +45,8 @@ export default function Inclusivity() {
           Let&aposs delve into what sexual orientations and gender identities
           entail:
         </p>
-        <p id={"types-of-sexualities"}>Sexual Orientations:</p>
+
+        <p style={{fontWeight: 600}} id={"types-of-sexualities"}>Sexual Orientations:</p>
         <ol>
           <li>
             Heterosexual (Straight): Individuals who are attracted to
@@ -64,7 +69,7 @@ export default function Inclusivity() {
             anyone or have a lack of interest in sexual activities
           </li>
         </ol>
-        <p id={"gender-identities"}>Gender Identities:</p>
+        <p style={{ fontWeight: 600 }} id={"gender-identities"}>Gender Identities:</p>
         <ol>
           <li>
             Cisgender: Individuals whose gender identity aligns with the sex
@@ -90,27 +95,35 @@ export default function Inclusivity() {
             times.
           </li>
         </ol>
-        <p>
-          It is essential to recognize that sexual orientations and gender
-          identities exist on a broad spectrum, and individuals may identify in
-          unique and diverse ways. Respecting and acknowledging these identities
-          is crucial for creating an inclusive and supportive environment for
-          all individuals, regardless of their sexual orientation or gender
-          identity. Embracing diversity and understanding the complexities of
-          human identity fosters empathy and paves the way for a more
-          compassionate world.
-        </p>
-        <p>
-          In our journey towards acceptance and celebration of diversity, let us
-          be allies and champions for the LGBTQ+ community. Together, we can
-          create a society where every individual is respected, supported, and
-          celebrated for who they truly are, regardless of their sexual
-          orientation or gender identity. It all starts with acknowledging the
-          shared humanity that unites us and working towards a world that
-          embraces empathy, understanding, and love for all
-        </p>
+
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              It is essential to recognize that sexual orientations and gender
+              identities exist on a broad spectrum, and individuals may identify in
+              unique and diverse ways. Respecting and acknowledging these identities
+              is crucial for creating an inclusive and supportive environment for
+              all individuals, regardless of their sexual orientation or gender
+              identity. Embracing diversity and understanding the complexities of
+              human identity fosters empathy and paves the way for a more
+              compassionate world.
+            </p>
+            <p>
+              In our journey towards acceptance and celebration of diversity, let us
+              be allies and champions for the LGBTQ+ community. Together, we can
+              create a society where every individual is respected, supported, and
+              celebrated for who they truly are, regardless of their sexual
+              orientation or gender identity. It all starts with acknowledging the
+              shared humanity that unites us and working towards a world that
+              embraces empathy, understanding, and love for all
+            </p>
+          </Callout.Text>
+        </Callout.Root>
       </div>
-      <div className={styles.article} id="pronouns" style={{ display: activeSection === "pronouns" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="pronouns" style={{ display: activeSection === "pronouns" ? "block" : "none" }}>
         <h2>Pronouns</h2>
         <p>
           People&apos;s pronouns are the pronouns they prefer to be addressed
@@ -144,13 +157,22 @@ export default function Inclusivity() {
             he/she, and &quot;xem&quot; is used in place of him/her.
           </li>
         </ol>
-        <p>
-          It is important to remember that individuals may have different
-          preferences when it comes to pronouns, and it is always respectful to
-          use the pronouns someone specifies for themselves. It is best to ask
-          and use the correct pronouns for each person based on their gender
-          identity.
-        </p>
+
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              It is important to remember that individuals may have different
+              preferences when it comes to pronouns, and it is always respectful to
+              use the pronouns someone specifies for themselves. It is best to ask
+              and use the correct pronouns for each person based on their gender
+              identity.
+            </p>
+          </Callout.Text>
+        </Callout.Root>
+
         <div id="respect-pronouns">
           <h3 style={{marginTop: "28px", marginBottom: "8px", fontSize: "24px"}}>Why should you respect people&apos;s pronouns?</h3>
           <p>Respecting pronouns is crucial for several reasons:</p>
@@ -191,11 +213,19 @@ export default function Inclusivity() {
               relationships.
             </li>
           </ol>
-          <p>
-            Overall, respecting pronouns is an essential step towards creating a
-            more inclusive, affirming, and understanding society for people of
-            all gender identities.
-          </p>
+
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                Overall, respecting pronouns is an essential step towards creating a
+                more inclusive, affirming, and understanding society for people of
+                all gender identities.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
         </div>
         <div id="pronouns-importance">
           <h3 style={{ marginTop: "28px", marginBottom: "8px", fontSize: "24px" }}>Why have pronouns become important in the last few years?</h3>
@@ -308,7 +338,7 @@ export default function Inclusivity() {
           </ol>
         </div>
       </div>
-      <div className={styles.article} id="ballroom-culture" style={{ display: activeSection === "ballroom-culture" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="ballroom-culture" style={{ display: activeSection === "ballroom-culture" ? "block" : "none" }}>
         <h2>
           Discovering the Vibrant History of Ballroom Culture: A Safe Haven for
           the LGBTQ+ Community
@@ -376,7 +406,7 @@ export default function Inclusivity() {
           society for everyone.
         </p>
       </div>
-      <div className={styles.article} id="vigils" style={{ display: activeSection === "vigils" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="vigils" style={{ display: activeSection === "vigils" ? "block" : "none" }}>
         <h2>Vigils: Celebrating LGBTQ+ Lives</h2>
         <p>
           Vigils hold a significant place in the hearts of the LGBTQ+ community

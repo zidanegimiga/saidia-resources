@@ -1,8 +1,10 @@
+@import '../../../styles/dark-mode-variables.scss';
+
 .pageWrapper {
     min-height: 100vh;
     padding-top: 48px;
     padding-right: 64px;
-    background-color: #1e2832;
+    background-color: $light-mode-background;
 
     @media (max-width: 769px) {
         padding-right: 16px;
@@ -16,29 +18,18 @@
     }
 }
 
-.eWasteCategories {
-    background-color: #061729;
-    list-style: none;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-
-    li span {
-        color: #0163c5;
-        font-weight: 600
-    }
+.pageWrapperDarkMode {
+    background-color: $dark-mode-background;
+    color: $dark-mode-text;
 }
 
 .article {
     margin-left: 22%;
-    color: white;
+    color: $light-mode-text;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 24px 32px;
     margin-bottom: 24px;
+    color: $light-mode-text;
 
     p {
         font-size: 16px;
@@ -51,7 +42,6 @@
         font-size: 38px;
         margin-top: 24px;
         margin-bottom: 36px;
-        text-align: center;
     }
 
     ol {
@@ -61,6 +51,7 @@
     li {
         font-size: 16px;
         margin-left: 12px;
+        margin-top: 4px;
     }
 
     @media (max-width: 1441px) {
@@ -71,3 +62,103 @@
         margin-left: 0px;
     }
 }
+
+.articleDarkMode {
+    color: $dark-mode-text;
+}
+
+.talkBubbleContainer {
+    width: 100%;
+
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        color: black;
+        line-height: 1.5em;
+    }
+
+    @media (max-width: 1600px) {
+
+        p {}
+
+        :nth-child(1) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 769px) {
+        padding-bottom: 0px;
+        height: 1040px;
+        justify-content: center;
+
+    }
+
+    @media (max-width: 456px) {
+        background: none;
+        padding: 0;
+        justify-content: flex-start;
+        margin: 0;
+
+        p {
+            width: 100%;
+            color: white;
+            font-weight: 400;
+        }
+    }
+}
+
+.eWasteCategories {
+    // background-color: #061729;
+    list-style: none;
+    // padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    li span {
+        // color: #0163c5;
+        font-weight: 600
+    }
+}
+
+// .article {
+//     margin-left: 22%;
+//     color: white;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     padding: 24px 32px;
+//     margin-bottom: 24px;
+
+//     p {
+//         font-size: 16px;
+//         margin-top: 16px;
+//         line-height: 1.5em;
+//     }
+
+//     h2 {
+//         font-weight: 500;
+//         font-size: 38px;
+//         margin-top: 24px;
+//         margin-bottom: 36px;
+//         text-align: center;
+//     }
+
+//     ol {
+//         margin-top: 16px;
+//     }
+
+//     li {
+//         font-size: 16px;
+//         margin-left: 12px;
+//     }
+
+//     @media (max-width: 1441px) {
+//     }
+
+//     @media (max-width: 769px) {
+//         width: 100%;
+//         margin-left: 0px;
+//     }
+// }

@@ -5,10 +5,15 @@ import Head from "next/head";
 import Link from "next/link";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
+import { useDarkMode } from "@/components/ThemeProvider";
+import classnames from 'classnames';
+import { Callout } from "@radix-ui/themes";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 export default function Events() {
   const activeSection = useHashChange();
   const [scrollY, setScrollY] = useState(0);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     function handleScroll() {
@@ -24,7 +29,7 @@ export default function Events() {
   }, []);
 
   return (
-    <div className={styles.pageWrapper}>
+    <div className={classnames(styles.pageWrapper, { [styles.pageWrapperDarkMode]: isDarkMode })}>
       <Head>
         <title>Saidia - Guides/Legal</title>
         <meta
@@ -45,7 +50,7 @@ export default function Events() {
           </h2>
         </div>
       }
-      <div className={styles.article} id="inclusive-events" style={{ display: activeSection === "inclusive-events" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="inclusive-events" style={{ display: activeSection === "inclusive-events" ? "block" : "none" }}>
         <h2>Queer-friendly events you can attend</h2>
         <p>
           In recent years, there has been a growing acceptance and recognition
@@ -118,17 +123,25 @@ export default function Events() {
             like Drag Brunch and also offer Drag make-up classes.
           </li>
         </ol>
-        <p>
-          It is important to note that the landscape for queer-friendly events
-          in Kenya is evolving, and it is recommended to stay connected with
-          LGBTQ+ organizations, social media groups, and online platforms to
-          stay informed about upcoming events. Additionally, due to the dynamic
-          nature of the social and political climate, it is advisable to
-          prioritize safety and consider the legal and cultural context when
-          attending or participating
-        </p>
+        <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+          <Callout.Icon>
+            <InfoCircledIcon />
+          </Callout.Icon>
+          <Callout.Text>
+            <p>
+              It is important to note that the landscape for queer-friendly events
+              in Kenya is evolving, and it is recommended to stay connected with
+              LGBTQ+ organizations, social media groups, and online platforms to
+              stay informed about upcoming events. Additionally, due to the dynamic
+              nature of the social and political climate, it is advisable to
+              prioritize safety and consider the legal and cultural context when
+              attending or participating
+            </p>            
+          </Callout.Text>
+        </Callout.Root>
+        
       </div>
-      <div className={styles.article} id="fun-things-to-do" style={{ display: activeSection === "fun-things-to-do" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="fun-things-to-do" style={{ display: activeSection === "fun-things-to-do" ? "block" : "none" }}>
         <h2>Fun things to do in Nairobi</h2>
         <p>
           There are plenty of fun activities to do in Nairobi. Here are some
@@ -400,14 +413,22 @@ export default function Events() {
               creating public art and promoting artistic expression.
             </li>
           </ol>
-          <p>
-            To stay updated on painting events in Kenya, consider following
-            local art galleries, art studios, and art organizations on social
-            media, checking event listings in newspapers or online platforms
-            dedicated to the arts. Additionally, joining art communities and
-            networking with fellow artists can provide valuable information
-            about upcoming painting events.
-          </p>
+          
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                To stay updated on painting events in Kenya, consider following
+                local art galleries, art studios, and art organizations on social
+                media, checking event listings in newspapers or online platforms
+                dedicated to the arts. Additionally, joining art communities and
+                networking with fellow artists can provide valuable information
+                about upcoming painting events.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
         </div>
       </div>
     </div>

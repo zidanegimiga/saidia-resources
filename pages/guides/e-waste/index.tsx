@@ -8,10 +8,15 @@ import { legal, business } from "@/Data/categories";
 import { Accordion } from "@/components/Accordion";
 import SideNav from "@/components/SideNav";
 import useHashChange from "@/hooks/useHashChange";
+import { useDarkMode } from "@/components/ThemeProvider";
+import classnames from 'classnames';
+import { Callout } from "@radix-ui/themes";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 export default function SelfCare() {
   const activeSection = useHashChange();
   const [scrollY, setScrollY] = useState(0);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     function handleScroll() {
@@ -26,7 +31,7 @@ export default function SelfCare() {
     };
   }, []); 
   return (
-    <div className={styles.pageWrapper}>
+    <div className={classnames(styles.pageWrapper, { [styles.pageWrapperDarkMode]: isDarkMode })}>
       <Head>
         <title>Saidia - Guides/Legal</title>
         <meta
@@ -45,7 +50,7 @@ export default function SelfCare() {
         </div>
       }
 
-      <div className={styles.article} style={{ display: activeSection === "" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Unravel the World of E-waste</h2>
         <p>
           E-waste, or electronic waste, is a term used to describe discarded
