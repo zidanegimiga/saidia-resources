@@ -46,7 +46,7 @@ const Support = () => {
             <h2 style={{color: "white", fontFamily: "sans-serif"}}> Organizations supporting the Kenyan LGBTQ+ community </h2>
         </div>
       } */}
-      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "organisations-supporting-the-lgbtq" || " " ? "block" : "none" }} >
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="organisations-supporting-the-lgbtq" style={{ display: activeSection === "organisations-supporting-the-lgbtq" || "audrey" || " " ? "block" : "none" }} >
         <h2> Organizations supporting the Kenyan LGBTQ+ community </h2>
         <p className={styles.articleDescription}>
           These organizations play a crucial role in promoting inclusivity,
@@ -66,7 +66,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <p>info@pemakenya.org</p>
+                <a href="https://info@pemakenya.org" type="email" target="_blank">info@pemakenya.org</a>
               </Blockquote>
             </Flex>            
           </Card>
@@ -100,8 +100,7 @@ const Support = () => {
 
               <Blockquote>
                 <p>+254 792 400 528</p>
-                <br />
-                <strong>+254 700 010 815</strong>
+                +254 700 010 815
               </Blockquote>
             </Flex>
           </Card>          
@@ -117,8 +116,7 @@ const Support = () => {
 
               <Blockquote>
                 <p>+254 792 400 528</p>
-                <br />
-                <p>jinsiangu@gmail.com</p>
+                <a href="https://jinsiangu@gmail.com" type="email" target="_blank">jinsiangu@gmail.com</a>
               </Blockquote>
             </Flex>
           </Card>
@@ -169,7 +167,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <strong>+254 020 2426 060</strong>
+                <p>+254 020 2426 060</p>
               </Blockquote>
             </Flex>
           </Card>
@@ -183,7 +181,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <a href="https//ishtarmsm.org" target="_blank"><strong>Ishtar Website</strong></a>
+                <a href="https://www.ishtarmsm.org" target="_blank"><>www.ishtarmsm.org</></a>
               </Blockquote>
             </Flex>
           </Card>
@@ -197,7 +195,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <strong><a href="https://hello@talanta-africa.org" target="_blank" type="email">Email address</a></strong>
+                <p><a href="https://hello@talanta-africa.org" target="_blank" type="email">hello@talanta-africa.org</a></p>
               </Blockquote>
             </Flex>
           </Card>
@@ -211,7 +209,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <strong><a href="https://info@hoymaskenya.or.ke" target="_blank" type="email">Email address</a></strong>
+                <p><a href="https://info@hoymaskenya.or.ke" target="_blank" type="email">info@hoymaskenya.or.ke</a></p>
               </Blockquote>
             </Flex>
           </Card>
@@ -225,7 +223,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <a href="https://twitter.com/rwokwomen" target="_blank"><strong>Twitter profile</strong></a>
+                <a href="https://twitter.com/rwokwomen" target="_blank"><p>Twitter profile</p></a>
               </Blockquote>
             </Flex>
           </Card>
@@ -239,7 +237,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <a href="https//www.nadharia.org/" target="_blank"><strong>Nadharia Website</strong></a>
+                <a href="https//www.nadharia.org/" target="_blank"><p>Nadharia Website</p></a>
               </Blockquote>
             </Flex>
           </Card>
@@ -253,7 +251,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <strong>+254 708 791 323</strong>
+                <p>+254 708 791 323</p>
               </Blockquote>
             </Flex>
           </Card>
@@ -267,7 +265,7 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <strong><a href="hey@boldnetworkafrica.com" target="_blank" type="email">hey@boldnetworkafrica.com</a></strong>
+                <p><a href="hey@boldnetworkafrica.com" target="_blank" type="email">hey@boldnetworkafrica.com</a></p>
               </Blockquote>
             </Flex>
           </Card>
@@ -281,20 +279,19 @@ const Support = () => {
                 </Text>
               </div>
               <Blockquote>
-                <strong><a href="awesome@creativesgarage.org" target="_blank" type="email">awesome@creativesgarage.org</a></strong>
+                <p><a href="https://awesome@creativesgarage.org" target="_blank" type="email">awesome@creativesgarage.org</a></p>
               </Blockquote>
             </Flex>
           </Card>
         </Grid>
       </div>
 
-      <div className={styles.article} id={"audrey"} style={{ display: activeSection === "audrey" ? "block" : "none" }}>
-        <div className={styles.organizationContainerTopCorners}></div>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id={"audrey"} style={{ display: activeSection === "audrey" ? "block" : "none" }}>
         <h2>
           Audrey&apos;s Journey: Breaking Barriers for Transgender Rights in
           Kenya
         </h2>
-        <p>
+        <p style={{marginBottom: 8}}>
           In the heart of Kenya, a courageous and determined individual named
           Audrey Mbugua was on a mission to challenge the norms and fight for
           the rights of transgender people. Born as a male in 1984, Audrey
@@ -302,7 +299,7 @@ const Support = () => {
           young age, she knew that living as her authentic self was her ultimate
           goal.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Audrey&apos;s journey to self-discovery and acceptance was not an easy
           one. Growing up, she faced the weight of societal expectations,
           struggling with her identity while trying to conform to the gender
@@ -310,26 +307,26 @@ const Support = () => {
           grew stronger over the years, leading her to a dark place where she
           attempted to take her own life.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Rescued from her desperate act, Audrey found herself seeking help and
           support at Mathari Hospital. It was there that she was diagnosed with
           Gender Identity Disorder, a condition rarely discussed or understood
           in Kenya at that time. This was the turning point for Audrey, as she
           embarked on a path of self-acceptance and empowerment.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           With determination, Audrey sought counseling and began hormonal
           treatment to align her physical appearance with her true self. She
           dreamed of living as a woman, and she was determined to make it a
           reality.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           In a groundbreaking move, Audrey became the first transgender woman in
           East Africa to lawfully change her name in official documents. No
           longer going by Andrew, she embraced her true identity as Audrey, the
           woman she had always known herself to be.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Audrey&apos;s fight for recognition did not end there. In a landmark
           case against the Kenya National Examinations Council (KNEC), she
           challenged the name and gender marker listed on her academic
@@ -338,7 +335,7 @@ const Support = () => {
           victory was a significant step towards creating a more inclusive
           society for transgender individuals.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Audrey&apos;s unwavering advocacy and determination did not go
           unnoticed. In 2014, she was nominated for the prestigious Human Rights
           Tulip award by the Dutch Ministry of Foreign Affairs. Her activism and
@@ -346,21 +343,21 @@ const Support = () => {
           stage, bringing attention to the struggles and triumphs of transgender
           people in Kenya.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Inspired by her own journey, Audrey founded a groundbreaking
           organization—a transgender-led international nonprofit—the first of
           its kind in Africa. Through this organization, she continued to fight
           for the rights of transgender individuals, breaking barriers and
           challenging societal prejudices.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Despite the challenges Audrey faced along the way, she never gave up
           on her mission. She forged ahead, facing adversity with grace and
           strength. Her passion for justice and equality fueled her advocacy,
           and she became a beacon of hope for the transgender community in Kenya
           and beyond.
         </p>
-        <p>
+        <p style={{ marginBottom: 8 }}>
           Audrey&apos;s legacy lives on as she continues to lead the charge for
           transgender rights in Kenya. Her story serves as a reminder that
           change is possible, even in the face of deeply ingrained societal
@@ -368,8 +365,6 @@ const Support = () => {
           transgender individuals, paving the way for a more inclusive and
           accepting future for all.
         </p>
-
-        <div className={styles.organizationContainerBottomCorners}></div>
       </div>
     </div>
   );
