@@ -5,8 +5,10 @@ import { business, legal, organizations, inclusivity, events, selfCare, eWaste }
 import { useSidebar } from '@/hooks/SidebarContext';
 import  * as Accordion from '@radix-ui/react-accordion';
 import classNames from 'classnames';
+import classnames from 'classnames';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
+import { useDarkMode } from '../ThemeProvider';
 
 interface AccordionTriggerProps {
   children: React.ReactNode;
@@ -25,6 +27,9 @@ const SideNav = () => {
             {...props}
             // @ts-ignore
             ref={forwardedRef}
+            style={{
+              backgroundColor: isDarkMode ? "#1d3752" : "#f3f3f3",
+            }}
           >
             {children}
             <ChevronDownIcon className={styles.AccordionChevron} aria-hidden />
@@ -47,6 +52,9 @@ const SideNav = () => {
         className={classNames([styles.AccordionContent], className)}
         {...props}
         ref={forwardedRef}
+        style={{
+          backgroundColor: isDarkMode ? "#1d375280" : "#f3f3f3",
+        }}
       >
         <div className={styles.AccordionContentText}>{children}</div>
       </Accordion.Content>
@@ -87,21 +95,21 @@ const SideNav = () => {
   ]
 
   const AccordionDemo: React.FC = () => (
-    <Accordion.Root className={styles.AccordionRoot} type="multiple">
+    <Accordion.Root className={classnames(styles.AccordionRoot, { [styles.AccordionRootDarkMode]: isDarkMode })} type="multiple">
       {
         categories.map((category, index) => {
           return (
             <Accordion.Item className={styles.AccordionItem} value={category.name} key={index}>
               <AccordionTrigger>
-                <h2 className={styles["accordionHeaderTitle"]}>{category.name}</h2>
+                <h2 className={classnames(styles["accordionHeaderTitle"], {[styles.accordionHeaderTitleDarkMode]: isDarkMode})}>{category.name}</h2>
               </AccordionTrigger>
               <AccordionContent>
                 {
                   category.category.map((article, index) => {
                     return (
-                      <div key={index} className={styles.accordionLink} onClick={toggleSidebar}>
+                      <div key={index} className={classnames(styles.accordionLink, {[styles.accordionLinkDarkMode]: isDarkMode})} onClick={toggleSidebar}>
                         <Link href={article?.url}>
-                          <p className={styles.accordionArticleTitle}>
+                          <p className={classnames(styles.accordionArticleTitle, { [styles.accordionArticleTitleDarkMode]: isDarkMode})}>
                             {article?.title}
                           </p>
                         </Link>
@@ -119,12 +127,13 @@ const SideNav = () => {
 
   AccordionDemo.displayName = 'AccordionDemo';
 
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+
   return (
     <div style={{position: "relative"}}>
-      <div className={styles.sideNav}
+      <div className={classnames(styles.sideNav, { [styles.sideNavDarkMode]: isDarkMode })}
         // style={{transition: "ease-in-out all 0.5s", top: isSidebarOpen ? "0%" : "100%", height: isSidebarOpen ? "100vh" : "0", display: isSidebarOpen ? "block" : "none"}}
       >
-        <h2 style={{color: "white", textAlign: "center", fontFamily: "sans-serif", marginBottom: 16}}>Explore Saidia Resources Categories</h2>
         <AccordionDemo/>
       </div>
       {/* <div className={styles.sidebarToggler} onClick={toggleSidebar}>

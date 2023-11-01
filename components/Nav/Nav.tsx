@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import styles from "./Nav.module.scss";
 import Link from "next/link";
+import { Button, Flex, IconButton, Tooltip } from "@radix-ui/themes";
+import { ThemeToggle } from "../ThemeToggler";
+
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
+
   return (
     <div className={styles.nav}>
       <div className={styles.navContainer}>
@@ -37,6 +41,16 @@ const Nav = () => {
               ></div>
             </div>
           </div>
+          <Flex
+            display={{ md: 'flex' }}
+            align="center"
+            gap="4"
+            pr="4"
+          >
+            <div className={styles.HeaderThemeToggleContainer}>
+              <ThemeToggle />
+            </div>
+          </Flex>
         </div>
         {navOpen && (
           <div
