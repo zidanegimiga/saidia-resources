@@ -45,11 +45,11 @@ export default function Guides() {
       <SideNav />
       {
         <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px", zIndex: 2 }}>
-          <h2 style={{ color: "white", fontFamily: "sans-serif" }}> 
+          <h3 style={{ color: "white", fontFamily: "sans-serif" }}> 
             {
-              activeSection === "" ? "Vocational Skills in Kenya" : "Starting a Business in Kenya"
+              activeSection === "" ? "Vocational Skills" : "Starting a Business in Kenya"
             }
-          </h2>
+          </h3>
         </div>
       }
       <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection === "" ? "block" : "none" }}>
