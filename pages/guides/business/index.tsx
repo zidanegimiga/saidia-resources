@@ -43,15 +43,15 @@ export default function Guides() {
       </Head>
       <Nav />
       <SideNav />
-      {
-        <div style={{ paddingTop: 16, paddingBottom: 16, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px", zIndex: 2 }}>
+      {/* {
+        <div style={{ paddingTop: 8, paddingBottom: 8, width: "100%", backgroundColor: "#1e2832", textAlign: "center", position: "fixed", top: scrollY > 288 ? 0 : -80, transition: "ease-in-out 0.5s all", paddingLeft: "132px", zIndex: 2 }}>
           <h3 style={{ color: "white", fontFamily: "sans-serif" }}> 
             {
               activeSection === "" ? "Vocational Skills" : "Starting a Business"
             }
           </h3>
         </div>
-      }
+      } */}
       <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} style={{ display: activeSection === "" ? "block" : "none" }}>
         <h2>Vocational Skills in Kenya</h2>
         <p>
