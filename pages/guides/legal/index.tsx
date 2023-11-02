@@ -100,17 +100,22 @@ export default function Guides() {
         </Tabs.Root>       
 
         <Box p="3">
-          <Text size="3">         
-          <p>
-          It&apos;s crucial to recognize that legal procedures and terminology
-          can vary depending on the jurisdiction and the nature of the case.
-          Seeking the guidance of a qualified lawyer or seeking legal advice is
-          highly recommended to gain accurate and up-to-date information on
-          these matters. The legal system aims to uphold justice, protect the
-          rights of all parties involved, and ensure fair treatment and due
-          process for those facing legal issues in Kenya.
-        </p>
-        </Text>
+          <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
+            <Callout.Icon>
+              <InfoCircledIcon />
+            </Callout.Icon>
+            <Callout.Text>
+              <p>
+                It&apos;s crucial to recognize that legal procedures and terminology
+                can vary depending on the jurisdiction and the nature of the case.
+                Seeking the guidance of a qualified lawyer or seeking legal advice is
+                highly recommended to gain accurate and up-to-date information on
+                these matters. The legal system aims to uphold justice, protect the
+                rights of all parties involved, and ensure fair treatment and due
+                process for those facing legal issues in Kenya.
+              </p>
+            </Callout.Text>
+          </Callout.Root>
         </Box>
       </div>
 
