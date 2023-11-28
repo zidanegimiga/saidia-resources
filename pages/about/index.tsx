@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "./index.module.scss";
 import Nav from "@/components/Nav/Nav";
 import { motion } from "framer-motion"
+import MarketingVideo from "@/components/marketingVideo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,9 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Nav />
+      <MarketingVideo />
       <main className={styles.main}>
-        <Nav />
         <div className={styles.mainContentContainer}>
           < motion.img 
           initial={{
