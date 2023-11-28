@@ -18,6 +18,10 @@ const MarketingVideo = () => {
                 <source src="/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+            <video autoPlay muted loop className={styles.fullscreenVideoMobile}>
+                <source src="/mobile.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <div className={styles.scrollDownBtn} onClick={handleScrollDown}>
                 <span>&#8595;</span>
                 <p className={styles.scrollDownBtnText}>SCROLL</p>
