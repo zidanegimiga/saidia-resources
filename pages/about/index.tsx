@@ -51,30 +51,12 @@ export default function About() {
           }}
           className={styles.mainContent}>
             <div className={styles.aboutDescription}>
-              <p>
-                Embark on an extraordinary journey with Kaya in &quot;Saidia:
-                Embrace the Journey&quot; – a groundbreaking game where
-                acceptance and understanding change lives!
-              </p>
-              <p>
-                Join Kaya as she defies injustice and uplifts her community in
-                Kenya. Help her find a safe haven and blaze a trail of
-                empowerment. Build a supportive safe house and educate the
-                community on LGBTQ issues.
-              </p>
-              <p>
-                Confront dynamic challenges, triumph over hate, and witness the
-                power of love and acceptance. Unleash your creativity in bonus
-                dream levels and unlock Kaya&apos;s true potential!
-              </p>
-              <p>
-                Ready to make a difference? Play &quot;Saidia: Embrace the
-                Journey&quot; now and experience compassion in action!
-              </p>
-              <p>
-                Embrace the Journey! Available on all platforms. Download now
-                and change lives today!
-              </p>
+              <p>Kaya, a transgender woman, has recently faced an unjust eviction from her home because her landlord
+                suspects her gender identity. She had been offering shelter to several queer individuals who had been evicted from their homes for living authentically. In Saidia, you assist Kaya in navigating her life as a trans woman in Kenya, as she strives to improve her own circumstances and make a positive impact on the lives of others.</p>
+              <p>Welcome to Saidia, where the game isn’t just about leveling up; it’s about levelling the playing field for the LGBTQ+ community in Kenya! Join Kaya and her friends on an epic 2D RPG journey that’s all about life, love, and navigating the twists and turns of being a queer Kenyan.</p>
+              <p>In Saidia, you’ll delve into a rich narrative that explores the difficulties, triumphs, and everyday moments that shape the lives of LGBTQ+ individuals in Kenya.. Hang out with diverse characters, have heart-to-hearts, and make choices that steer Kaya’s tale in this game-meets-reality adventure that’s a catalyst for understanding.</p>
+              <p>Through Kaya’s journey, face challenges head-on, play, explore, and maybe even change your perspective a bit. Saidia isn’t just about scoring points; it’s an opportunity to delve into a world of diversity and gain a deeper understanding of the experiences in Kenya.</p>
+              <p>Saidia challenges you to elevate yourself while also uplifting the surrounding community. The goal is to collect money, acquire skills, protect the environment and support the queer community. As you navigate the game, your choices will directly influence your own development and the well-being of those around you.</p>
             </div>
             <div className={styles.platformsBadges}>
               <img
