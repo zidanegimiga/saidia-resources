@@ -5,7 +5,7 @@ const MarketingVideo = () => {
     const handleScrollDown = () => {
         if(typeof window !== "undefined"){
             window.scrollTo({
-                top: window.innerHeight,
+                top: window.innerHeight + 240,
                 behavior: 'smooth',
             });
         } else{
