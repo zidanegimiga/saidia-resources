@@ -51,6 +51,7 @@ export default function About() {
           }}
           className={styles.mainContent}>
             <div className={styles.aboutDescription}>
+              <h3 style={{color: "black"}}>About</h3>
               <p>Kaya, a transgender woman, has recently faced an unjust eviction from her home because her landlord
                 suspects her gender identity. She had been offering shelter to several queer individuals who had been evicted from their homes for living authentically. In Saidia, you assist Kaya in navigating her life as a trans woman in Kenya, as she strives to improve her own circumstances and make a positive impact on the lives of others.</p>
               <p>Welcome to Saidia, where the game isn’t just about leveling up; it’s about levelling the playing field for the LGBTQ+ community in Kenya! Join Kaya and her friends on an epic 2D RPG journey that’s all about life, love, and navigating the twists and turns of being a queer Kenyan.</p>
