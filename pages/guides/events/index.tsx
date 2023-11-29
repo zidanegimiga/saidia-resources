@@ -50,7 +50,7 @@ export default function Events() {
           </h2>
         </div>
       }
-      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="inclusive-events" style={{ display: activeSection === "inclusive-events" ? "block" : "none" }}>
+      <div className={classnames(styles.article, { [styles.articleDarkMode]: isDarkMode })} id="inclusive-events" style={{ display: activeSection === "inclusive-events" || " " ? "block" : "none" }}>
         <h2>Queer-friendly events you can attend</h2>
         <p>
           In recent years, there has been a growing acceptance and recognition
