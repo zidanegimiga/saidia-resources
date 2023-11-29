@@ -105,23 +105,19 @@ export default function Events() {
             empowerment within the LGBTQ+ community.
           </li>
           <li>
-            <span>Podcasts:</span> Podcasts such as Blooms in the Dark, The Spread, and
-            Channelke also provide platforms for discussions about sexuality,
+            <span>Podcasts:</span> Podcasts such as Blooms in the Dark and The Spread also provide platforms for discussions about sexuality,
             gender and sexual expression. Blooms in the Dark (a podcast by
             Creatives Garage) is a collection of short, fictional stories about
             various individuals&apos; experiences navigating the challenges they
             face as a result of their sexual orientation or gender identity. The
             Spread is a podcast hosted by Kaz that offers sexual education for
             everyone regardless of their sexual orientation or gender identity.
-            Channelke is a podcast that was started by @magicdyke to teach her
-            audience about drag as a tool of liberation and encourage them to be
-            proud of their sexual orientation.
           </li>
-          <li>
+          {/* <li>
             <span>Kings of Kenya Events:</span> Founded by @Magicdyke, Kings of Kenya is a
             collection of Drag Kings in Kenya that host entertainment events
             like Drag Brunch and also offer Drag make-up classes.
-          </li>
+          </li> */}
         </ol>
         <Callout.Root color="green" mt={"5"} mb={"5"} variant="surface">
           <Callout.Icon>
