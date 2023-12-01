@@ -8,7 +8,6 @@ import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
 import Layout from '@/components/Layout';
 
-
 // Load font
 const raster = localFont({
   src: [
