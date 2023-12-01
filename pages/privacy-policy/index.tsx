@@ -77,12 +77,12 @@ const PrivacyPolicy = () => {
             <h2>4. Types of Data Collected</h2>
             <h3>Personal Data</h3>
             <p>
-              While using our Service, we may ask you to provide us with certain
+              While using our Service, although we currently don&apos;t, we may ask you to provide us with certain
               personally identifiable information that can be used to contact or
               identify you (“Personal Data”). Personally identifiable
               information may include, but is not limited to:
             </p>
-            <ol>
+            <ol style={{paddingLeft: "16px"}}>
               <li>Email address</li>
               <li>First name and last name</li>
               <li>Phone number</li>
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
             <h3>Tracking Cookies Data</h3>
             <p>
               We use cookies and similar tracking technologies to track the
-              activity on our Service and we hold certain information.
+              activity on our website and we hold certain information.
             </p>
             <p>
               Cookies are files with a small amount of data which may include an
@@ -133,7 +133,7 @@ const PrivacyPolicy = () => {
               cookies, you may not be able to use some portions of our Service.
             </p>
             <p>Examples of Cookies we use:</p>
-            <ol>
+            <ol style={{ paddingLeft: "16px" }}>
               <li>
                 <b>Session Cookies:</b> We use Session Cookies to operate our
                 Service.
@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
                 interests.
               </li>
             </ol>
-            <h3>Other Data</h3>
+            {/* <h3>Other Data</h3>
             <p>
               While using our Service, we may also collect the following
               information: sex, age, date of birth, place of birth, passport
@@ -163,12 +163,12 @@ const PrivacyPolicy = () => {
               compensation, information on marital status, family members,
               social security (or other taxpayer identification) number, office
               location and other data.
-            </p>
+            </p> */}
             <h2>5. Use of Data</h2>
             <p>
               Creatives garage uses the collected data for various purposes:
             </p>
-            <ol>
+            <ol style={{ paddingLeft: "16px" }}>
               <li>to provide and maintain our Service;</li>
               <li>to notify you about changes to our Service;</li>
               <li>
@@ -249,7 +249,7 @@ const PrivacyPolicy = () => {
               We may disclose personal information that we collect, or you
               provide:
             </p>
-            <ol>
+            <ol style={{ paddingLeft: "16px" }}>
               <li>
                 <h3>Business Transaction.</h3>
                 <p>
@@ -313,7 +313,7 @@ const PrivacyPolicy = () => {
               In certain circumstances, you have the following data protection
               rights:
             </p>
-            <ol>
+            <ol style={{ paddingLeft: "16px" }}>
               <li>
                 the right to access, update or to delete the information we have
                 on you;
@@ -356,7 +356,7 @@ const PrivacyPolicy = () => {
               Act (DPA)
             </h2>
             <p>According to DPA we agree to the following:</p>
-            <ol>
+            <ol style={{ paddingLeft: "16px" }}>
               <li>users can visit our site anonymously;</li>
               <li>
                 our Privacy Policy link includes the word “Privacy”, and can
@@ -392,7 +392,7 @@ const PrivacyPolicy = () => {
               (share) it. To exercise your data protection rights, you can make
               certain requests and ask us:
             </p>
-            <ol>
+            <ol style={{ paddingLeft: "16px" }}>
               <li>
                 What personal information we have about you. If you make this
                 request, we will return to you:
@@ -543,7 +543,7 @@ const PrivacyPolicy = () => {
               We may use third-party Service Providers to automate the
               development process of our Service.
             </p>
-            <h2>19. Children’s Privacy</h2>
+            {/* <h2>19. Children’s Privacy</h2>
             <p>
               Our Services are intended for use by children under the age of 18
               (“Child” or “Children”). We however do not knowingly collect
@@ -553,8 +553,8 @@ const PrivacyPolicy = () => {
               Personal Data from Children without verification of parental
               consent, we take steps to remove that information from our
               servers.
-            </p>
-            <h2>20. Changes to This Privacy Policy</h2>
+            </p> */}
+            <h2>19. Changes to This Privacy Policy</h2>
             <p>
               We may update our Privacy Policy from time to time. We will notify
               you of any changes by posting the new Privacy Policy on this page.
