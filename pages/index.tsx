@@ -101,10 +101,6 @@ export default function Home() {
             </motion.h1>
           </div>
         </div>
-
-        {/* <video ref={videoRef} controls={false} loop autoPlay className={styles.video} muted>
-          <source src="/saidiaVid.mp4" type="video/mp4" />
-        </video> */}
       </main>
     </>
   );
